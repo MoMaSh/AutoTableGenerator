@@ -5,10 +5,7 @@
 	    <class>com.mmsh.atg.test.Address</class>
 	    <exclude-unlisted-classes>true</exclude-unlisted-classes>
 	    <properties>
-	      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
-	      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://127.0.0.1:3306/atgtestserver" />
-	      <property name="javax.persistence.jdbc.user" value="root" />
-	      <property name="javax.persistence.jdbc.password" value="Mohammad?1997668356" />
+	      <property name="hibernate.ejb.cfgfile" value="META-INF/hibernate.cfg.xml"/>
 	    </properties>
 	</persistence-unit>
 </persistence>
