@@ -1,0 +1,7017 @@
+.v-assistive-device-only {
+	position: absolute;
+	top: -2000px;
+	left: -2000px;
+	width: 10px;
+	overflow: hidden;
+}
+
+.v-vaadin-version:after {
+	content: "7.1.9";
+}
+
+.v-generated-body {
+	width: 100%;
+	height: 100%;
+	border: 0;
+	margin: 0;
+	overflow: hidden;
+}
+
+.v-debug-console {
+	background: #fff;
+	opacity: 0.9;
+	border: 1px solid #000;
+	font-family: sans-serif;
+}
+
+.v-debug-console-caption {
+	background: #000;
+	border-bottom: 1px solid grey;
+	color: white;
+	font-weight: bold;
+}
+
+.v-debug-console-content {
+	font-size: x-small;
+	overflow: auto;
+	white-space: pre;
+}
+
+.v-debug-console-content input {
+	font-size: xx-small;
+}
+
+.v-app .invalidlayout, .v-app .invalidlayout * {
+	background: #f99 !important;
+}
+
+@font-face {
+	font-family: "vdebugfont";
+	src: url(../base/debug/fonts/font.eot);
+	src: url(../base/debug/fonts/font.eot?#iefix) format("embedded-opentype"), url(../base/debug/fonts/font.woff) format("woff"), url(../base/debug/fonts/font.ttf) format("truetype"), url(../base/debug/fonts/font.svg#fontawesome) format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+.v-debugwindow [data-icon]:before, .v-debugwindow-menu [data-icon]:before {
+	font-family: "vdebugfont";
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	font-style: normal;
+	vertical-align: text-bottom;
+}
+
+.v-debugwindow {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-moz-opacity: 0.8;
+	-webkit-opacity: 0.8;
+	opacity: 0.8;
+	color: #666;
+	font-family: Arial, Helvetica, Tahoma, Verdana, sans-serif;
+	font-size: 13px;
+}
+
+.v-debugwindow .v-debugwindow-handle {
+	position: absolute;
+	bottom: 0;
+	background-color: #fff;
+	-moz-opacity: 0;
+	-webkit-opacity: 0;
+	opacity: 0;
+	z-index: 1000;
+}
+
+.v-debugwindow .v-debugwindow-handle-sw {
+	width: 7px;
+	height: 7px;
+}
+
+.v-debugwindow .v-debugwindow-handle-se {
+	right: 0;
+	width: 14px;
+	height: 14px;
+}
+
+.v-debugwindow:hover {
+	-moz-opacity: 1;
+	-webkit-opacity: 1;
+	opacity: 1;
+}
+
+.v-debugwindow * {
+	font-size: inherit !important;
+}
+
+.v-debugwindow-size0, .v-debugwindow-menu .v-debugwindow-button-size0 {
+	font-size: 10px;
+}
+
+.v-debugwindow-size1, .v-debugwindow-menu .v-debugwindow-button-size1 {
+	font-size: 13px;
+}
+
+.v-debugwindow-size2, .v-debugwindow-menu .v-debugwindow-button-size2 {
+	font-size: 16px;
+}
+
+.v-debugwindow-head {
+	text-align: right;
+	background-color: transparent;
+}
+
+.v-debugwindow-tabs {
+	display: inline-block;
+	background-color: #fff;
+}
+
+.v-debugwindow-tab, .v-debugwindow-controls > * {
+	width: 2em;
+	border: none;
+	margin: 0;
+	line-height: 1.5em;
+	background-color: #fff;
+	color: #666;
+}
+
+.v-debugwindow-tab {
+	position: relative;
+	top: 1px;
+	border-width: 1px 0 1px 1px;
+	border-style: solid;
+	border-color: #666;
+	border-radius: 2px 2px 0 0;
+}
+
+.v-debugwindow-tab-selected {
+	color: #666;
+	background-color: #fff;
+	border-bottom: 1px solid #fff;
+}
+
+.v-debugwindow-controls {
+	position: relative;
+	top: 1px;
+	display: inline-block;
+	background-color: #fff;
+	border: 1px solid #666;
+	border-radius: 2px 2px 0 0;
+}
+
+.v-debugwindow-section-head {
+	text-align: left;
+	background-color: #fff;
+	border: 1px solid #666;
+	border-bottom: 1px solid #999;
+	box-shadow: 0px 0px 7px 0 rgba(55, 55, 55, 0.6);
+	min-height: 1.5em;
+	line-height: 1.5em;
+	padding-left: 5px;
+}
+
+.v-debugwindow-button {
+	border: none;
+	background-color: transparent;
+	color: #666;
+}
+
+.v-debugwindow-button:hover {
+	color: #000;
+	text-decoration: underline;
+}
+
+.v-debugwindow-button-active {
+	color: #666;
+	box-shadow: 1px 1px 3px 0 inset;
+}
+
+.v-debugwindow-content {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	box-shadow: 0px 0px 7px 0 rgba(55, 55, 55, 0.6);
+	background-color: #fff;
+	border: 1px solid #666;
+	border-top: none;
+}
+
+.v-debugwindow-menu {
+	background-color: #fff;
+	padding: 4px;
+	border: 1px solid #999;
+	border-top: none;
+	border-radius: 0 0 5px 5px;
+	box-shadow: 0px 0px 7px 0 rgba(55, 55, 55, 0.6);
+}
+
+.v-debugwindow-menu-content {
+	min-width: 100px;
+}
+
+.v-debugwindow-menu-content .v-debugwindow-button {
+	line-height: 22px;
+}
+
+.v-debugwindow-menu-content > div > .v-debugwindow-button {
+	width: 33%;
+}
+
+.v-debugwindow-row {
+	display: table-row;
+}
+
+.v-debugwindow-row:nth-child(odd) {
+	background-color: rgba(0, 61, 255, 0.11);
+}
+
+.v-debugwindow-row > span {
+	display: table-cell;
+	padding: 4px;
+}
+
+.v-debugwindow-row.SEVERE {
+	color: #550000;
+	background-color: #FFC5C5;
+}
+
+.v-debugwindow-row.WARNING {
+	background-color: #FFFF99;
+}
+
+.v-debugwindow-row.FINE {
+	color: #777;
+}
+
+.v-debugwindow-row.FINER {
+	color: #888;
+}
+
+.v-debugwindow-row.FINEST {
+	color: #888;
+}
+
+.v-debugwindow-row > span.caption {
+	color: #999;
+	text-align: right;
+	white-space: nowrap;
+}
+
+.v-debugwindow-row > span.value {
+	width: 100%;
+}
+
+.v-debugwindow-log {
+	font-family: monospace;
+}
+
+.v-debugwindow-log .v-debugwindow-reset {
+	color: #fff;
+	background-color: #4C92ED;
+	padding: 4px;
+}
+
+.v-debugwindow-log .v-debugwindow-time {
+	text-align: right;
+	color: #999;
+}
+
+.v-debugwindow-log .v-debugwindow-message {
+	white-space: nowrap;
+	width: 100%;
+}
+
+.v-debugwindow-log .v-debugwindow-message:hover {
+	white-space: normal;
+	word-wrap: break-word;
+}
+
+.v-debugwindow-log .v-debugwindow-message em {
+	background-color: #C4E6F8;
+}
+
+.v-debugwindow-hierarchy .v-debugwindow-info {
+	padding: 1em;
+}
+
+.v-debugwindow-network .v-debugwindow-row {
+	display: block !important;
+}
+
+.v-debugwindow-network .v-debugwindow-row > span {
+	display: inline;
+}
+
+/** sprite: verticals; sprite-image: url(common/img/vertical-sprites.png); sprite-layout: vertical */
+
+/** sprite: horizontals; sprite-image: url(common/img/horizontal-sprites.png); sprite-layout: horizontal */
+
+/** sprite: black-verticals; sprite-image: url(common/img/black-vertical-sprites.png); sprite-layout: vertical; sprite-matte-color: #1e2022 */
+
+/** sprite: black-horizontals; sprite-image: url(common/img/black-horizontal-sprites.png); sprite-layout: horizontal; sprite-matte-color: #1e2022 */
+
+/** sprite: buttons; sprite-image: url(button/img/button-sprites.png); sprite-layout: vertical */
+
+/** sprite: black-buttons; sprite-image: url(button/img/black-button-sprites.png); sprite-layout: vertical */
+
+.v-generated-body {
+	background: #f5f5f5;
+}
+
+.atg .v-widget {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	text-align: left;
+	display: inline-block;
+	white-space: normal;
+	vertical-align: bottom;
+	font-size: 12px;
+	line-height: normal;
+}
+
+.atg .v-absolutelayout-wrapper {
+	position: absolute;
+	overflow: hidden;
+}
+
+.atg .v-absolutelayout-margin, .atg .v-absolutelayout-canvas {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.atg .v-absolutelayout.v-has-height > div, .atg .v-absolutelayout.v-has-height > div > div {
+	height: 100%;
+}
+
+.atg .v-absolutelayout.v-has-width > div, .atg .v-absolutelayout.v-has-width > div > div {
+	width: 100%;
+}
+
+.atg .v-accordion {
+	position: relative;
+	outline: none;
+	overflow: visible;
+	text-align: left;
+	font-size: 0;
+}
+
+.atg .v-accordion-item {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+}
+
+.atg .v-accordion-item-caption {
+	overflow: visible;
+	white-space: nowrap;
+	background: #eee;
+	border-bottom: 1px solid #ddd;
+}
+
+.atg .v-accordion-item-caption .v-caption {
+	cursor: pointer;
+	font-size: 12px;
+}
+
+.atg .v-accordion-item-open .v-accordion-item-caption .v-caption {
+	cursor: default;
+}
+
+.atg .v-accordion-item-content {
+	position: absolute;
+	width: 100%;
+}
+
+.atg .v-browserframe {
+	font-size: 0;
+}
+
+.atg .v-browserframe > span {
+	font-size: 12px;
+}
+
+.atg .v-button {
+	display: inline-block;
+	zoom: 1;
+	text-align: center !important;
+	text-decoration: none;
+	border: 2px outset #ddd;
+	background: #eee;
+	cursor: pointer;
+	white-space: nowrap;
+	margin: 0;
+	padding: 0.2em 1em;
+	color: inherit;
+	font: inherit;
+	font-size: 12px;
+	line-height: normal;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.atg .v-button.v-disabled {
+	cursor: default;
+}
+
+.atg .v-button-wrap, .atg .v-button-caption {
+	vertical-align: baseline;
+	white-space: nowrap;
+	font: inherit;
+	color: inherit;
+	line-height: normal;
+}
+
+.atg .v-button .v-icon {
+	vertical-align: middle;
+	margin-right: 3px;
+	border: none;
+}
+
+.atg .v-button .v-errorindicator {
+	display: inline-block;
+	zoom: 1;
+	vertical-align: middle;
+	float: none;
+}
+
+.atg .v-button-link {
+	border: none;
+	text-align: left !important;
+	background: transparent;
+	padding: 0;
+	color: inherit;
+	-khtml-user-select: text;
+	-moz-user-select: text;
+	-ie-user-select: text;
+	user-select: text;
+}
+
+.v-sa .atg .v-button-link:focus {
+	outline-offset: -3px;
+}
+
+.atg .v-button-link .v-button-caption {
+	text-decoration: underline;
+	color: inherit;
+	text-align: left;
+}
+
+.atg .v-nativebutton .v-icon {
+	vertical-align: middle;
+	margin-right: 3px;
+	border: none;
+}
+
+.atg .v-nativebutton .v-errorindicator {
+	display: inline-block;
+	zoom: 1;
+	vertical-align: middle;
+	float: none;
+}
+
+.atg .v-nativebutton-link {
+	border: none;
+	text-align: left !important;
+	background: transparent;
+	padding: 0;
+	color: inherit;
+	-khtml-user-select: text;
+	-moz-user-select: text;
+	-ie-user-select: text;
+	user-select: text;
+}
+
+.atg .v-nativebutton-link .v-nativebutton-caption {
+	text-decoration: underline;
+	color: inherit;
+	text-align: left;
+}
+
+.atg .v-nativebutton {
+	text-align: center !important;
+	cursor: pointer;
+	white-space: nowrap;
+	margin: 0;
+	color: inherit;
+	font: inherit;
+	line-height: normal;
+}
+
+.atg .v-nativebutton .v-nativebutton-caption {
+	vertical-align: middle;
+	white-space: nowrap;
+	font: inherit;
+	color: inherit;
+}
+
+.atg .v-nativebutton .v-icon {
+	vertical-align: middle;
+	margin-right: 3px;
+}
+
+.atg .v-nativebutton .v-errorindicator {
+	display: inline-block;
+	zoom: 1;
+	float: none;
+}
+
+.v-ie .atg .v-nativebutton {
+	overflow: visible;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+.v-ie .atg .v-nativebutton-link {
+	padding: 0;
+}
+
+.atg .v-checkbox {
+	display: block;
+}
+
+.atg .v-checkbox, .atg .v-checkbox label, .atg .v-checkbox input, .atg .v-checkbox .v-icon {
+	vertical-align: middle;
+	white-space: nowrap;
+}
+
+.atg .v-checkbox .v-icon {
+	margin: 0 2px;
+}
+
+.atg .v-checkbox .v-errorindicator {
+	float: none;
+	display: inline;
+	display: inline-block;
+	zoom: 1;
+}
+
+.atg .v-captionwrapper {
+	text-align: left;
+}
+
+.atg .v-caption {
+	overflow: hidden;
+	white-space: nowrap;
+	font-size: 12px;
+}
+
+.atg .v-errorindicator {
+	display: inline-block;
+}
+
+.atg .v-caption .v-icon {
+	display: inline-block;
+	padding-right: 2px;
+	vertical-align: middle;
+}
+
+.atg .v-caption .v-captiontext {
+	display: inline-block;
+	overflow: hidden;
+	vertical-align: middle;
+}
+
+.atg .v-caption .v-required-field-indicator {
+	display: inline-block;
+}
+
+.atg .v-colorpicker {
+	text-align: center;
+}
+
+.atg .v-colorpicker-button-color {
+	border: 1px solid silver;
+	float: left;
+	width: 10px;
+	height: 10px;
+	margin-top: 2px;
+	margin-right: 5px;
+}
+
+.atg .v-colorpicker-area {
+	border: 1px solid silver;
+	margin: 1px auto;
+}
+
+.atg .v-colorpicker-history {
+	margin: 5px;
+}
+
+.atg .v-colorpicker-history td {
+	border: 1px solid silver !important;
+}
+
+.atg .v-colorpicker-history td {
+	line-height: 15px;
+}
+
+.atg .v-colorpicker-popup {
+	width: 244px;
+}
+
+.atg .v-colorpicker-popup .v-scrollable {
+	background-color: #dddddd;
+}
+
+.atg .v-colorpicker-popup .v-tabsheet-content .v-scrollable {
+	background-color: #eaeaea;
+}
+
+.atg .v-colorpicker-popup .v-tabsheet-content .v-tabsheet-tabsheetpanel {
+	background: transparent;
+}
+
+.atg .v-colorpicker-popup .resize-button {
+	border: 0px solid silver;
+	background: url(../base/colorpicker/images/resizebg.png);
+	margin-top: 5px;
+}
+
+.atg .v-colorpicker-popup .resize-button-caption {
+	display: none;
+}
+
+.atg .v-colorpicker-popup .resize-button:hover {
+	background: url(../base/colorpicker/images/resizebg-selected.png);
+}
+
+.atg .v-colorpicker-popup .resize-button:focus {
+	outline: none;
+}
+
+.atg .v-colorpicker-gradient {
+	width: 220px;
+	height: 220px;
+	padding-left: 10px;
+	margin-top: 0px;
+}
+
+.atg .v-colorpicker-gradient .v-colorpicker-gradient-clicklayer {
+	background-color: white;
+	filter: alpha(opacity = 0);
+	opacity: 0;
+}
+
+.atg .v-colorpicker-popup .rgb-gradient .v-colorpicker-gradient-background {
+	width: 220px;
+	height: 220px;
+	background: url(../base/colorpicker/images/gradient2.png);
+}
+
+.atg .v-colorpicker-popup .hsv-gradient .v-colorpicker-gradient-foreground {
+	background: url(../base/colorpicker/images/gradient.png);
+}
+
+.atg .v-colorpicker-popup .v-colorpicker-gradient-lowerbox {
+	border-right: 1px solid white;
+	border-top: 1px solid white;
+}
+
+.atg .v-colorpicker-popup .v-colorpicker-gradient-higherbox {
+	border-left: 1px solid white;
+	border-bottom: 1px solid white;
+}
+
+.atg .v-colorpicker-popup .rgb-sliders {
+	width: 227px;
+	padding-left: 10px;
+	color: #444444;
+	text-shadow: 0 1px 0 #FFFFFF;
+}
+
+.atg .v-colorpicker-popup .rgb-sliders .red .v-slider-base {
+	background-color: red;
+}
+
+.atg .v-colorpicker-popup .rgb-sliders .green .v-slider-base {
+	background-color: green;
+}
+
+.atg .v-colorpicker-popup .rgb-sliders .blue .v-slider-base {
+	background-color: blue;
+}
+
+.atg .v-colorpicker-popup .hsv-sliders {
+	padding-left: 10px;
+	color: #444444;
+	text-shadow: 0 1px 0 #FFFFFF;
+}
+
+.atg .v-colorpicker-popup .hue-slider {
+	height: 10px;
+	border: 0px solid silver;
+	background-image: url(../base/colorpicker/images/slider_hue_bg.png);
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: 0 3px;
+	margin-top: 0px;
+}
+
+.atg .v-colorpicker-popup .hue-slider .v-slider-handle {
+	margin-top: -2px;
+}
+
+.atg .v-colorpicker-popup .hue-slider .v-slider-base {
+	border: 0px none;
+	height: 0px;
+	background-color: transparent;
+}
+
+.atg .v-colorpicker-popup .v-colorpicker-preview {
+	margin-top: 5px;
+	padding-left: 11px;
+	padding-right: 10px;
+	margin-bottom: 0px;
+}
+
+.atg .v-colorpicker-popup .v-absolutelayout-wrapper {
+	width: 100%;
+	height: 100%;
+}
+
+.atg .v-colorpicker-popup .v-colorpicker-preview-textfield {
+	background: none;
+	overflow: hidden;
+	overflow-y: hidden;
+	overflow-x: hidden;
+}
+
+.atg .v-colorpicker-popup .v-textfield-dark {
+	color: #FFFFFF;
+}
+
+.atg .v-colorpicker-popup .v-textfield-light {
+	color: #000000;
+}
+
+.atg .v-colorpicker-popup .colorselect {
+	margin-top: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.atg .v-colorpicker-popup .v-tabsheet .v-colorpicker-grid {
+	height: 319px;
+}
+
+.atg .v-colorpicker-popup .colorselect td {
+	line-height: 15px;
+}
+
+.atg .v-colorpicker-popup .v-filterselect {
+	padding-right: 16px;
+}
+
+.atg .v-calendar-nresize DIV DIV {
+	cursor: n-resize !important;
+}
+
+.atg .v-calendar-sresize DIV DIV {
+	cursor: s-resize !important;
+}
+
+.atg .v-calendar {
+	background-color: #fff;
+}
+
+.atg .v-calendar-header-month, .atg .v-calendar-header-week {
+	border-bottom: 1px solid #c1c1c1;
+}
+
+.atg .v-calendar-header-day {
+	text-align: center;
+	color: #666;
+	font-size: 12px;
+	line-height: normal;
+}
+
+.atg .v-calendar-header-week .v-calendar-header-day:hover {
+	cursor: pointer;
+	color: #222;
+}
+
+.atg .v-calendar-header-day-today {
+	font-weight: bold;
+	color: #444;
+}
+
+.atg .v-calendar-header-month td:first-child {
+	padding-left: 19px;
+}
+
+.atg .v-calendar-header-week .v-calendar-back, .atg .v-calendar-header-week .v-calendar-next {
+	border: none;
+	padding: 0;
+	margin: 0;
+	height: 12px;
+	width: 12px;
+	overflow: hidden;
+	background: transparent url(../base/calendar/img/arrows.png) no-repeat 50% 0;
+	opacity: 0.3;
+	filter: alpha(opacity = 30);
+	cursor: default;
+}
+
+.atg .v-calendar-header-week .v-calendar-back:hover, .atg .v-calendar-header-week .v-calendar-next:hover {
+	opacity: 0.6;
+	filter: alpha(opacity = 60);
+}
+
+.atg .v-calendar-header-week .v-calendar-back:active, .atg .v-calendar-header-week .v-calendar-next:active {
+	opacity: 1;
+	filter: alpha(opacity = 100);
+}
+
+.atg .v-calendar-header-week .v-calendar-next {
+	background-position: 50% -12px;
+}
+
+.atg .v-calendar-month {
+	outline: none;
+}
+
+.atg .v-calendar-week-numbers {
+	width: 20px;
+	border-right: 1px solid #ccc;
+}
+
+.atg .v-calendar-week-number {
+	border: none;
+	background: transparent;
+	padding: 0;
+	margin: 0;
+	cursor: pointer;
+	opacity: 0.5;
+	width: 20px;
+	text-align: center;
+	border-bottom: 1px solid #ddd;
+}
+
+.atg .v-calendar-week-number:hover {
+	opacity: 1;
+}
+
+.atg .v-calendar-month-day {
+	border-bottom: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	outline: none;
+}
+
+.atg .v-calendar-month-day-today {
+	background-color: #e7f0f5;
+}
+
+.atg .v-calendar-month-day-selected {
+	background-color: #fffee7;
+}
+
+.atg .v-calendar-month-day-dragemphasis {
+	background-color: #a8a8a8;
+}
+
+.atg .v-calendar-month-day-scrollable {
+	overflow-y: scroll;
+}
+
+.atg .v-calendar-day-number {
+	height: 18px;
+	line-height: 18px;
+	font-size: 12px;
+	text-align: right;
+	padding-right: 3px;
+	white-space: nowrap;
+}
+
+.atg .v-calendar-day-number:hover {
+	cursor: pointer;
+	opacity: 0.6;
+	filter: alpha(opacity = 60);
+}
+
+.atg .v-calendar-month .v-calendar-spacer, .atg .v-calendar-month .v-calendar-bottom-spacer, .atg .v-calendar-month .v-calendar-bottom-spacer-empty {
+	height: 15px;
+	font-size: 11px;
+}
+
+.atg .v-calendar-month .v-calendar-bottom-spacer:hover {
+	cursor: pointer;
+	opacity: 0.6;
+	filter: alpha(opacity = 60);
+}
+
+.atg .v-calendar-event {
+	line-height: 14px;
+	font-size: 11px;
+	padding: 0 0 0 4px;
+	cursor: pointer;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	outline: none;
+}
+
+.atg .v-calendar-event-month {
+	margin-bottom: 1px;
+	white-space: nowrap;
+}
+
+.atg .v-calendar-event-month:hover {
+	text-decoration: underline;
+}
+
+.atg .v-calendar-event-all-day {
+	background: #999;
+	display: block;
+	margin-left: -2px;
+}
+
+.atg div.v-calendar-event-all-day {
+	color: #fff;
+	height: 14px;
+}
+
+.atg .v-calendar-event-continued-from {
+	margin-left: 0;
+}
+
+.atg .v-calendar-event-start {
+	-webkit-border-top-left-radius: 6px;
+	-webkit-border-bottom-left-radius: 6px;
+	-moz-border-radius-topleft: 6px;
+	-moz-border-radius-bottomleft: 6px;
+	border-top-left-radius: 6px;
+	border-bottom-left-radius: 6px;
+	margin-left: 0;
+}
+
+.atg .v-calendar-event-end {
+	-webkit-border-top-right-radius: 6px;
+	-webkit-border-bottom-right-radius: 6px;
+	-moz-border-radius-topright: 6px;
+	-moz-border-radius-bottomright: 6px;
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+}
+
+.atg .v-calendar-week-wrapper {
+	position: relative;
+}
+
+.atg .v-calendar-times {
+	width: 51px;
+}
+
+.atg .v-calendar-time {
+	padding: 0 8px 7px 0;
+	margin-top: -7px;
+	text-align: right;
+	font-size: 11px;
+	color: #666;
+	border-right: 1px solid #ccc;
+}
+
+.atg .v-calendar-weekly-longevents {
+	border-left: 1px solid #ccc;
+	border-bottom: 2px solid #bbb;
+	margin-left: 50px;
+}
+
+.atg .v-calendar-weekly-longevents .v-calendar-datecell {
+	border-right: 1px solid #ccc;
+	padding: 1px 0 0;
+}
+
+.atg .v-calendar-weekly-longevents .v-calendar-event {
+	height: 14px;
+	margin-bottom: 1px;
+}
+
+.atg .v-calendar-weekly-longevents .v-calendar-event:hover {
+	text-decoration: underline;
+}
+
+.atg .v-calendar-day-times {
+	border-right: 1px solid #ccc;
+	outline: none;
+}
+
+.atg .v-calendar-day-times .v-datecellslot, .atg .v-calendar-day-times .v-datecellslot-even {
+	border-bottom: 1px solid #ccc;
+}
+
+.atg .v-calendar-day-times .v-datecellslot-even {
+	border-bottom-color: #eee;
+}
+
+.atg .v-calendar-day-times .v-daterange {
+	background-color: #a8a8a8;
+}
+
+.atg .v-calendar-day-times .v-reserved {
+	background-color: #FF3333;
+}
+
+.atg .v-calendar-day-times .dragemphasis {
+	background-color: #a8a8a8;
+}
+
+.atg .v-calendar-week-wrapper .v-calendar-event {
+	padding: 0;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	margin-top: -1px;
+}
+
+.atg .v-calendar-event-caption {
+	position: absolute;
+	z-index: 1;
+	top: 2px;
+	left: 4px;
+	width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	line-height: normal;
+}
+
+.atg .v-calendar-event-content {
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	border: 1px solid #777;
+	background: #eee;
+	opacity: 0.8;
+	filter: alpha(opacity = 80);
+	height: 14px;
+}
+
+.atg .v-calendar-current-time {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	overflow: hidden;
+	background: #5a6c86;
+	opacity: 0.6;
+	filter: alpha(opacity = 60);
+	z-index: 2;
+}
+
+.atg .v-calendar-event-resizetop {
+	position: absolute;
+	cursor: n-resize;
+	height: 5%;
+	min-height: 3px;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+}
+
+.atg .v-calendar-event-resizebottom {
+	position: absolute;
+	cursor: s-resize;
+	height: 5%;
+	min-height: 3px;
+	bottom: 0;
+	width: 100%;
+	z-index: 1;
+}
+
+.atg .v-calendar-month-sizedheight .v-calendar-month-day {
+	height: 100px;
+}
+
+.atg .v-calendar-month-sizedwidth .v-calendar-month-day {
+	width: 100px;
+}
+
+.atg .v-calendar-header-month-Hsized .v-calendar-header-day {
+	width: 101px;
+}
+
+.atg .v-calendar-header-month-Hsized td:first-child {
+	padding-left: 21px;
+}
+
+.atg .v-calendar-header-day-Hsized {
+	width: 200px;
+}
+
+.atg .v-calendar-week-numbers-Vsized .v-calendar-week-number {
+	height: 100px;
+	line-height: 100px;
+}
+
+.atg .v-calendar-week-wrapper-Vsized {
+	height: 400px;
+	overflow-x: hidden !important;
+}
+
+.atg .v-calendar-times-Vsized .v-calendar-time {
+	height: 38px;
+}
+
+.atg .v-calendar-times-Hsized .v-calendar-time {
+	width: 42px;
+}
+
+.atg .v-calendar-day-times-Vsized .v-datecellslot, .atg .v-calendar-day-times-Vsized .v-datecellslot-even {
+	height: 18px;
+}
+
+.atg .v-calendar-day-times-Hsized, .atg .v-calendar-day-times-Hsized .v-datecellslot, .atg .v-calendar-day-times-Hsized .v-datecellslot-even {
+	width: 200px;
+}
+
+.atg.v-app {
+	height: 100%;
+}
+
+.atg.v-app, .atg .v-window, .atg .v-popupview-popup, .atg .v-label, .atg .v-caption {
+	cursor: default;
+}
+
+body .atg.v-app .v-app-loading {
+	background-image: url(../base/common/img/loading-indicator.gif);
+	background-repeat: no-repeat;
+	background-position: 50%;
+	width: 100%;
+	height: 100%;
+}
+
+.atg .v-ui {
+	height: 100%;
+	width: 100%;
+	outline: none;
+	position: relative;
+}
+
+.atg .v-ui.v-ui-embedded {
+	margin-top: -1px;
+	border-top: 1px solid transparent;
+}
+
+.atg .v-ui:active, .atg .v-ui:focus {
+	outline: none;
+}
+
+.atg.v-app select, .atg .v-window select {
+	margin: 0;
+}
+
+.atg .v-disabled {
+	opacity: 0.3;
+	filter: alpha(opacity=30);
+	cursor: default;
+}
+
+.atg .v-disabled * {
+	cursor: default;
+}
+
+* html .atg .v-disabled {
+	zoom: 1;
+}
+
+* + html .atg .v-disabled {
+	zoom: 1;
+}
+
+.atg .v-disabled .v-disabled {
+	opacity: 1;
+}
+
+.atg .v-required-field-indicator {
+	padding-left: 2px;
+	color: red;
+}
+
+.atg .v-form fieldset {
+	border: none;
+	padding: 0;
+	margin: 0;
+	height: 100%;
+}
+
+.atg .v-form-content {
+	height: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.atg .v-tooltip {
+	cursor: default;
+	background: #fff;
+}
+
+.atg .v-tooltip-text {
+	overflow: auto;
+}
+
+.atg .v-tooltip .v-errormessage {
+	overflow: auto;
+}
+
+.atg .v-contextmenu {
+	background: #fff;
+}
+
+.atg .v-contextmenu .gwt-MenuItem {
+	cursor: pointer;
+	vertical-align: middle;
+	padding: 0;
+	border: 0;
+	margin: 0;
+}
+
+.atg .v-contextmenu .gwt-MenuItem div {
+	cursor: pointer;
+	vertical-align: middle;
+	white-space: nowrap;
+}
+
+.atg .v-contextmenu .gwt-MenuItem-selected div {
+	background: #aaa;
+	color: #fff;
+}
+
+.atg .v-contextmenu table {
+	border-collapse: collapse;
+	margin: 0;
+	padding: 0;
+}
+
+.atg .v-contextmenu .gwt-MenuItem img {
+	margin-right: 1em;
+	vertical-align: middle;
+}
+
+.atg .v-label pre {
+	margin: 0;
+}
+
+.atg .v-label-undef-w {
+	white-space: nowrap;
+}
+
+.atg .v-label h1, .atg .v-label h2, .atg .v-label h3, .atg .v-label h4, .atg .v-label h5, .atg .v-label h6 {
+	line-height: normal;
+}
+
+.atg .v-loading-indicator, .atg .v-loading-indicator-delay, .atg .v-loading-indicator-wait {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 30000;
+	width: 31px;
+	height: 31px;
+	background: transparent url(../base/common/img/loading-indicator.gif);
+	margin-right: 5px;
+	margin-top: 5px;
+}
+
+.atg .v-loading-indicator-delay {
+	background-image: url(../base/common/img/loading-indicator-delay.gif);
+}
+
+.atg .v-loading-indicator-wait {
+	background-image: url(../base/common/img/loading-indicator-wait.gif);
+}
+
+.atg.v-app input[type="text"], .atg.v-app input[type="password"], .atg.v-app input[type="reset"], .atg.v-app select, .atg.v-app textarea, .atg .v-window input[type="text"], .atg .v-window input[type="password"], .atg .v-window input[type="reset"], .atg .v-window select, .atg .v-window textarea {
+	padding: 2px;
+}
+
+.atg input::-ms-clear {
+	display: none;
+}
+
+.atg .v-drag-element {
+	z-index: 60000;
+	position: absolute !important;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+	cursor: default;
+}
+
+.atg .v-clip {
+	overflow: hidden;
+}
+
+.atg .v-scrollable {
+	overflow: auto;
+	font-size: 0;
+	line-height: normal;
+}
+
+.v-ios.v-webkit .atg .v-scrollable {
+	-webkit-overflow-scrolling: touch;
+}
+
+.v-ios5.v-webkit .atg .v-scrollable {
+	-webkit-overflow-scrolling: none;
+}
+
+.atg.v-overlay-container {
+	width: 0;
+	height: 0;
+}
+
+.atg .v-vertical.v-margin-top, .atg .v-horizontal.v-margin-top {
+	padding-top: 12px;
+}
+
+.atg .v-vertical.v-margin-right, .atg .v-horizontal.v-margin-right {
+	padding-right: 12px;
+}
+
+.atg .v-vertical.v-margin-bottom, .atg .v-horizontal.v-margin-bottom {
+	padding-bottom: 12px;
+}
+
+.atg .v-vertical.v-margin-left, .atg .v-horizontal.v-margin-left {
+	padding-left: 12px;
+}
+
+.atg .v-gridlayout.v-layout-margin-top {
+	padding-top: 24px;
+}
+
+.atg .v-gridlayout, .atg .v-verticallayout, .atg .v-horizontallayout {
+	font-size: 0;
+	line-height: normal;
+}
+
+.atg .v-gridlayout.v-layout-margin-bottom {
+	padding-bottom: 24px;
+}
+
+.atg .v-gridlayout.v-layout-margin-left {
+	padding-left: 24px;
+}
+
+.atg .v-gridlayout.v-layout-margin-right {
+	padding-right: 24px;
+}
+
+.atg .v-gridlayout .v-layout-spacing-on {
+	padding-left: 12px;
+	padding-top: 12px;
+}
+
+.atg .v-spacing {
+	width: 6px;
+	height: 6px;
+}
+
+.atg .v-vertical, .atg .v-horizontal {
+	display: inline-block;
+}
+
+.atg div.v-layout.v-horizontal.v-widget {
+	white-space: nowrap;
+}
+
+.atg .v-layout.v-vertical > .v-expand, .atg .v-layout.v-horizontal > .v-expand {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+}
+
+.atg .v-slot, .atg .v-spacing {
+	display: inline-block;
+	white-space: normal;
+	vertical-align: top;
+}
+
+.atg .v-vertical > .v-slot:after {
+	display: inline-block;
+	clear: both;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	line-height: 0;
+}
+
+.atg .v-vertical > .v-slot, .atg .v-vertical > .v-expand > .v-slot {
+	display: block;
+	clear: both;
+}
+
+.atg .v-horizontal > .v-slot, .atg .v-horizontal > .v-expand > .v-slot {
+	height: 100%;
+}
+
+.atg .v-horizontal > .v-expand > .v-slot {
+	position: relative;
+}
+
+.atg .v-vertical > .v-spacing, .atg .v-vertical > .v-expand > .v-spacing {
+	width: 0;
+	display: block;
+	clear: both;
+}
+
+.atg .v-horizontal > .v-spacing, .atg .v-horizontal > .v-expand > .v-spacing {
+	height: 0;
+}
+
+.atg .v-align-middle:before, .atg .v-align-bottom:before, .atg .v-expand > .v-align-middle:before, .atg .v-expand > .v-align-bottom:before {
+	content: "";
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+	width: 0;
+}
+
+.atg .v-align-middle, .atg .v-align-bottom {
+	white-space: nowrap;
+}
+
+.atg .v-align-middle > .v-widget, .atg .v-align-bottom > .v-widget {
+	display: inline-block;
+}
+
+.atg .v-align-middle, .atg .v-align-middle > .v-widget {
+	vertical-align: middle;
+}
+
+.atg .v-align-bottom, .atg .v-align-bottom > .v-widget {
+	vertical-align: bottom;
+}
+
+.atg .v-align-center {
+	text-align: center;
+}
+
+.atg .v-align-center > .v-widget {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.atg .v-align-right {
+	text-align: right;
+}
+
+.atg .v-align-right > .v-widget {
+	margin-left: auto;
+}
+
+.atg .v-has-caption, .atg .v-has-caption > .v-caption {
+	display: inline-block;
+}
+
+.atg .v-caption {
+	overflow: visible;
+	vertical-align: middle;
+}
+
+.atg .v-caption-on-left, .atg .v-caption-on-right {
+	white-space: nowrap;
+}
+
+.atg .v-caption-on-top > .v-caption, .atg .v-caption-on-bottom > .v-caption {
+	display: block;
+}
+
+.atg .v-caption-on-left > .v-caption {
+	padding-right: 0.5em;
+}
+
+.atg .v-caption-on-right > .v-caption {
+	vertical-align: top;
+}
+
+.atg .v-caption-on-left > .v-widget, .atg .v-caption-on-right > .v-widget {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.atg .v-has-caption.v-has-width > .v-widget {
+	width: 100% !important;
+}
+
+.atg .v-has-caption.v-has-height > .v-widget {
+	height: 100% !important;
+}
+
+.atg .v-errorindicator {
+	vertical-align: middle;
+}
+
+.atg .v-csslayout {
+	overflow: hidden;
+}
+
+.atg div.v-csslayout {
+	display: block;
+}
+
+.atg .v-csslayout-margin, .atg .v-csslayout-container {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.atg .v-has-width > .v-csslayout-margin, .atg .v-has-width > .v-csslayout-margin > .v-csslayout-container {
+	width: 100%;
+}
+
+.atg .v-has-height > .v-csslayout-margin, .atg .v-has-height > .v-csslayout-margin > .v-csslayout-container {
+	height: 100%;
+}
+
+.atg .v-csslayout-margin-top {
+	padding-top: 12px;
+}
+
+.atg .v-csslayout-margin-bottom {
+	padding-bottom: 12px;
+}
+
+.atg .v-csslayout-margin-left {
+	padding-left: 12px;
+}
+
+.atg .v-csslayout-margin-right {
+	padding-right: 12px;
+}
+
+.atg .v-customcomponent {
+	overflow: hidden;
+}
+
+.atg .v-customlayout {
+	overflow: hidden;
+}
+
+.atg .v-datefield {
+	white-space: nowrap;
+	display: inline-block;
+}
+
+.atg .v-datefield-textfield {
+	vertical-align: top;
+}
+
+.v-ie .atg .v-datefield-button:after {
+	content: "\200B";
+}
+
+.atg .v-datefield-button {
+	cursor: pointer;
+	vertical-align: top;
+}
+
+.atg .v-has-width > input.v-datefield-textfield {
+	width: 100%;
+}
+
+.atg .v-datefield-prompt .v-datefield-textfield {
+	color: #999;
+	font-style: italic;
+}
+
+.atg .v-datefield .v-datefield-button-readonly {
+	display: none;
+}
+
+.atg .v-datefield-calendarpanel table {
+	width: 100%;
+}
+
+.atg .v-datefield-calendarpanel td {
+	padding: 0;
+	margin: 0;
+}
+
+.atg .v-datefield-calendarpanel:focus {
+	outline: none;
+}
+
+.atg .v-datefield-calendarpanel-header td {
+	text-align: center;
+}
+
+.atg .v-datefield-calendarpanel-month {
+	text-align: center;
+	white-space: nowrap;
+}
+
+.atg .v-datefield-calendarpanel-weeknumber {
+	color: #999;
+	border-right: 1px solid #ddd;
+	font-size: 11.7px;
+}
+
+.atg .v-datefield-calendarpanel-day, .atg .v-datefield-calendarpanel-day-today {
+	cursor: pointer;
+}
+
+.atg .v-datefield-calendarpanel-day-today {
+	border: 1px solid #ddd;
+}
+
+.atg .v-disabled .v-datefield-calendarpanel-day, .atg .v-disabled .v-datefield-calendarpanel-day-today {
+	cursor: default;
+}
+
+.atg .v-datefield-calendarpanel-day-disabled, .atg .v-datefield-calendarpanel-day-outside-range {
+	cursor: default;
+	opacity: 0.5;
+}
+
+.atg .v-datefield-calendarpanel-prevyear button.outside-range, .atg .v-datefield-calendarpanel-nextyear button.outside-range, .atg .v-datefield-calendarpanel-prevmonth button.outside-range, .atg .v-datefield-calendarpanel-nextmonth button.outside-range {
+	opacity: 0.5;
+}
+
+.atg .v-datefield-calendarpanel-day-selected {
+	cursor: default;
+	background: #333;
+	color: #fff;
+}
+
+.atg .v-datefield-calendarpanel-day-focused {
+	outline: 1px dotted black;
+}
+
+.atg .v-datefield-calendarpanel-day-offmonth {
+	color: #666;
+}
+
+.atg .v-datefield-time {
+	white-space: nowrap;
+}
+
+.atg .v-datefield-time .v-label {
+	display: inline;
+}
+
+.atg .v-datefield-popup {
+	background: #fff;
+}
+
+.atg .v-datefield-popupcalendar input.v-datefield-textfield {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.atg .v-inline-datefield {
+	white-space: nowrap;
+	display: inline-block;
+}
+
+.atg .v-inline-datefield-textfield {
+	vertical-align: top;
+}
+
+.v-ie .atg .v-inline-datefield-button:after {
+	content: "\200B";
+}
+
+.atg .v-inline-datefield-button {
+	cursor: pointer;
+	vertical-align: top;
+}
+
+.atg .v-has-width > input.v-inline-datefield-textfield {
+	width: 100%;
+}
+
+.atg .v-inline-datefield-prompt .v-inline-datefield-textfield {
+	color: #999;
+	font-style: italic;
+}
+
+.atg .v-inline-datefield .v-inline-datefield-button-readonly {
+	display: none;
+}
+
+.atg .v-inline-datefield-calendarpanel table {
+	width: 100%;
+}
+
+.atg .v-inline-datefield-calendarpanel td {
+	padding: 0;
+	margin: 0;
+}
+
+.atg .v-inline-datefield-calendarpanel:focus {
+	outline: none;
+}
+
+.atg .v-inline-datefield-calendarpanel-header td {
+	text-align: center;
+}
+
+.atg .v-inline-datefield-calendarpanel-month {
+	text-align: center;
+	white-space: nowrap;
+}
+
+.atg .v-inline-datefield-calendarpanel-weeknumber {
+	color: #999;
+	border-right: 1px solid #ddd;
+	font-size: 11.7px;
+}
+
+.atg .v-inline-datefield-calendarpanel-day, .atg .v-inline-datefield-calendarpanel-day-today {
+	cursor: pointer;
+}
+
+.atg .v-inline-datefield-calendarpanel-day-today {
+	border: 1px solid #ddd;
+}
+
+.atg .v-disabled .v-inline-datefield-calendarpanel-day, .atg .v-disabled .v-inline-datefield-calendarpanel-day-today {
+	cursor: default;
+}
+
+.atg .v-inline-datefield-calendarpanel-day-disabled, .atg .v-inline-datefield-calendarpanel-day-outside-range {
+	cursor: default;
+	opacity: 0.5;
+}
+
+.atg .v-inline-datefield-calendarpanel-prevyear button.outside-range, .atg .v-inline-datefield-calendarpanel-nextyear button.outside-range, .atg .v-inline-datefield-calendarpanel-prevmonth button.outside-range, .atg .v-inline-datefield-calendarpanel-nextmonth button.outside-range {
+	opacity: 0.5;
+}
+
+.atg .v-inline-datefield-calendarpanel-day-selected {
+	cursor: default;
+	background: #333;
+	color: #fff;
+}
+
+.atg .v-inline-datefield-calendarpanel-day-focused {
+	outline: 1px dotted black;
+}
+
+.atg .v-inline-datefield-calendarpanel-day-offmonth {
+	color: #666;
+}
+
+.atg .v-inline-datefield-time {
+	white-space: nowrap;
+}
+
+.atg .v-inline-datefield-time .v-label {
+	display: inline;
+}
+
+.atg .v-inline-datefield-popup {
+	background: #fff;
+}
+
+.atg .v-inline-datefield-popupcalendar input.v-inline-datefield-textfield {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.atg .v-ddwrapper {
+	padding: 2px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	position: relative;
+}
+
+.atg [draggable=true] {
+	-khtml-user-drag: element;
+	-webkit-user-drag: element;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+}
+
+.v-ie .atg .v-ddwrapper a.drag-start {
+	display: block;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	background-color: cyan;
+	filter: alpha(opacity=0);
+}
+
+.atg .v-ddwrapper-over {
+	border: 2px solid #1d9dff;
+	background-color: #bcdcff;
+	padding: 0;
+}
+
+.atg .v-ddwrapper-over {
+	background-color: rgba(169, 209, 255, 0.6);
+}
+
+.atg .no-box-drag-hints .v-ddwrapper-over {
+	border: none;
+	background-color: transparent;
+	padding: 2px;
+}
+
+.atg.v-app .v-ddwrapper-over-top, .atg .v-window .v-ddwrapper-over-top, .atg .v-popupview-popup .v-ddwrapper-over-top {
+	border: none;
+	border-top: 2px solid #1d9dff;
+	background-color: transparent;
+	padding: 2px;
+	padding-top: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+}
+
+.atg.v-app .v-ddwrapper-over-bottom, .atg .v-window .v-ddwrapper-over-bottom, .atg .v-popupview-popup .v-ddwrapper-over-bottom {
+	border: none;
+	border-bottom: 2px solid #1d9dff;
+	background-color: transparent;
+	padding: 2px;
+	padding-bottom: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+}
+
+.atg.v-app .v-ddwrapper-over-left, .atg .v-window .v-ddwrapper-over-left, .atg .v-popupview-popup .v-ddwrapper-over-left {
+	border: none;
+	border-left: 2px solid #1d9dff;
+	background-color: transparent;
+	padding: 2px;
+	padding-left: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+}
+
+.atg.v-app .v-ddwrapper-over-right, .atg .v-window .v-ddwrapper-over-right, .atg .v-popupview-popup .v-ddwrapper-over-right {
+	border: none;
+	border-right: 2px solid #1d9dff;
+	background-color: transparent;
+	padding: 2px;
+	padding-right: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+}
+
+.atg .v-ddwrapper, .atg .v-ddwrapper-over, .atg.v-app .v-ddwrapper-over-top, .atg .v-window .v-ddwrapper-over-top, .atg .v-popupview-popup .v-ddwrapper-over-top, .atg.v-app .v-ddwrapper-over-bottom, .atg .v-window .v-ddwrapper-over-bottom, .atg .v-popupview-popup .v-ddwrapper-over-bottom, .atg.v-app .v-ddwrapper-over-left, .atg .v-window .v-ddwrapper-over-left, .atg .v-popupview-popup .v-ddwrapper-over-left, .atg.v-app .v-ddwrapper-over-right, .atg .v-window .v-ddwrapper-over-right, .atg .v-popupview-popup .v-ddwrapper-over-right {
+	border-color: rgba(0, 109, 232, 0.6);
+}
+
+.atg .v-ddwrapper-over-top:before, .atg .v-ddwrapper-over-bottom:after, .atg .v-ddwrapper-over-left:before, .atg .v-ddwrapper-over-right:before {
+	display: block;
+	position: absolute;
+	width: 6px;
+	height: 6px;
+	margin-top: -4px;
+	margin-left: -2px;
+	background: transparent url(../base/common/img/drag-slot-dot.png) no-repeat;
+}
+
+.atg .v-ddwrapper-over-bottom:after {
+	margin-top: -2px;
+}
+
+.atg .v-ddwrapper-over-left:before, .atg .v-ddwrapper-over-right:before {
+	background-position: 0 -6px;
+	margin-top: -2px;
+	margin-left: -4px;
+}
+
+.atg .v-ddwrapper-over-right:before {
+	position: relative;
+	margin-bottom: -4px;
+	margin-right: -4px;
+	margin-left: 0;
+	width: auto;
+	background-position: 100% -6px;
+}
+
+.atg .no-horizontal-drag-hints .v-ddwrapper-over-left {
+	padding-left: 2px;
+	border-left: none;
+}
+
+.atg .no-horizontal-drag-hints .v-ddwrapper-over-right {
+	padding-right: 2px;
+	border-right: none;
+}
+
+.atg .no-vertical-drag-hints .v-ddwrapper-over-top {
+	padding-top: 2px;
+	border-top: none;
+}
+
+.atg .no-vertical-drag-hints .v-ddwrapper-over-bottom {
+	padding-bottom: 2px;
+	border-bottom: none;
+}
+
+.atg .no-horizontal-drag-hints .v-ddwrapper-over-left:before, .atg .no-horizontal-drag-hints .v-ddwrapper-over-right:before, .atg .no-vertical-drag-hints .v-ddwrapper-over-top:before, .atg .no-vertical-drag-hints .v-ddwrapper-over-bottom:after {
+	display: none;
+}
+
+.atg .v-table .v-embedded-image {
+	display: inline-block;
+}
+
+.atg .v-formlayout.v-has-width > table {
+	width: 100%;
+}
+
+.atg .v-formlayout.v-has-height > table {
+	height: 100%;
+}
+
+.atg .v-formlayout-cell .v-errorindicator {
+	display: block;
+}
+
+.atg .v-formlayout-error-indicator {
+	width: 12px;
+}
+
+.atg .v-formlayout-captioncell {
+	text-align: right;
+	white-space: nowrap;
+}
+
+.atg .v-formlayout-errorcell, .atg .v-formlayout-captioncell {
+	width: 1px;
+}
+
+.atg .v-formlayout-captioncell .v-caption {
+	overflow: visible;
+}
+
+.atg .v-formlayout-spacing > tbody > .v-formlayout-row > .v-formlayout-captioncell, .atg .v-formlayout-spacing > tbody > .v-formlayout-row > .v-formlayout-contentcell, .atg .v-formlayout-spacing > tbody > .v-formlayout-row > .v-formlayout-errorcell {
+	padding-top: 6px;
+}
+
+.atg .v-formlayout-spacing > tbody > .v-formlayout-firstrow > .v-formlayout-captioncell, .atg .v-formlayout-spacing > tbody > .v-formlayout-firstrow > .v-formlayout-contentcell, .atg .v-formlayout-spacing > tbody > .v-formlayout-firstrow > .v-formlayout-errorcell {
+	padding-top: 0;
+}
+
+.atg .v-formlayout-margin-top > tbody > .v-formlayout-firstrow > .v-formlayout-captioncell, .atg .v-formlayout-margin-top > tbody > .v-formlayout-firstrow > .v-formlayout-contentcell, .atg .v-formlayout-margin-top > tbody > .v-formlayout-firstrow > .v-formlayout-errorcell {
+	padding-top: 12px;
+}
+
+.atg .v-formlayout-margin-bottom > tbody > .v-formlayout-lastrow > .v-formlayout-captioncell, .atg .v-formlayout-margin-bottom > tbody > .v-formlayout-lastrow > .v-formlayout-contentcell, .atg .v-formlayout-margin-bottom > tbody > .v-formlayout-lastrow > .v-formlayout-errorcell {
+	padding-bottom: 12px;
+}
+
+.atg .v-formlayout-margin-left > tbody > .v-formlayout-row > .v-formlayout-captioncell {
+	padding-left: 12px;
+}
+
+.atg .v-formlayout-margin-right > tbody > .v-formlayout-row > .v-formlayout-contentcell {
+	padding-right: 12px;
+}
+
+.atg .v-formlayout-captioncell .v-caption .v-required-field-indicator {
+	float: none;
+}
+
+.atg .v-gridlayout {
+	position: relative;
+}
+
+.atg .v-gridlayout-slot {
+	position: absolute;
+}
+
+.atg .v-gridlayout-margin-top {
+	padding-top: 12px;
+}
+
+.atg .v-gridlayout-margin-bottom {
+	padding-bottom: 12px;
+}
+
+.atg .v-gridlayout-margin-left {
+	padding-left: 12px;
+}
+
+.atg .v-gridlayout-margin-right {
+	padding-right: 12px;
+}
+
+.atg .v-gridlayout-spacing-on {
+	padding-left: 6px;
+	padding-top: 6px;
+	overflow: hidden;
+}
+
+.atg .v-gridlayout-spacing, .atg .v-gridlayout-spacing-off {
+	padding-left: 0;
+	padding-top: 0;
+}
+
+.atg .v-gridlayout-spacing-off {
+	overflow: hidden;
+}
+
+.atg .v-label {
+	overflow: hidden;
+}
+
+.atg .v-label.v-has-width {
+	white-space: normal;
+}
+
+.atg .v-link {
+	white-space: nowrap;
+}
+
+.atg .v-link a {
+	vertical-align: middle;
+	text-decoration: none;
+}
+
+.atg .v-link span {
+	text-decoration: underline;
+	vertical-align: middle;
+}
+
+.atg .v-disabled a {
+	cursor: default;
+}
+
+.atg .v-link img {
+	vertical-align: middle;
+	border: none;
+}
+
+.atg .v-loginform {
+	height: 140px;
+	width: 200px;
+}
+
+.atg .v-app-loginpage .v-button, .atg .v-app-loginpage .v-button {
+	float: left;
+}
+
+.atg .v-menubar {
+	display: inline-block;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.atg .v-menubar .v-menubar-menuitem {
+	cursor: default;
+	vertical-align: middle;
+	white-space: nowrap;
+	display: inline;
+	display: inline-block;
+	zoom: 1;
+}
+
+.atg .v-menubar .v-menubar-menuitem-caption .v-icon {
+	vertical-align: middle;
+	white-space: nowrap;
+}
+
+.atg .v-menubar-submenu {
+	background: #fff;
+}
+
+.atg .v-menubar-menuitem-selected {
+	background: #333;
+	color: #fff;
+}
+
+.atg .v-menubar-submenu .v-menubar-menuitem {
+	cursor: default;
+	display: block;
+	position: relative;
+	padding-right: 1.5em;
+}
+
+.atg .v-menubar-submenu .v-menubar-menuitem-caption {
+	display: block;
+}
+
+.atg .v-menubar-submenu .v-menubar-menuitem *, .atg .v-menubar-submenu .v-menubar-menuitem-caption * {
+	white-space: nowrap;
+}
+
+.atg .v-menubar-submenu-indicator {
+	display: none;
+	font-family: arial, helvetica, sans-serif;
+}
+
+.atg .v-menubar-submenu .v-menubar-submenu-indicator {
+	display: block;
+	position: absolute;
+	right: 0;
+	width: 1em;
+	height: 1em;
+	font-size: 11.7px;
+}
+
+.atg .v-menubar-menuitem-disabled, .atg .v-menubar span.v-menubar-menuitem-disabled:hover, .atg .v-menubar span.v-menubar-menuitem-disabled:focus, .atg .v-menubar span.v-menubar-menuitem-disabled:active {
+	color: #999;
+}
+
+.atg .v-menubar-more-menuitem {
+	font-family: arial, helvetica, sans-serif;
+}
+
+.atg .v-menubar-separator {
+	overflow: hidden;
+}
+
+.atg .v-menubar-separator span {
+	display: block;
+	text-indent: -9999px;
+	font-size: 1px;
+	line-height: 1px;
+	border-top: 1px solid #ddd;
+	margin: 3px 0 2px;
+	overflow: hidden;
+}
+
+.atg .v-menubar .v-icon, .atg .v-menubar-submenu .v-icon {
+	margin-right: 3px;
+}
+
+.atg .v-menubar:focus, .atg .v-menubar-popup:focus, .atg .v-menubar-popup .popupContent:focus, .atg .v-menubar-popup .popupContent .v-menubar-submenu:focus {
+	outline: none;
+}
+
+.atg .v-menubar-submenu-check-column .v-menubar-menuitem {
+	padding-left: 6px;
+}
+
+.atg .v-menubar-submenu-check-column .v-menubar-menuitem-caption {
+	padding-left: 18px;
+}
+
+.atg .v-menubar-submenu .v-menubar-menuitem-checked .v-menubar-menuitem-caption {
+	background: transparent url(../base/menubar/img/check.gif) no-repeat left;
+}
+
+.atg .v-Notification {
+	background: #999;
+	color: #fff;
+	cursor: pointer;
+	overflow: hidden;
+	padding: 1em;
+	max-width: 85%;
+}
+
+.atg .v-Notification h1, .atg .v-Notification p, .atg .v-Notification-error h1, .atg .v-Notification-error p, .atg .v-Notification-warning h1, .atg .v-Notification-warning p {
+	display: inline;
+	margin: 0 0.5em 0 0;
+}
+
+.atg .v-Notification-warning {
+	background: orange;
+}
+
+.atg .v-Notification-error {
+	background: red;
+}
+
+.atg .v-Notification-tray h1 {
+	display: block;
+}
+
+.atg .v-Notification-tray p {
+	display: block;
+}
+
+.atg .v-Notification-system {
+	background-color: red;
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+}
+
+.atg .v-Notification-system h1 {
+	display: block;
+	margin: 0;
+}
+
+.atg .v-orderedlayout, .atg .v-horizontallayout, .atg .v-verticallayout {
+	position: relative;
+}
+
+.atg .v-orderedlayout-margin-top, .atg .v-horizontallayout-margin-top, .atg .v-verticallayout-margin-top {
+	padding-top: 12px;
+}
+
+.atg .v-orderedlayout-margin-right, .atg .v-horizontallayout-margin-right, .atg .v-verticallayout-margin-right {
+	padding-right: 12px;
+}
+
+.atg .v-orderedlayout-margin-bottom, .atg .v-horizontallayout-margin-bottom, .atg .v-verticallayout-margin-bottom {
+	padding-bottom: 12px;
+}
+
+.atg .v-orderedlayout-margin-left, .atg .v-horizontallayout-margin-left, .atg .v-verticallayout-margin-left {
+	padding-left: 12px;
+}
+
+.atg .v-orderedlayout-spacing-on, .atg .v-horizontallayout-spacing-on, .atg .v-verticallayout-spacing-on {
+	padding-top: 6px;
+	padding-left: 6px;
+}
+
+.atg .v-orderedlayout-spacing-off, .atg .v-horizontallayout-spacing-off, .atg .v-verticallayout-spacing-off {
+	padding-top: 0;
+	padding-left: 0;
+}
+
+.atg .v-horizontallayout-slot, .atg .v-verticallayout-slot {
+	position: absolute;
+}
+
+.atg .v-panel, .atg .v-panel-caption, .atg .v-panel-content, .atg .v-panel-deco, .atg .v-panel-light, .atg .v-panel-caption-light, .atg .v-panel-content-light, .atg .v-panel-deco-light {
+	outline: none;
+	text-align: left;
+}
+
+.atg .v-panel-caption .v-errorindicator {
+	float: none;
+	display: inline;
+}
+
+.atg .v-panel-caption .v-icon {
+	display: inline;
+	vertical-align: middle;
+}
+
+.atg .v-panel-caption span {
+	vertical-align: middle;
+}
+
+.atg .v-panel-caption {
+	white-space: nowrap;
+	overflow: hidden;
+	font-weight: bold;
+}
+
+.atg .v-panel-nocaption {
+	overflow: hidden;
+}
+
+.atg .v-panel-content {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.atg .v-panel.v-has-width > .v-panel-content {
+	width: 100%;
+}
+
+.atg .v-panel.v-has-height > .v-panel-content {
+	height: 100%;
+}
+
+.atg .v-popupview {
+	cursor: pointer;
+	text-decoration: underline;
+	white-space: nowrap;
+}
+
+.atg .v-popupview-popup {
+	overflow: auto;
+}
+
+.atg .v-popupview-loading {
+	width: 30px;
+	height: 30px;
+	background: transparent url(../base/common/img/ajax-loader-medium.gif) no-repeat 50%;
+}
+
+.atg .v-progressbar {
+	width: 150px;
+}
+
+.atg .v-progressbar-wrapper {
+	height: 7px;
+	border: 1px solid #ddd;
+}
+
+.atg .v-progressbar-indicator {
+	height: 7px;
+	background: #ddd;
+}
+
+.atg div.v-progressbar-indeterminate {
+	height: 20px;
+	width: 20px;
+	background: #fff url(../base/common/img/ajax-loader-medium.gif) no-repeat 50%;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+}
+
+.atg .v-progressbar-indeterminate .v-progressbar-wrapper, .atg .v-progressbar-indeterminate .v-progressbar-indicator, .atg .v-progressbar-indeterminate-disabled .v-progressbar-wrapper, .atg .v-progressbar-indeterminate-disabled .v-progressbar-indicator {
+	display: none;
+}
+
+.atg div.v-progressbar-indeterminate-disabled {
+	height: 20px;
+	width: 20px;
+	background: transparent;
+}
+
+.atg .v-progressindicator {
+	width: 150px;
+}
+
+.atg .v-progressindicator-wrapper {
+	height: 7px;
+	border: 1px solid #ddd;
+}
+
+.atg .v-progressindicator-indicator {
+	height: 7px;
+	background: #ddd;
+}
+
+.atg div.v-progressindicator-indeterminate {
+	height: 20px;
+	width: 20px;
+	background: #fff url(../base/common/img/ajax-loader-medium.gif) no-repeat 50%;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+}
+
+.atg .v-progressindicator-indeterminate .v-progressindicator-wrapper, .atg .v-progressindicator-indeterminate .v-progressindicator-indicator, .atg .v-progressindicator-indeterminate-disabled .v-progressindicator-wrapper, .atg .v-progressindicator-indeterminate-disabled .v-progressindicator-indicator {
+	display: none;
+}
+
+.atg div.v-progressindicator-indeterminate-disabled {
+	height: 20px;
+	width: 20px;
+	background: transparent;
+}
+
+.atg .v-select {
+	text-align: left;
+}
+
+.atg .v-select-optiongroup .v-select-option {
+	display: block;
+	white-space: nowrap;
+}
+
+.atg .v-select-optiongroup .v-icon {
+	vertical-align: middle;
+	white-space: nowrap;
+	margin: 0 2px;
+}
+
+.v-ie .atg .v-select-optiongroup .v-select-option {
+	zoom: 1;
+}
+
+.atg .v-select-select {
+	display: block;
+}
+
+.atg .v-select-twincol {
+	white-space: nowrap;
+}
+
+.atg .v-select-twincol-options {
+	float: left;
+}
+
+.atg .v-select-twincol-caption-left {
+	float: left;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.atg .v-select-twincol-selections {
+	font-weight: bold;
+}
+
+.atg .v-select-twincol-caption-right {
+	float: right;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.atg .v-select-twincol-buttons {
+	float: left;
+	text-align: center;
+}
+
+.atg .v-select-twincol-buttons .v-select-twincol-deco {
+	clear: both;
+}
+
+.atg .v-select-twincol .v-textfield {
+	display: block;
+	float: left;
+	clear: left;
+}
+
+.atg .v-select-twincol .v-button {
+	float: left;
+}
+
+.atg .v-select-twincol-buttons .v-button {
+	float: none;
+}
+
+.atg .v-filterselect {
+	white-space: nowrap;
+	text-align: left;
+	display: inline-block;
+	padding-right: 1em;
+}
+
+.atg .v-filterselect .v-icon {
+	float: left;
+}
+
+.atg.v-app .v-filterselect-input, .atg .v-window .v-filterselect-input, .atg .v-popupview-popup .v-filterselect-input {
+	margin: 0;
+	float: left;
+	-webkit-border-radius: 0px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.atg .v-filterselect-prompt .v-filterselect-input {
+	color: #999;
+	font-style: italic;
+}
+
+.atg .v-filterselect-button {
+	display: inline-block;
+	cursor: pointer;
+	width: 1em;
+	margin-right: -1em;
+	height: 1em;
+	background: transparent url(../base/common/img/sprites.png) no-repeat -5px -8px;
+}
+
+.atg .v-filterselect.v-readonly .v-filterselect-button {
+	display: none;
+}
+
+.atg .v-filterselect.v-readonly, .atg .v-filterselect.v-readonly .v-filterselect-input {
+	background: transparent;
+}
+
+.atg .v-filterselect-suggestpopup {
+	background: #fff;
+	border: 1px solid #eee;
+}
+
+.atg .v-filterselect-suggestmenu table {
+	border-collapse: collapse;
+	border: none;
+	vertical-align: top;
+}
+
+.atg .v-filterselect-suggestmenu .gwt-MenuItem {
+	white-space: nowrap;
+}
+
+.atg .v-filterselect-suggestmenu .gwt-MenuItem .v-icon {
+	margin-right: 3px;
+	vertical-align: middle;
+}
+
+.atg .v-filterselect-suggestmenu .gwt-MenuItem span {
+	vertical-align: middle;
+}
+
+.atg .v-filterselect-suggestmenu .gwt-MenuItem-selected {
+	background: #333;
+	color: #fff;
+}
+
+.atg .v-filterselect-nextpage, .atg .v-filterselect-nextpage-off, .atg .v-filterselect-prevpage-off, .atg .v-filterselect-prevpage {
+	width: 100%;
+	background: #aaa;
+	text-align: center;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.atg .v-filterselect-nextpage-off, .atg .v-filterselect-prevpage-off {
+	color: #666;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+	cursor: default;
+}
+
+.atg .v-filterselect-nextpage-off span, .atg .v-filterselect-prevpage-off span {
+	cursor: default;
+}
+
+.atg .v-filterselect-status {
+	white-space: nowrap;
+	text-align: center;
+}
+
+.atg .v-filterselect-no-input .v-filterselect-input {
+	cursor: default;
+}
+
+.atg .v-shadow {
+	position: absolute;
+}
+
+.atg .v-shadow .top-left {
+	position: absolute;
+	overflow: hidden;
+	top: -3px;
+	left: -5px;
+	width: 10px;
+	height: 10px;
+	background: transparent url(../base/shadow/img/top-left.png);
+}
+
+.atg .v-shadow .top {
+	position: absolute;
+	overflow: hidden;
+	top: -3px;
+	left: 5px;
+	height: 10px;
+	right: 5px;
+	background: transparent url(../base/shadow/img/top.png);
+}
+
+.atg .v-shadow .top-right {
+	position: absolute;
+	overflow: hidden;
+	top: -3px;
+	right: -5px;
+	width: 10px;
+	height: 10px;
+	background: transparent url(../base/shadow/img/top-right.png);
+}
+
+.atg .v-shadow .left {
+	position: absolute;
+	overflow: hidden;
+	top: 7px;
+	left: -5px;
+	width: 10px;
+	bottom: 3px;
+	background: transparent url(../base/shadow/img/left.png);
+}
+
+.atg .v-shadow .center {
+	position: absolute;
+	overflow: hidden;
+	top: 7px;
+	left: 5px;
+	bottom: 3px;
+	right: 5px;
+	background: transparent url(../base/shadow/img/center.png);
+}
+
+.atg .v-shadow .right {
+	position: absolute;
+	overflow: hidden;
+	top: 7px;
+	right: -5px;
+	width: 10px;
+	bottom: 3px;
+	background: transparent url(../base/shadow/img/right.png);
+}
+
+.atg .v-shadow .bottom-left {
+	position: absolute;
+	overflow: hidden;
+	bottom: -7px;
+	left: -5px;
+	width: 10px;
+	height: 10px;
+	background: transparent url(../base/shadow/img/bottom-left.png);
+}
+
+.atg .v-shadow .bottom {
+	position: absolute;
+	overflow: hidden;
+	bottom: -7px;
+	left: 5px;
+	right: 5px;
+	height: 10px;
+	background: transparent url(../base/shadow/img/bottom.png);
+}
+
+.atg .v-shadow .bottom-right {
+	position: absolute;
+	overflow: hidden;
+	bottom: -7px;
+	right: -5px;
+	width: 10px;
+	height: 10px;
+	background: transparent url(../base/shadow/img/bottom-right.png);
+}
+
+.atg .v-slider {
+	margin: 5px 0;
+}
+
+.atg .v-slider-base {
+	height: 2px;
+	border-top: 1px solid #ddd;
+	background: #eee;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #eee;
+}
+
+.atg .v-slider-handle {
+	background: #aaa;
+	width: 12px;
+	height: 12px;
+	margin-top: -5px;
+	font-size: 0;
+}
+
+.atg .v-slider-vertical {
+	width: 2px;
+	height: auto;
+	margin: 0 5px;
+	border: none;
+	border-left: 1px solid #cccfd0;
+	border-right: 1px solid #cccfd0;
+}
+
+.atg .v-slider-vertical .v-slider-base {
+	width: 2px;
+	border-bottom: 1px solid #eee;
+	border-right: none;
+}
+
+.atg .v-slider-vertical .v-slider-handle {
+	width: 12px;
+	height: 12px;
+	font-size: 0;
+	margin-left: -5px;
+}
+
+.atg .v-slider-feedback {
+	padding: 2px 5px;
+	background: #444;
+	color: #fff;
+	font-size: 11px;
+	line-height: 13px;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	margin: -2px 0 0 2px;
+	text-shadow: 0 1px 0 #000;
+}
+
+.atg .v-splitpanel-horizontal, .atg .v-splitpanel-vertical {
+	overflow: hidden;
+}
+
+.atg .v-splitpanel-hsplitter {
+	width: 6px;
+}
+
+.atg .v-splitpanel-hsplitter div {
+	width: 6px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	background: #ddd;
+	cursor: e-resize;
+	cursor: col-resize;
+}
+
+.atg .v-disabled .v-splitpanel-hsplitter div {
+	cursor: default;
+}
+
+.atg .v-splitpanel-vsplitter {
+	height: 6px;
+}
+
+.atg .v-splitpanel-vsplitter div {
+	height: 6px;
+	background: #ddd;
+	cursor: s-resize;
+	cursor: row-resize;
+}
+
+.atg .v-disabled .v-splitpanel-vsplitter div {
+	cursor: default;
+}
+
+.atg .v-table {
+	overflow: hidden;
+	text-align: left;
+}
+
+.atg .v-table-header-wrap {
+	overflow: hidden;
+	border: 1px solid #aaa;
+	border-bottom: none;
+	background: #efefef;
+}
+
+.atg .v-table-header table, .atg .v-table-table {
+	border-spacing: 0;
+	border-collapse: separate;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+.atg .v-table-table {
+	font-size: 12px;
+}
+
+.atg .v-table-header td {
+	padding: 0;
+}
+
+.atg .v-table-header-cell, .atg .v-table-header-cell-asc, .atg .v-table-header-cell-desc {
+	cursor: pointer;
+}
+
+.atg .v-table.v-disabled .v-table-header-cell, .atg .v-table.v-disabled .v-table-header-cell-asc, .atg .v-table.v-disabled .v-table-header-cell-desc {
+	cursor: default;
+}
+
+.atg .v-table-footer-wrap {
+	overflow: hidden;
+	border: 1px solid #aaa;
+	border-top: none;
+	background: #efefef;
+}
+
+.atg .v-table-footer table {
+	border-spacing: 0;
+	border-collapse: collapse;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+.atg .v-table-footer td {
+	padding: 0;
+	border-right: 1px solid #aaa;
+}
+
+.atg .v-table-footer-cell {
+	cursor: pointer;
+}
+
+.atg .v-table-footer-container {
+	float: right;
+	padding-right: 6px;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.atg .v-table-resizer {
+	display: block;
+	height: 1.2em;
+	float: right;
+	background: #aaa;
+	cursor: e-resize;
+	cursor: col-resize;
+	width: 1px;
+	overflow: hidden;
+}
+
+.atg .v-table.v-disabled .v-table-resizer {
+	cursor: default;
+}
+
+.atg .v-table-caption-container {
+	overflow: hidden;
+	white-space: nowrap;
+	margin-left: 6px;
+}
+
+.atg .v-table-caption-container-align-right {
+	float: right;
+}
+
+.atg .v-table-sort-indicator {
+	width: 0px;
+	height: 1.2em;
+	float: right;
+}
+
+.atg .v-table-header-cell-asc .v-table-sort-indicator, .atg .v-table-header-cell-desc .v-table-sort-indicator {
+	width: 16px;
+	height: 1.2em;
+	float: right;
+}
+
+.atg .v-table-header-cell-asc .v-table-sort-indicator {
+	background: transparent url(../base/common/img/sprites.png) no-repeat right 6px;
+}
+
+.atg .v-table-header-cell-desc .v-table-sort-indicator {
+	background: transparent url(../base/common/img/sprites.png) no-repeat right -10px;
+}
+
+.atg .v-table-caption-container-align-center {
+	text-align: center;
+}
+
+.atg .v-table-caption-container-align-right {
+	text-align: right;
+}
+
+.atg .v-table-caption-container .v-icon, .atg .v-table-header-drag .v-icon {
+	vertical-align: middle;
+}
+
+.atg .v-table-body {
+	border: 1px solid #aaa;
+}
+
+.atg .v-table-row-spacer {
+	height: 10px;
+	overflow: hidden;
+}
+
+.atg .v-table-row, .atg .v-table-row-odd {
+	background: #fff;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	cursor: pointer;
+}
+
+.atg .v-table-generated-row {
+	background: #efefef;
+}
+
+.atg .v-table-body-noselection .v-table-row, .atg .v-table-body-noselection .v-table-row-odd {
+	cursor: default;
+}
+
+.atg .v-table .v-selected {
+	background: #999;
+	color: #fff;
+}
+
+.atg .v-table-cell-content {
+	white-space: nowrap;
+	overflow: hidden;
+	padding: 0 6px;
+	border-right: 1px solid #aaa;
+}
+
+.atg .v-table-cell-wrapper {
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.atg .v-table-cell-wrapper-align-center {
+	text-align: center;
+}
+
+.atg .v-table-cell-wrapper-align-right {
+	text-align: right;
+}
+
+.atg .v-table-column-selector {
+	float: right;
+	background: transparent url(../base/common/img/sprites.png) no-repeat 4px -37px;
+	margin: -1.2em 0 0 0;
+	height: 1.2em;
+	width: 14px;
+	position: relative;
+	cursor: pointer;
+}
+
+.atg .v-table.v-disabled .v-table-column-selector {
+	cursor: default;
+}
+
+.atg .v-table-focus-slot-left {
+	border-left: 2px solid #999;
+	float: none;
+	margin-bottom: -1.2em;
+	width: auto;
+	background: transparent;
+	border-right: 1px solid #aaa;
+}
+
+.atg .v-table-focus-slot-right {
+	border-right: 2px solid #999;
+	margin-left: -2px;
+}
+
+.atg .v-table-header-drag {
+	position: absolute;
+	background: #efefef;
+	border: 1px solid #eee;
+	opacity: 0.9;
+	filter: alpha(opacity=90);
+	margin-top: 20px;
+	z-index: 30000;
+}
+
+.atg .v-table-header-drag .v-icon {
+	vertical-align: middle;
+}
+
+.atg .v-table-scrollposition {
+	width: 160px;
+	background: #eee;
+	border: 1px solid #aaa;
+}
+
+.atg .v-table-scrollposition span {
+	display: block;
+	text-align: center;
+}
+
+.atg .v-table-body:focus, .atg .v-table-body-wrapper:focus {
+	outline: none;
+}
+
+.atg .v-table-body.focused {
+	border-color: #388ddd;
+}
+
+.atg .v-table-focus .v-table-cell-content {
+	border-top: 1px dotted #0066bd;
+	border-bottom: 1px dotted #0066bd;
+}
+
+.atg .v-table-focus .v-table-cell-wrapper {
+	margin-top: -1px;
+	margin-bottom: -1px;
+}
+
+.atg .v-off {
+	color: #ddd;
+}
+
+.atg .v-table-drag .v-table-body {
+	border-color: #1d9dff;
+}
+
+.atg .v-table-row-drag-middle .v-table-cell-content {
+	background-color: #bcdcff;
+}
+
+.atg .v-table-row-drag-top .v-table-cell-content {
+	border-top: 2px solid #1d9dff;
+}
+
+.atg .v-table-row-drag-top .v-table-cell-wrapper {
+	margin-top: -2px;
+}
+
+.atg .v-table-row-drag-bottom .v-table-cell-content {
+	border-bottom: 2px solid #1d9dff;
+}
+
+.atg .v-table-row-drag-bottom .v-table-cell-wrapper {
+	margin-bottom: -2px;
+}
+
+.atg .v-table-row-drag-top .v-table-cell-content:first-child:before, .atg .v-table-row-drag-bottom .v-table-cell-content:first-child:after {
+	display: block;
+	position: absolute;
+	width: 6px;
+	height: 6px;
+	margin-top: -4px;
+	margin-left: -6px;
+	background: transparent url(../base/common/img/drag-slot-dot.png);
+}
+
+.v-ff .atg .v-table-row-drag-bottom .v-table-cell-content:first-child:after, .v-ie .atg .v-table-row-drag-bottom .v-table-cell-content:first-child:after {
+	margin-top: -2px;
+}
+
+.atg .v-tabsheet, .atg .v-tabsheet-content, .atg .v-tabsheet-deco {
+	outline: none;
+	text-align: left;
+}
+
+.atg .v-tabsheet-tabs {
+	empty-cells: hide;
+	border-collapse: collapse;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	width: 100%;
+	overflow: hidden;
+}
+
+.atg .v-tabsheet-tabitemcell:focus {
+	outline: none;
+}
+
+.atg .v-tabsheet-tabitemcell, .atg .v-tabsheet-spacertd {
+	margin: 0;
+	padding: 0;
+	vertical-align: bottom;
+}
+
+.atg .v-tabsheet-spacertd {
+	width: 100%;
+}
+
+.atg .v-tabsheet-spacertd div {
+	border-left: 1px solid #aaa;
+	border-bottom: 1px solid #aaa;
+	height: 1em;
+	padding: 0.2em 0;
+}
+
+.atg .v-tabsheet-hidetabs > .v-tabsheet-tabcontainer {
+	display: none;
+}
+
+.atg .v-tabsheet-scroller {
+	white-space: nowrap;
+	text-align: right;
+	margin-top: -1em;
+}
+
+.atg .v-disabled .v-tabsheet-scroller {
+	display: none;
+}
+
+.atg .v-tabsheet-scrollerPrev, .atg .v-tabsheet-scrollerNext, .atg .v-tabsheet-scrollerPrev-disabled, .atg .v-tabsheet-scrollerNext-disabled {
+	border: 1px solid #aaa;
+	background: #fff;
+	width: 12px;
+	height: 1em;
+	cursor: pointer;
+}
+
+.atg .v-tabsheet-scrollerPrev-disabled, .atg .v-tabsheet-scrollerNext-disabled {
+	opacity: 0.5;
+	cursor: default;
+}
+
+.atg .v-tabsheet-tabs .v-caption, .atg .v-tabsheet-tabs .v-caption span {
+	white-space: nowrap;
+}
+
+.atg .v-tabsheet-caption-close {
+	display: inline;
+	display: inline-block;
+	zoom: 1;
+	width: 16px;
+	height: 16px;
+	text-align: center;
+	font-weight: bold;
+	cursor: pointer;
+	vertical-align: middle;
+	user-select: none;
+	-khtml-user-select: none;
+	-ms-user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+}
+
+.atg .v-tabsheet .v-disabled .v-tabsheet-caption-close {
+	cursor: default;
+	visibility: hidden;
+}
+
+.atg .v-tabsheet-tabitem:hover .v-tabsheet-caption-close {
+	visibility: visible;
+}
+
+.atg .v-tabsheet-tabitem {
+	border: 1px solid #aaa;
+	border-right: none;
+	cursor: pointer;
+	padding: 0.2em 0.5em;
+}
+
+.atg .v-tabsheet-tabitem .v-caption {
+	cursor: inherit;
+}
+
+.atg .v-tabsheet.v-disabled .v-tabsheet-tabitem, .atg .v-tabsheet-tabitemcell-disabled .v-tabsheet-tabitem {
+	cursor: default;
+}
+
+.atg .v-tabsheet-tabitem-selected {
+	cursor: default;
+	border-bottom-color: #fff;
+}
+
+.atg .v-tabsheet-tabitem-selected .v-caption {
+	cursor: default;
+}
+
+.atg .v-tabsheet-content {
+	border: 1px solid #aaa;
+	border-top: none;
+	border-bottom: none;
+	position: relative;
+}
+
+.atg .v-tabsheet-deco {
+	height: 1px;
+	background: #aaa;
+	overflow: hidden;
+}
+
+.atg .v-tabsheet-hidetabs .v-tabsheet-content {
+	border: none;
+}
+
+.atg .v-tabsheet-hidetabs .v-tabsheet-deco {
+	height: 0;
+}
+
+.atg .v-textfield {
+	text-align: left;
+}
+
+.atg .v-textarea {
+	resize: none;
+	white-space: pre-wrap;
+}
+
+.atg input.v-textfield-prompt, .atg textarea.v-textarea-prompt {
+	color: #999;
+	font-style: italic;
+}
+
+.atg input.v-textfield-readonly, .atg textarea.v-textarea-readonly {
+	background: transparent;
+	border: none;
+	resize: none;
+}
+
+.atg input.v-disabled, .atg textarea.v-disabled {
+	resize: none;
+}
+
+.atg input.v-textfield-readonly:focus, .atg textarea.v-textarea-readonly:focus {
+	outline: none;
+}
+
+.v-sa .atg input:focus, .v-sa .atg textarea:focus {
+	outline-width: medium;
+}
+
+.atg .v-richtextarea {
+	border: 1px solid #aaa;
+	overflow: hidden;
+}
+
+.atg .v-richtextarea .gwt-RichTextArea {
+	background: #fff;
+	border: none;
+}
+
+.atg .v-richtextarea .gwt-HTML {
+	height: 100%;
+	font-size: 12px;
+}
+
+.atg .v-richtextarea .gwt-RichTextToolbar {
+	white-space: nowrap;
+	background: #959595 url(../base/textfield/img/richtext-toolbar-bg.png) repeat-x 0 -42px;
+	border-bottom: 1px solid #7d7d7d;
+	padding: 2px;
+	overflow: hidden;
+}
+
+.atg .v-richtextarea .gwt-RichTextToolbar-top {
+	padding-bottom: 1px;
+	overflow: hidden;
+	white-space: normal;
+}
+
+.atg .v-richtextarea .gwt-RichTextToolbar-bottom {
+	clear: left;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.atg .v-richtextarea .gwt-RichTextToolbar .gwt-ToggleButton, .atg .v-richtextarea .gwt-RichTextToolbar .gwt-PushButton {
+	float: left;
+	display: inline;
+	width: 22px;
+	height: 21px;
+	overflow: hidden;
+	background: transparent url(../base/textfield/img/richtext-toolbar-bg.png) repeat-x;
+	cursor: pointer;
+	margin-right: 2px;
+	text-align: center;
+}
+
+.atg .v-richtextarea .gwt-RichTextToolbar .gwt-ToggleButton-down, .atg .v-richtextarea .gwt-RichTextToolbar .gwt-PushButton-down, .atg .v-richtextarea .gwt-RichTextToolbar .gwt-ToggleButton-down-hovering, .atg .v-richtextarea .gwt-RichTextToolbar .gwt-PushButton-down-hovering {
+	background-position: 0 -21px;
+}
+
+.atg .v-richtextarea .gwt-RichTextToolbar .gwt-ListBox {
+	width: 24.5%;
+	margin-right: 2px;
+}
+
+.atg .v-richtextarea-readonly {
+	border: none;
+}
+
+.atg .v-tree {
+	text-align: left;
+	padding: 1px 0;
+	outline: none;
+}
+
+.atg .v-tree-node {
+	background: transparent url(../base/common/img/sprites.png) no-repeat 5px -37px;
+	padding: 1px 0;
+}
+
+.atg .v-tree-node-caption:focus {
+	outline: none;
+}
+
+.atg div.v-tree-node-leaf {
+	background: transparent;
+}
+
+.atg .v-tree-node-expanded {
+	background: transparent url(../base/common/img/sprites.png) no-repeat -5px -10px;
+}
+
+.atg .v-tree-node-caption {
+	margin-left: 1em;
+}
+
+.atg .v-tree-node span {
+	cursor: pointer;
+}
+
+.atg .v-tree-node-caption div {
+	white-space: nowrap;
+}
+
+.atg .v-tree-node-caption span, .atg .v-tree-node-caption .v-icon {
+	vertical-align: middle;
+}
+
+.atg .v-tree-node-selected span {
+	background: #999;
+	color: #fff;
+}
+
+.atg .v-tree-node-children {
+	padding-left: 1em;
+}
+
+.atg .v-tree .v-tree-node-drag-top {
+	border-top: 2px solid #1d9dff;
+	margin-top: -1px;
+	padding-top: 0;
+}
+
+.atg .v-tree .v-tree-node-drag-bottom {
+	border-bottom: 2px solid #1d9dff;
+	margin-bottom: -1px;
+	padding-bottom: 0;
+}
+
+.atg .v-tree .v-tree-node-drag-top:before, .atg .v-tree .v-tree-node-drag-bottom:after, .atg .v-tree .v-tree-node-caption-drag-center:after {
+	display: block;
+	position: absolute;
+	width: 6px;
+	height: 6px;
+	margin-top: -4px;
+	background: transparent url(../base/common/img/drag-slot-dot.png);
+}
+
+.atg .v-tree .v-tree-node-drag-bottom:after {
+	margin-top: -2px;
+}
+
+.atg .v-tree .v-tree-node-caption-drag-center:after {
+	margin-left: 14px;
+}
+
+.v-ff .atg .v-tree .v-tree-node-caption-drag-center:after, .v-ie .atg .v-tree .v-tree-node-caption-drag-center:after {
+	margin-top: -2px;
+}
+
+.atg .v-tree .v-tree-node-drag-top {
+	background-position: 5px -38px;
+}
+
+.atg .v-tree .v-tree-node-drag-top.v-tree-node-expanded {
+	background-position: -5px -11px;
+}
+
+.atg .v-tree .v-tree-node-caption-drag-center div {
+	border: 2px solid #1d9dff;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	margin: -2px 2px -2px -2px;
+	background-color: #bcdcff;
+}
+
+.atg .v-tree .v-tree-node-caption-drag-center div {
+	background-color: rgba(169, 209, 255, 0.6);
+}
+
+.atg .v-tree .v-tree-node-caption-drag-center div, .atg .v-tree .v-tree-node-drag-top, .atg .v-tree .v-tree-node-drag-bottom {
+	border-color: rgba(0, 109, 232, 0.6);
+}
+
+.atg .v-tree-connectors .v-tree-node-caption {
+	padding-top: 1px;
+}
+
+.atg .v-tree-connectors .v-tree-node {
+	background: transparent url(../base/tree/img/connector-expand.png) no-repeat 2px -52px;
+}
+
+.atg .v-tree-connectors .v-tree-node-expanded {
+	background: transparent url(../base/tree/img/connector-collapse.png) no-repeat 2px -52px;
+}
+
+.atg .v-tree-connectors .v-tree-node-last {
+	background: transparent url(../base/tree/img/connector-expand-last.png) no-repeat 2px -52px;
+}
+
+.atg .v-tree-connectors .v-tree-node-expanded.v-tree-node-last {
+	background: transparent url(../base/tree/img/connector-collapse-last.png) no-repeat 2px -52px;
+}
+
+.atg .v-tree-connectors .v-tree-node-leaf {
+	background: transparent url(../base/tree/img/connector-leaf.png) repeat-y 2px 50%;
+}
+
+.atg .v-tree-connectors .v-tree-node-leaf-last {
+	background: transparent url(../base/tree/img/connector-leaf-last.png) repeat-y 2px 50%;
+}
+
+.atg .v-tree-connectors .v-tree-node-children {
+	background: transparent url(../base/tree/img/connector.png) repeat-y 2px 0;
+}
+
+.atg .v-tree-connectors .v-tree-node-children-last {
+	background: transparent;
+}
+
+.atg .v-tree-connectors .v-tree-node-drag-top, .atg .v-tree-connectors .v-tree-node-expanded.v-tree-node-drag-top {
+	background-position: 2px -53px;
+}
+
+.atg .v-tree-connectors .v-tree-node-drag-top.v-tree-node-leaf {
+	background-position: 2px 50%;
+}
+
+.atg .v-treetable-treespacer {
+	display: inline-block;
+	background: transparent;
+	height: 10px;
+	width: 18px;
+	position: absolute;
+	left: 0;
+	top: 5px;
+}
+
+.atg .v-treetable-node-closed {
+	background: url(../base/treetable/img/arrow-right.png) right top no-repeat;
+}
+
+.atg .v-treetable-node-open {
+	background: url(../base/treetable/img/arrow-down.png) right top no-repeat;
+}
+
+.atg .v-treetable .v-checkbox {
+	display: inline-block;
+	padding-bottom: 4px;
+}
+
+.atg .v-treetable .v-table-row .v-table-cell-content, .atg .v-treetable .v-table-row-odd .v-table-cell-content {
+	position: relative;
+	z-index: 10;
+}
+
+.atg .v-treetable .v-table-cell-wrapper {
+	position: relative;
+}
+
+.atg .v-treetable .v-table-body .v-table-table .v-table-row-animating {
+	zoom: 1;
+	z-index: 1;
+}
+
+.atg .v-treetable .v-table-body .v-table-table .v-table-row-animating, .atg .v-treetable .v-table-body .v-table-table .v-table-row-animating .v-table-cell-content {
+	background: transparent;
+}
+
+.atg .v-treetable-animation-clone {
+	border-spacing: 0;
+	zoom: 1;
+}
+
+.atg div.v-treetable-animation-clone-wrapper {
+	position: absolute;
+	z-index: 2;
+	background-color: #fff;
+}
+
+.atg div.v-treetable-animation-clone-wrapper table.v-treetable-animation-clone {
+	background-color: #fff;
+}
+
+.atg div table.v-treetable-animation-clone tr.v-table-row, .atg div table.v-treetable-animation-clone tr.v-table-row-odd, .atg div table.v-treetable-animation-clone tr.v-table-row td.v-table-cell-content, .atg div table.v-treetable-animation-clone tr.v-table-row-odd td.v-table-cell-content {
+	visibility: visible;
+}
+
+.atg .v-upload {
+	white-space: nowrap;
+}
+
+.atg .v-upload-immediate {
+	position: relative;
+	margin: 0;
+	overflow: hidden;
+}
+
+.v-ff .atg .v-upload-immediate, .v-op .atg .v-upload-immediate {
+	display: inline-block;
+}
+
+.atg .v-upload-immediate input {
+	opacity: 0;
+	filter: alpha(opacity=0);
+	z-index: 2;
+	position: absolute;
+	right: 0;
+	height: 21px;
+	text-align: right;
+	border: none;
+	background: transparent;
+}
+
+.atg .v-upload-immediate button {
+	position: relative;
+	left: 0;
+	top: 0;
+	width: 100%;
+	text-align: left;
+}
+
+.atg .v-window {
+	background: #fff;
+}
+
+.atg .v-window-contents {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.atg .v-window.v-has-width > div.popupContent, .atg .v-window.v-has-width .v-window-wrap, .atg .v-window.v-has-width .v-window-contents, .atg .v-window.v-has-width .v-window-contents > div {
+	width: 100%;
+}
+
+.atg .v-window.v-has-height > div.popupContent, .atg .v-window.v-has-height .v-window-wrap, .atg .v-window.v-has-height .v-window-contents, .atg .v-window.v-has-height .v-window-contents > div {
+	height: 100%;
+}
+
+.atg .v-window-outerheader {
+	padding: 0.3em 1em;
+	height: 1.6em;
+	position: relative;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.atg .v-window-outerheader, .atg .v-window-draggingCurtain {
+	cursor: move;
+}
+
+.atg .v-window-header {
+	font-weight: bold;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ie-user-select: none;
+	user-select: none;
+}
+
+.atg div.v-window-header {
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	-ms-text-overflow: ellipsis;
+	overflow: hidden;
+	padding: 0;
+}
+
+.atg .v-window-header .v-icon {
+	vertical-align: middle;
+}
+
+.atg .v-window-contents > div {
+	outline: none;
+}
+
+.atg .v-window-footer {
+	overflow: hidden;
+	zoom: 1;
+	height: 10px;
+	position: relative;
+	cursor: move;
+}
+
+.atg .v-window-resizebox {
+	width: 10px;
+	height: 10px;
+	background: #ddd;
+	overflow: hidden;
+	position: absolute;
+	right: 0;
+}
+
+.atg .v-window-resizebox, .atg .v-window-resizingCurtain {
+	cursor: se-resize;
+}
+
+.atg .v-window div.v-window-footer-noresize {
+	height: 0;
+}
+
+.atg .v-window-resizebox-disabled, .atg .v-window-restorebox-disabled, .atg .v-window-maximizebox-disabled {
+	cursor: default;
+	display: none;
+}
+
+.atg .v-window-closebox, .atg .v-window-restorebox, .atg .v-window-maximizebox {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 1em;
+	height: 1em;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.atg .v-window-maximizebox, .atg .v-window-restorebox {
+	right: 1.1em;
+}
+
+.atg .v-window-closebox {
+	background: red;
+}
+
+.atg .v-window-maximizebox {
+	background: blue;
+}
+
+.atg .v-window-restorebox {
+	background: yellow;
+}
+
+.atg .v-window-modalitycurtain {
+	top: 0;
+	left: 0;
+	background: #999;
+	opacity: 0.5;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	filter: alpha(opacity=50);
+}
+
+.atg .v-shadow-window {
+	position: absolute;
+}
+
+.atg .v-shadow-window .top-left {
+	position: absolute;
+	overflow: hidden;
+	top: -10px;
+	left: -15px;
+	width: 28px;
+	height: 28px;
+	background: transparent url(../base/window/img/shadow/top-left.png);
+}
+
+.atg .v-shadow-window .top {
+	position: absolute;
+	overflow: hidden;
+	top: -10px;
+	left: 13px;
+	height: 28px;
+	right: 13px;
+	background: transparent url(../base/window/img/shadow/top.png);
+}
+
+.atg .v-shadow-window .top-right {
+	position: absolute;
+	overflow: hidden;
+	top: -10px;
+	right: -15px;
+	width: 28px;
+	height: 28px;
+	background: transparent url(../base/window/img/shadow/top-right.png);
+}
+
+.atg .v-shadow-window .left {
+	position: absolute;
+	overflow: hidden;
+	top: 18px;
+	left: -15px;
+	width: 28px;
+	bottom: 10px;
+	background: transparent url(../base/window/img/shadow/left.png);
+}
+
+.atg .v-shadow-window .center {
+	position: absolute;
+	overflow: hidden;
+	top: 18px;
+	left: 13px;
+	bottom: 10px;
+	right: 13px;
+	background: transparent url(../base/window/img/shadow/center.png);
+}
+
+.atg .v-shadow-window .right {
+	position: absolute;
+	overflow: hidden;
+	top: 18px;
+	right: -15px;
+	width: 28px;
+	bottom: 10px;
+	background: transparent url(../base/window/img/shadow/right.png);
+}
+
+.atg .v-shadow-window .bottom-left {
+	position: absolute;
+	overflow: hidden;
+	bottom: -18px;
+	left: -15px;
+	width: 28px;
+	height: 28px;
+	background: transparent url(../base/window/img/shadow/bottom-left.png);
+}
+
+.atg .v-shadow-window .bottom {
+	position: absolute;
+	overflow: hidden;
+	bottom: -18px;
+	left: 13px;
+	right: 13px;
+	height: 28px;
+	background: transparent url(../base/window/img/shadow/bottom.png);
+}
+
+.atg .v-shadow-window .bottom-right {
+	position: absolute;
+	overflow: hidden;
+	bottom: -18px;
+	right: -15px;
+	width: 28px;
+	height: 28px;
+	background: transparent url(../base/window/img/shadow/bottom-right.png);
+}
+
+.atg .v-accordion {
+	border: 1px solid #bebebe;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+}
+
+.atg .v-accordion-item {
+	background-color: #fff;
+}
+
+.atg .v-accordion-item-caption {
+	height: 19px;
+	background: #e4e4e4 repeat-x;
+	background-image: url(../reindeer/tabsheet/img/tabbar-bg.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+	font-size: 11px;
+	line-height: normal;
+	border-top: 1px solid #bebebe;
+	text-shadow: #fff 0 1px 0;
+}
+
+.atg .v-accordion-item-caption .v-caption {
+	font-size: 11px;
+}
+
+.atg .v-accordion-item-caption .v-captiontext {
+	vertical-align: baseline;
+}
+
+.atg .v-accordion-item-first .v-accordion-item-caption {
+	border-top: none;
+}
+
+.atg .v-accordion-item-caption .v-caption {
+	padding: 3px 0 0 10px;
+}
+
+.atg .v-accordion-item-open .v-accordion-item-caption {
+	background-image: url(../reindeer/tabsheet/img/tabbar-bg-sel.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+	border-bottom: 1px solid #bbb;
+}
+
+.atg .v-accordion-item-caption .v-icon {
+	margin-top: -3px;
+}
+
+.v-ie .atg .v-accordion-item-caption .v-icon, .v-ff .atg .v-accordion-item-caption .v-icon {
+	margin-top: -6px;
+}
+
+.atg .v-accordion-borderless {
+	border: none;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+}
+
+.atg .v-button:focus {
+	background-image: url(../reindeer/button/img/left-focus.png);/** sprite-ref: buttons */
+	outline: none;
+}
+
+.atg .v-button:focus .v-button-wrap {
+	background-image: url(../reindeer/button/img/right-focus.png);/** sprite-ref: buttons; sprite-alignment: right */
+	outline: none;
+}
+
+.atg .v-button:active, .atg .v-button.v-pressed {
+	background-image: url(../reindeer/button/img/left-pressed.png);/** sprite-ref: buttons */
+	outline: none;
+}
+
+.atg .v-button:active .v-button-wrap, .atg .v-button.v-pressed .v-button-wrap {
+	background-image: url(../reindeer/button/img/right-pressed.png);/** sprite-ref: buttons; sprite-alignment: right */
+	outline: none;
+}
+
+.atg .v-button, .atg .v-disabled.v-button {
+	height: 26px;
+	padding: 0 0 0 6px;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-image: url(../reindeer/button/img/left.png);/** sprite-ref: buttons */
+	border: none;
+	cursor: default;
+}
+
+.atg .v-button-wrap, .atg .v-disabled.v-button .v-button-wrap {
+	display: block;
+	height: 22px;
+	padding: 4px 15px 0 9px;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-image: url(../reindeer/button/img/right.png);/** sprite-ref: buttons; sprite-alignment: right */
+}
+
+.atg .v-button-caption {
+	color: #222;
+	text-shadow: #fff 0 1px 0;
+	font-weight: bold;
+	font-size: 11px;
+	line-height: 16px;
+}
+
+.atg .black .v-button:focus {
+	background-image: url(../reindeer/button/img/black/left-focus.png);/** sprite-ref: black-buttons */
+}
+
+.atg .black .v-button:focus .v-button-wrap {
+	background-image: url(../reindeer/button/img/black/right-focus.png);/** sprite-ref: black-buttons; sprite-alignment: right */
+}
+
+.atg .black .v-button:active, .atg .black .v-button.v-pressed {
+	background-image: url(../reindeer/button/img/black/left-pressed.png);/** sprite-ref: black-buttons */
+}
+
+.atg .black .v-button:active .v-button-wrap, .atg .black .v-button.v-pressed .v-button-wrap {
+	background-image: url(../reindeer/button/img/black/right-pressed.png);/** sprite-ref: black-buttons; sprite-alignment: right */
+}
+
+.atg .black .v-button, .atg .black .v-disabled.v-button {
+	background-image: url(../reindeer/button/img/black/left.png);/** sprite-ref: black-buttons */
+}
+
+.atg .black .v-button-wrap, .atg .black .v-disabled.v-button .v-button-wrap {
+	background-image: url(../reindeer/button/img/black/right.png);/** sprite-ref: black-buttons; sprite-alignment: right */
+}
+
+.atg .black .v-button-caption {
+	color: #c9ccce;
+	text-shadow: #121314 0 -1px 0;
+}
+
+.atg .v-button-primary:focus {
+	background-image: url(../reindeer/button/img/primary-left-focus.png);/** sprite-ref: buttons */
+}
+
+.atg .v-button-primary:focus .v-button-wrap {
+	background-image: url(../reindeer/button/img/primary-right-focus.png);/** sprite-ref: buttons; sprite-alignment: right */
+}
+
+.atg .v-button-primary:active, .atg .v-button-primary.v-pressed {
+	background-image: url(../reindeer/button/img/primary-left-pressed.png);/** sprite-ref: buttons */
+}
+
+.atg .v-button-primary:active .v-button-wrap, .atg .v-button-primary.v-pressed .v-button-wrap {
+	background-image: url(../reindeer/button/img/primary-right-pressed.png);/** sprite-ref: buttons; sprite-alignment: right */
+}
+
+.atg .v-button-primary, .atg .v-disabled.v-button-primary {
+	background-image: url(../reindeer/button/img/primary-left.png);/** sprite-ref: buttons */
+}
+
+.atg .v-button-primary .v-button-wrap, .atg .v-disabled.v-button-primary .v-button-wrap {
+	background-image: url(../reindeer/button/img/primary-right.png);/** sprite-ref: buttons; sprite-alignment: right */
+}
+
+.atg .black .v-button-primary:focus {
+	background-image: url(../reindeer/button/img/black/primary-left-focus.png);/** sprite-ref: black-buttons */
+}
+
+.atg .black .v-button-primary:focus .v-button-wrap {
+	background-image: url(../reindeer/button/img/black/primary-right-focus.png);/** sprite-ref: black-buttons; sprite-alignment: right */
+	color: #eaf4fb;
+}
+
+.atg .black .v-button-primary:active, .atg .black .v-button-primary.v-pressed {
+	background-image: url(../reindeer/button/img/black/primary-left-pressed.png);/** sprite-ref: black-buttons */
+}
+
+.atg .black .v-button-primary:active .v-button-wrap, .atg .black .v-button-primary.v-pressed .v-button-wrap {
+	background-image: url(../reindeer/button/img/black/primary-right-pressed.png);/** sprite-ref: black-buttons; sprite-alignment: right */
+}
+
+.atg .black .v-button-primary, .atg .black .v-disabled.v-button-primary {
+	background-image: url(../reindeer/button/img/black/primary-left.png);/** sprite-ref: black-buttons */
+}
+
+.atg .black .v-button-primary .v-button-wrap, .atg .black .v-disabled.v-button-primary .v-button-wrap {
+	background-image: url(../reindeer/button/img/black/primary-right.png);/** sprite-ref: black-buttons; sprite-alignment: right */
+}
+
+.atg .v-button-small:focus {
+	background-image: url(../reindeer/button/img/small-left-focus.png);/** sprite-ref: buttons */
+}
+
+.atg .v-button-small:focus .v-button-wrap {
+	background-image: url(../reindeer/button/img/small-right-focus.png);/** sprite-ref: buttons; sprite-alignment: right */
+}
+
+.atg .v-button-small:active, .atg .v-button-small.v-pressed {
+	background-image: url(../reindeer/button/img/small-left-pressed.png);/** sprite-ref: buttons */
+}
+
+.atg .v-button-small:active .v-button-wrap, .atg .v-button-small.v-pressed .v-button-wrap {
+	background-image: url(../reindeer/button/img/small-right-pressed.png);/** sprite-ref: buttons; sprite-alignment: right */
+}
+
+.atg .v-button-small, .atg .v-disabled.v-button-small {
+	background-image: url(../reindeer/button/img/small-left.png);/** sprite-ref: buttons */
+	height: 20px;
+}
+
+.atg .v-button-small .v-button-wrap, .atg .v-disabled.v-button-small .v-button-wrap {
+	background-image: url(../reindeer/button/img/small-right.png);/** sprite-ref: buttons; sprite-alignment: right */
+	height: 19px;
+	padding: 1px 14px 0 8px;
+}
+
+.atg .v-button-small .v-button-caption {
+	font-weight: normal;
+}
+
+.atg .black .v-button-small:focus {
+	background-image: url(../reindeer/button/img/black/small-left-focus.png);/** sprite-ref: black-buttons */
+}
+
+.atg .black .v-button-small:focus .v-button-wrap {
+	background-image: url(../reindeer/button/img/black/small-right-focus.png);/** sprite-ref: black-buttons; sprite-alignment: right */
+}
+
+.atg .black .v-button-small:active, .atg .black .v-button-small.v-pressed {
+	background-image: url(../reindeer/button/img/black/small-left-pressed.png);/** sprite-ref: black-buttons */
+}
+
+.atg .black .v-button-small:active .v-button-wrap, .atg .black .v-button-small.v-pressed .v-button-wrap {
+	background-image: url(../reindeer/button/img/black/small-right-pressed.png);/** sprite-ref: black-buttons; sprite-alignment: right */
+}
+
+.atg .black .v-button-small, .atg .black .v-disabled.v-button-small {
+	background-image: url(../reindeer/button/img/black/small-left.png);/** sprite-ref: black-buttons */
+}
+
+.atg .black .v-button-small .v-button-wrap, .atg .black .v-disabled.v-button-small .v-button-wrap {
+	background-image: url(../reindeer/button/img/black/small-right.png);/** sprite-ref: black-buttons; sprite-alignment: right */
+}
+
+.atg .v-button.v-button-link, .atg .v-button.v-button-link:focus, .atg .v-button.v-button-link:active, .atg .v-button-link.v-pressed, .atg .v-disabled.v-button.v-button-link, .atg .v-button.v-button-link .v-button-wrap, .atg .v-button.v-button-link:focus .v-button-wrap, .atg .v-button.v-button-link:active .v-button-wrap, .atg .v-button-link.v-pressed .v-button-wrap, .atg .v-disabled.v-button.v-button-link .v-button-wrap {
+	background: transparent;
+	height: auto;
+	padding: 0;
+	cursor: pointer;
+	line-height: inherit;
+}
+
+.atg .v-button.v-button-link.v-disabled, .atg .v-button.v-button-link.v-disabled .v-button-wrap {
+	cursor: default;
+}
+
+.atg .v-button-link .v-button-caption {
+	line-height: inherit;
+	font-weight: normal;
+	color: #1b699f;
+	font-size: 12px;
+	text-shadow: none;
+}
+
+.atg .v-button-link:focus .v-button-caption {
+	outline: 1px dotted #1b699f;
+}
+
+.atg .v-nativebutton-link .v-nativebutton-caption {
+	line-height: inherit;
+	font-weight: normal;
+	color: #1b699f;
+	font-size: 12px;
+	text-shadow: none;
+}
+
+.atg .v-nativebutton-link:focus .v-nativebutton-caption {
+	outline: 1px dotted #1b699f;
+}
+
+.v-ie8 .atg .v-nativebutton-link {
+	padding: 0;
+	text-align: left;
+}
+
+.atg .v-colorpicker-popup {
+	width: 246px;
+}
+
+.atg .v-colorpicker-popup .v-tabsheet .v-colorpicker-grid {
+	height: 284px;
+}
+
+.atg .v-colorpicker-popup .v-filterselect {
+	padding-right: 25px;
+}
+
+.atg.v-app {
+	background: #f5f5f5;
+}
+
+.atg.v-app, .atg .v-window, .atg .v-popupview-popup, .atg .v-tooltip, .atg.v-app input, .atg.v-app select, .atg.v-app button, .atg.v-app textarea, .atg .v-window input, .atg .v-window select, .atg .v-window button, .atg .v-window textarea, .atg .v-popupview-popup input, .atg .v-popupview-popup select, .atg .v-popupview-popup button, .atg .v-popupview-popup textarea, .atg .v-filterselect-suggestpopup, .atg .v-datefield-popup, .atg .v-contextmenu, .atg .v-Notification, .atg .v-menubar-submenu, .atg .v-drag-element, .atg .v-table-header-drag {
+	font-family: Arial, Helvetica, Tahoma, Verdana, sans-serif;
+	font-size: 12px;
+	line-height: normal;
+	color: #222;
+}
+
+.atg.v-app .black, .atg .v-window-black, .atg .v-window .black, .atg .v-popupview-popup .black {
+	color: #c9ccce;
+	text-shadow: #000 0 0 1px;
+}
+
+.atg .v-errorindicator {
+	width: 13px;
+	height: 15px;
+	background: transparent url(../reindeer/common/icons/error.png) no-repeat 50%;
+}
+
+.atg .v-tooltip {
+	background-color: #fffcdd;
+	border: 1px solid #b8b295;
+	font-size: 11px;
+	color: #222;
+}
+
+.atg .v-tooltip-text {
+	padding: 2px 4px;
+}
+
+.atg .v-tooltip .v-errormessage {
+	padding: 3px 4px;
+	background: #ffecc6;
+	color: #b74100;
+	border: none;
+	border-top: 1px solid #fff3dc;
+}
+
+.atg .v-tooltip .v-errormessage h2 {
+	font-size: 16px;
+	font-weight: normal;
+	color: #ab3101;
+	margin: 2px 0 8px 0;
+}
+
+.atg .v-tooltip .v-errormessage h3 {
+	font-size: 13px;
+	font-weight: bold;
+	margin: 1px 0 4px 0;
+}
+
+.atg .v-contextmenu {
+	background: #f8f8f9;
+	border: none;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	overflow: hidden;
+	padding: 4px 0;
+}
+
+.atg .v-contextmenu .gwt-MenuItem {
+	padding: 1px 12px 1px 8px;
+	height: 16px;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	cursor: default;
+}
+
+.atg .v-contextmenu .gwt-MenuItem .v-icon {
+	margin-right: 3px;
+}
+
+.atg .v-contextmenu .gwt-MenuItem-selected {
+	background: transparent repeat-x;
+	background-image: url(../reindeer/common/img/sel-bg.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+	color: #fff;
+	text-shadow: #3b5a7a 0 1px 0;
+}
+
+.v-ie .atg .v-contextmenu .gwt-MenuItem-selected {
+	background-image: url(../reindeer/common/img/sel-bg.png);
+	background-position: left top;
+}
+
+.atg .v-contextmenu .gwt-MenuItem-selected div {
+	background: transparent;
+	cursor: default;
+}
+
+.portlet .atg.v-app {
+	background: transparent;
+}
+
+.portlet .atg.v-app .v-radiobutton input, .atg .portlet .v-window .v-radiobutton input, .atg .portlet .v-popupview-popup .v-radiobutton input, .portlet .atg.v-app .v-checkbox input, .atg .portlet .v-window .v-checkbox input, .atg .portlet .v-popupview-popup .v-checkbox input {
+	margin-right: 3px;
+	background: transparent;
+}
+
+.atg .v-datefield {
+	overflow: hidden;
+}
+
+.atg input.v-textfield-readonly:focus {
+	background-color: transparent;
+}
+
+.atg .v-datefield-calendarpanel {
+	border-collapse: collapse;
+	margin: 0;
+	padding: 0;
+	height: auto !important;
+}
+
+.atg .v-datefield-year .v-datefield-calendarpanel-prevmonth, .atg .v-datefield-year .v-datefield-calendarpanel-nextmonth {
+	display: none;
+}
+
+.atg .v-datefield-calendarpanel td {
+	vertical-align: top;
+}
+
+.atg td.v-datefield-calendarpanel-month {
+	height: 23px;
+	background-repeat: repeat-x;
+	background-image: url(../reindeer/datefield/img/header-bg.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+}
+
+.atg span.v-datefield-calendarpanel-month {
+	display: block;
+	text-align: center;
+	height: 16px;
+	padding: 3px 10px 0 10px;
+	border-left: 1px solid #efefef;
+	border-right: 1px solid #d8d8d8;
+	text-shadow: #fff 0 1px 0;
+	overflow: hidden;
+	margin-top: 1px;
+}
+
+.atg .v-datefield-year .v-datefield-calendarpanel-month {
+	width: 35px;
+}
+
+.atg .v-datefield-month .v-datefield-calendarpanel-month, .atg .v-datefield-day .v-datefield-calendarpanel-month, .atg .v-datefield-full .v-datefield-calendarpanel-month {
+	width: 124px;
+}
+
+.atg .v-datefield-month, .atg .v-datefield-day, .atg .v-datefield-full {
+	min-width: 240px;
+}
+
+.atg .v-datefield-popupcalendar {
+	min-width: 0;
+	padding-right: 24px;
+}
+
+.atg .v-datefield-year .v-datefield-calendarpanel {
+	width: 100px;
+}
+
+.atg td.v-datefield-calendarpanel-prevyear {
+	text-align: right;
+}
+
+.atg td.v-datefield-calendarpanel-nextyear {
+	text-align: left;
+}
+
+.atg .v-datefield-calendarpanel-prevyear button, .atg .v-datefield-calendarpanel-nextyear button, .atg .v-datefield-calendarpanel-prevmonth button, .atg .v-datefield-calendarpanel-nextmonth button {
+	width: 24px;
+	height: 23px;
+	border: none;
+	background: transparent;
+	background-repeat: no-repeat;
+	background-image: url(../reindeer/datefield/img/year-prev.png);/** sprite-ref: verticals */
+	overflow: hidden;
+	padding: 0;
+	text-indent: -9999px;
+	outline: none;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+}
+
+.v-ie .atg .v-datefield-calendarpanel-prevyear button, .v-ie .atg .v-datefield-calendarpanel-nextyear button, .v-ie .atg .v-datefield-calendarpanel-prevmonth button, .v-ie .atg .v-datefield-calendarpanel-nextmonth button {
+	text-indent: 0;
+	font-size: 1px;
+}
+
+.atg .v-datefield-calendarpanel-nextyear button {
+	background-position: left top;
+	background-image: url(../reindeer/datefield/img/year-next.png);/** sprite-ref: verticals */
+}
+
+.atg .v-datefield-calendarpanel-prevyear button:active, .v-ie .atg .v-datefield-calendarpanel-prevyear button.v-pressed {
+	background-image: url(../reindeer/datefield/img/year-prev-pressed.png);/** sprite-ref: verticals */
+}
+
+.atg .v-datefield-calendarpanel-nextyear button:active, .v-ie .atg .v-datefield-calendarpanel-nextyear button.v-pressed {
+	background-image: url(../reindeer/datefield/img/year-next-pressed.png);/** sprite-ref: verticals */
+}
+
+.atg .v-datefield-calendarpanel-prevmonth, .atg .v-datefield-calendarpanel-nextmonth {
+	width: 24px;
+	background-repeat: repeat-x;
+	background-image: url(../reindeer/datefield/img/header-bg.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+}
+
+.atg .v-datefield-calendarpanel-prevmonth button, .atg .v-datefield-calendarpanel-nextmonth button {
+	width: 100%;
+	height: 21px;
+	border-left: 1px solid #efefef;
+	border-right: 1px solid #d8d8d8;
+	background: transparent;
+	background-position: center top;
+	background-image: url(../reindeer/datefield/img/month-prev.png);/** sprite-ref: verticals; sprite-alignment: center */
+	min-width: 24px;
+	margin-top: 1px;
+}
+
+.v-ie .atg .v-datefield-calendarpanel-prevmonth button, .v-ie .atg .v-datefield-calendarpanel-nextmonth button {
+	border: none;
+}
+
+.atg .v-datefield-calendarpanel-nextmonth button {
+	background-image: url(../reindeer/datefield/img/month-next.png);/** sprite-ref: verticals; sprite-alignment: center */
+}
+
+.atg .v-datefield-calendarpanel-prevmonth button:active, .v-ie .atg .v-datefield-calendarpanel-prevmonth button.v-pressed {
+	background-position: center top;
+	background-image: url(../reindeer/datefield/img/month-prev-pressed.png);/** sprite-ref: verticals; sprite-alignment: center */
+}
+
+.atg .v-datefield-calendarpanel-nextmonth button:active, .v-ie .atg .v-datefield-calendarpanel-nextmonth button.v-pressed {
+	background-position: center top;
+	background-image: url(../reindeer/datefield/img/month-next-pressed.png);/** sprite-ref: verticals; sprite-alignment: center */
+}
+
+.atg .v-datefield-calendarpanel-body, .atg .v-datefield-calendarpanel-time {
+	text-align: center;
+	vertical-align: top;
+}
+
+.atg .v-datefield-calendarpanel-body table {
+	border-collapse: collapse;
+	margin: 0;
+	padding: 0;
+	width: 220px;
+	margin: 0 auto;
+}
+
+.atg .v-datefield-calendarpanel-weekdays td {
+	width: 14.2%;
+	overflow: hidden;
+	background-repeat: repeat-x;
+	background-image: url(../reindeer/datefield/img/weekday-bg.png);/** sprite-ref: verticals; sprite-alignment: repeat; sprite-margin-bottom: 3px */
+	font-size: 10px;
+	line-height: normal;
+	text-transform: uppercase;
+	color: #eaeff1;
+	text-shadow: #3b4651 0 -1px 0;
+	vertical-align: top;
+	padding: 0;
+}
+
+.atg .v-datefield-calendarpanel-weeknumbers td {
+	width: 12.4%;
+}
+
+.atg .v-datefield-calendarpanel-weekdays strong {
+	display: block;
+	text-align: right;
+	padding: 1px 5px 0 0;
+	height: 14px;
+	border-top: 1px solid #596775;
+}
+
+.atg .v-datefield-calendarpanel-weekdays .v-first {
+	background-repeat: no-repeat;
+	background-image: url(../reindeer/datefield/img/weekday-first.png);/** sprite-ref: verticals; sprite-margin-bottom: 3px */
+}
+
+.atg .v-datefield-calendarpanel-weekdays .v-last {
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-image: url(../reindeer/datefield/img/weekday-last.png);/** sprite-ref: verticals; sprite-alignment: right; sprite-margin-bottom: 3px */
+}
+
+.v-ie .atg .v-datefield-calendarpanel-weekdays td {
+	background: url(../reindeer/datefield/img/weekday-bg.png) repeat-x;
+	background-position: left top;
+}
+
+.v-ie .atg .v-datefield-calendarpanel .v-first {
+	background: url(../reindeer/datefield/img/weekday-first.png) no-repeat;
+}
+
+.v-ie .atg .v-datefield-calendarpanel .v-last {
+	background: url(../reindeer/datefield/img/weekday-last.png) no-repeat right top;
+}
+
+.atg .v-datefield-calendarpanel-body td {
+	text-align: right;
+	height: 19px;
+}
+
+.atg .v-datefield-calendarpanel-day, .atg .v-datefield-calendarpanel-weeknumber, .atg .v-datefield-calendarpanel-day-today {
+	padding: 2px 5px 2px 0;
+	display: block;
+	margin: 1px 0 0 5px;
+}
+
+.atg .v-datefield-calendarpanel-weeknumber {
+	margin: 0;
+	padding-top: 4px;
+	padding-bottom: 3px;
+	font-size: 10.8px;
+}
+
+.atg .v-datefield-calendarpanel-day-today {
+	color: #4095d1;
+	border: none;
+}
+
+.atg .v-datefield-calendarpanel-day-selected {
+	background: #507ba3;
+	color: #fff;
+	text-shadow: #3b5b79 0 1px 0;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+}
+
+.atg .v-datefield-calendarpanel-time select {
+	padding: 0;
+	font-size: 11px;
+	margin: 2px;
+}
+
+.atg .v-datefield-popup {
+	background: #f8f8f9;
+	padding: 8px 4px;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+}
+
+.v-sa .atg .v-datefield-popup, .v-op .atg .v-datefield-popup {
+	background: rgba(255, 255, 255, 0.95);
+}
+
+.atg .v-datefield-year > .v-datefield-textfield {
+	width: 4.5em;
+}
+
+.atg .v-datefield-month > .v-datefield-textfield {
+	width: 5.5em;
+}
+
+.atg .v-datefield-day > .v-datefield-textfield {
+	width: 6em;
+}
+
+.atg .v-datefield-full > .v-datefield-textfield {
+	width: 12.5em;
+}
+
+.atg .v-datefield-popupcalendar input.v-datefield-textfield {
+	border-right-width: 0;
+	-moz-border-radius-topright: 0;
+	-moz-border-radius-bottomright: 0;
+	-webkit-border-top-right-radius: 0;
+	-webkit-border-bottom-right-radius: 0;
+	height: 23px;
+}
+
+.atg .v-datefield.v-readonly input.v-datefield-textfield {
+	border-right-width: 1px;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+
+.atg .v-datefield-prompt .v-datefield-textfield {
+	color: #999;
+	font-style: normal;
+}
+
+.atg .v-datefield-popupcalendar .v-datefield-button {
+	width: 24px;
+	margin-right: -24px;
+	height: 23px;
+	background: transparent;
+	border: none;
+	padding: 0;
+	background-image: url(../reindeer/datefield/img/popup-btn.png);/** sprite-ref: verticals */
+	cursor: pointer;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+}
+
+.atg .v-datefield-popupcalendar .v-datefield-button:active {
+	background-image: url(../reindeer/datefield/img/popup-btn-pressed.png);/** sprite-ref: verticals */
+}
+
+.atg .black .v-datefield-popupcalendar .v-datefield-button {
+	background-image: url(../reindeer/datefield/img/popup-btn-black.png);/** sprite-ref: black-verticals */
+}
+
+.atg .black .v-datefield-popupcalendar .v-datefield-button:active {
+	background-image: url(../reindeer/datefield/img/popup-btn-black-pressed.png);/** sprite-ref: black-verticals */
+}
+
+.atg .black td.v-datefield-calendarpanel-month {
+	background-image: url(../reindeer/datefield/img/header-bg-black.png);/** sprite-ref: black-verticals; sprite-alignment: repeat */
+	height: 21px;
+}
+
+.atg .black span.v-datefield-calendarpanel-month {
+	border-left: 1px solid #333638;
+	border-right: 1px solid #232527;
+	color: #c9ccce;
+	text-shadow: #000 0 -1px 0;
+	padding: 4px 10px 1px 10px;
+	margin-top: 0;
+}
+
+.atg .black .v-datefield-calendarpanel-prevyear button, .atg .black .v-datefield-calendarpanel-nextyear button, .atg .black .v-datefield-calendarpanel-prevmonth button, .atg .black .v-datefield-calendarpanel-nextmonth button {
+	background-image: url(../reindeer/datefield/img/year-prev-black.png);/** sprite-ref: black-verticals */
+	height: 21px;
+}
+
+.atg .black .v-datefield-calendarpanel-nextyear button {
+	background-image: url(../reindeer/datefield/img/year-next-black.png);/** sprite-ref: black-verticals */
+}
+
+.atg .black .v-datefield-calendarpanel-prevyear button:active, .v-ie .atg .black .v-datefield-calendarpanel-prevyear button.v-pressed {
+	background-image: url(../reindeer/datefield/img/year-prev-black-pressed.png);/** sprite-ref: black-verticals */
+}
+
+.atg .black .v-datefield-calendarpanel-nextyear button:active, .v-ie .atg .black .v-datefield-calendarpanel-nextyear button.v-pressed {
+	background-image: url(../reindeer/datefield/img/year-next-black-pressed.png);/** sprite-ref: black-verticals */
+}
+
+.atg .black .v-datefield-calendarpanel-prevmonth, .atg .black .v-datefield-calendarpanel-nextmonth {
+	background-image: url(../reindeer/datefield/img/header-bg-black.png);/** sprite-ref: black-verticals; sprite-alignment: repeat */
+}
+
+.atg .black .v-datefield-calendarpanel-prevmonth button, .atg .black .v-datefield-calendarpanel-nextmonth button {
+	border-left: 1px solid #333638;
+	border-right: 1px solid #232527;
+	background-image: url(../reindeer/datefield/img/month-prev-black.png);/** sprite-ref: black-verticals; sprite-alignment: center */
+	margin-top: 0;
+}
+
+.atg .black .v-datefield-calendarpanel-nextmonth button {
+	background-image: url(../reindeer/datefield/img/month-next-black.png);/** sprite-ref: black-verticals; sprite-alignment: center */
+}
+
+.atg .black .v-datefield-calendarpanel-prevmonth button:active, .v-ie .atg .black .v-datefield-calendarpanel-prevmonth button.v-pressed {
+	background-image: url(../reindeer/datefield/img/month-prev-black-pressed.png);/** sprite-ref: black-verticals; sprite-alignment: center */
+}
+
+.atg .black .v-datefield-calendarpanel-nextmonth button:active, .v-ie .atg .black .v-datefield-calendarpanel-nextmonth button.v-pressed {
+	background-image: url(../reindeer/datefield/img/month-next-black-pressed.png);/** sprite-ref: black-verticals; sprite-alignment: center */
+}
+
+.v-ie .atg .black .v-datefield-calendarpanel-prevmonth button, .v-ie .atg .black .v-datefield-calendarpanel-nextmonth button {
+	border: none;
+}
+
+.atg .black .v-datefield-calendarpanel-weekdays td {
+	background-image: url(../reindeer/datefield/img/weekday-bg-black.png);/** sprite-ref: black-verticals; sprite-alignment: repeat; sprite-margin-bottom: 3px */
+	color: #0a0b0b;
+	text-shadow: #5a5c5e 0 1px 0;
+}
+
+.atg .black .v-datefield-calendarpanel-weekdays strong {
+	border-top-color: #1b1c1d;
+}
+
+.atg .black .v-datefield-calendarpanel .v-first {
+	background-image: url(../reindeer/datefield/img/weekday-first-black.png);/** sprite-ref: black-verticals; sprite-margin-bottom: 3px */
+}
+
+.atg .black .v-datefield-calendarpanel .v-last {
+	background-image: url(../reindeer/datefield/img/weekday-last-black.png);/** sprite-ref: black-verticals; sprite-alignment: right */
+}
+
+.atg .black .v-datefield-prompt .v-datefield-textfield {
+	color: #5f6366;
+}
+
+.atg .v-inline-datefield {
+	overflow: hidden;
+}
+
+.atg input.v-textfield-readonly:focus {
+	background-color: transparent;
+}
+
+.atg .v-inline-datefield-calendarpanel {
+	border-collapse: collapse;
+	margin: 0;
+	padding: 0;
+	height: auto !important;
+}
+
+.atg .v-inline-datefield-year .v-inline-datefield-calendarpanel-prevmonth, .atg .v-inline-datefield-year .v-inline-datefield-calendarpanel-nextmonth {
+	display: none;
+}
+
+.atg .v-inline-datefield-calendarpanel td {
+	vertical-align: top;
+}
+
+.atg td.v-inline-datefield-calendarpanel-month {
+	height: 23px;
+	background-repeat: repeat-x;
+	background-image: url(../reindeer/datefield/img/header-bg.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+}
+
+.atg span.v-inline-datefield-calendarpanel-month {
+	display: block;
+	text-align: center;
+	height: 16px;
+	padding: 3px 10px 0 10px;
+	border-left: 1px solid #efefef;
+	border-right: 1px solid #d8d8d8;
+	text-shadow: #fff 0 1px 0;
+	overflow: hidden;
+	margin-top: 1px;
+}
+
+.atg .v-inline-datefield-year .v-inline-datefield-calendarpanel-month {
+	width: 35px;
+}
+
+.atg .v-inline-datefield-month .v-inline-datefield-calendarpanel-month, .atg .v-inline-datefield-day .v-inline-datefield-calendarpanel-month, .atg .v-inline-datefield-full .v-inline-datefield-calendarpanel-month {
+	width: 124px;
+}
+
+.atg .v-inline-datefield-month, .atg .v-inline-datefield-day, .atg .v-inline-datefield-full {
+	min-width: 240px;
+}
+
+.atg .v-inline-datefield-popupcalendar {
+	min-width: 0;
+	padding-right: 24px;
+}
+
+.atg .v-inline-datefield-year .v-inline-datefield-calendarpanel {
+	width: 100px;
+}
+
+.atg td.v-inline-datefield-calendarpanel-prevyear {
+	text-align: right;
+}
+
+.atg td.v-inline-datefield-calendarpanel-nextyear {
+	text-align: left;
+}
+
+.atg .v-inline-datefield-calendarpanel-prevyear button, .atg .v-inline-datefield-calendarpanel-nextyear button, .atg .v-inline-datefield-calendarpanel-prevmonth button, .atg .v-inline-datefield-calendarpanel-nextmonth button {
+	width: 24px;
+	height: 23px;
+	border: none;
+	background: transparent;
+	background-repeat: no-repeat;
+	background-image: url(../reindeer/datefield/img/year-prev.png);/** sprite-ref: verticals */
+	overflow: hidden;
+	padding: 0;
+	text-indent: -9999px;
+	outline: none;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+}
+
+.v-ie .atg .v-inline-datefield-calendarpanel-prevyear button, .v-ie .atg .v-inline-datefield-calendarpanel-nextyear button, .v-ie .atg .v-inline-datefield-calendarpanel-prevmonth button, .v-ie .atg .v-inline-datefield-calendarpanel-nextmonth button {
+	text-indent: 0;
+	font-size: 1px;
+}
+
+.atg .v-inline-datefield-calendarpanel-nextyear button {
+	background-position: left top;
+	background-image: url(../reindeer/datefield/img/year-next.png);/** sprite-ref: verticals */
+}
+
+.atg .v-inline-datefield-calendarpanel-prevyear button:active, .v-ie .atg .v-inline-datefield-calendarpanel-prevyear button.v-pressed {
+	background-image: url(../reindeer/datefield/img/year-prev-pressed.png);/** sprite-ref: verticals */
+}
+
+.atg .v-inline-datefield-calendarpanel-nextyear button:active, .v-ie .atg .v-inline-datefield-calendarpanel-nextyear button.v-pressed {
+	background-image: url(../reindeer/datefield/img/year-next-pressed.png);/** sprite-ref: verticals */
+}
+
+.atg .v-inline-datefield-calendarpanel-prevmonth, .atg .v-inline-datefield-calendarpanel-nextmonth {
+	width: 24px;
+	background-repeat: repeat-x;
+	background-image: url(../reindeer/datefield/img/header-bg.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+}
+
+.atg .v-inline-datefield-calendarpanel-prevmonth button, .atg .v-inline-datefield-calendarpanel-nextmonth button {
+	width: 100%;
+	height: 21px;
+	border-left: 1px solid #efefef;
+	border-right: 1px solid #d8d8d8;
+	background: transparent;
+	background-position: center top;
+	background-image: url(../reindeer/datefield/img/month-prev.png);/** sprite-ref: verticals; sprite-alignment: center */
+	min-width: 24px;
+	margin-top: 1px;
+}
+
+.v-ie .atg .v-inline-datefield-calendarpanel-prevmonth button, .v-ie .atg .v-inline-datefield-calendarpanel-nextmonth button {
+	border: none;
+}
+
+.atg .v-inline-datefield-calendarpanel-nextmonth button {
+	background-image: url(../reindeer/datefield/img/month-next.png);/** sprite-ref: verticals; sprite-alignment: center */
+}
+
+.atg .v-inline-datefield-calendarpanel-prevmonth button:active, .v-ie .atg .v-inline-datefield-calendarpanel-prevmonth button.v-pressed {
+	background-position: center top;
+	background-image: url(../reindeer/datefield/img/month-prev-pressed.png);/** sprite-ref: verticals; sprite-alignment: center */
+}
+
+.atg .v-inline-datefield-calendarpanel-nextmonth button:active, .v-ie .atg .v-inline-datefield-calendarpanel-nextmonth button.v-pressed {
+	background-position: center top;
+	background-image: url(../reindeer/datefield/img/month-next-pressed.png);/** sprite-ref: verticals; sprite-alignment: center */
+}
+
+.atg .v-inline-datefield-calendarpanel-body, .atg .v-inline-datefield-calendarpanel-time {
+	text-align: center;
+	vertical-align: top;
+}
+
+.atg .v-inline-datefield-calendarpanel-body table {
+	border-collapse: collapse;
+	margin: 0;
+	padding: 0;
+	width: 220px;
+	margin: 0 auto;
+}
+
+.atg .v-inline-datefield-calendarpanel-weekdays td {
+	width: 14.2%;
+	overflow: hidden;
+	background-repeat: repeat-x;
+	background-image: url(../reindeer/datefield/img/weekday-bg.png);/** sprite-ref: verticals; sprite-alignment: repeat; sprite-margin-bottom: 3px */
+	font-size: 10px;
+	line-height: normal;
+	text-transform: uppercase;
+	color: #eaeff1;
+	text-shadow: #3b4651 0 -1px 0;
+	vertical-align: top;
+	padding: 0;
+}
+
+.atg .v-inline-datefield-calendarpanel-weeknumbers td {
+	width: 12.4%;
+}
+
+.atg .v-inline-datefield-calendarpanel-weekdays strong {
+	display: block;
+	text-align: right;
+	padding: 1px 5px 0 0;
+	height: 14px;
+	border-top: 1px solid #596775;
+}
+
+.atg .v-inline-datefield-calendarpanel-weekdays .v-first {
+	background-repeat: no-repeat;
+	background-image: url(../reindeer/datefield/img/weekday-first.png);/** sprite-ref: verticals; sprite-margin-bottom: 3px */
+}
+
+.atg .v-inline-datefield-calendarpanel-weekdays .v-last {
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-image: url(../reindeer/datefield/img/weekday-last.png);/** sprite-ref: verticals; sprite-alignment: right; sprite-margin-bottom: 3px */
+}
+
+.v-ie .atg .v-inline-datefield-calendarpanel-weekdays td {
+	background: url(../reindeer/datefield/img/weekday-bg.png) repeat-x;
+	background-position: left top;
+}
+
+.v-ie .atg .v-inline-datefield-calendarpanel .v-first {
+	background: url(../reindeer/datefield/img/weekday-first.png) no-repeat;
+}
+
+.v-ie .atg .v-inline-datefield-calendarpanel .v-last {
+	background: url(../reindeer/datefield/img/weekday-last.png) no-repeat right top;
+}
+
+.atg .v-inline-datefield-calendarpanel-body td {
+	text-align: right;
+	height: 19px;
+}
+
+.atg .v-inline-datefield-calendarpanel-day, .atg .v-inline-datefield-calendarpanel-weeknumber, .atg .v-inline-datefield-calendarpanel-day-today {
+	padding: 2px 5px 2px 0;
+	display: block;
+	margin: 1px 0 0 5px;
+}
+
+.atg .v-inline-datefield-calendarpanel-weeknumber {
+	margin: 0;
+	padding-top: 4px;
+	padding-bottom: 3px;
+	font-size: 10.8px;
+}
+
+.atg .v-inline-datefield-calendarpanel-day-today {
+	color: #4095d1;
+	border: none;
+}
+
+.atg .v-inline-datefield-calendarpanel-day-selected {
+	background: #507ba3;
+	color: #fff;
+	text-shadow: #3b5b79 0 1px 0;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+}
+
+.atg .v-inline-datefield-calendarpanel-time select {
+	padding: 0;
+	font-size: 11px;
+	margin: 2px;
+}
+
+.atg .v-inline-datefield-popup {
+	background: #f8f8f9;
+	padding: 8px 4px;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+}
+
+.v-sa .atg .v-inline-datefield-popup, .v-op .atg .v-inline-datefield-popup {
+	background: rgba(255, 255, 255, 0.95);
+}
+
+.atg .v-inline-datefield-year > .v-inline-datefield-textfield {
+	width: 4.5em;
+}
+
+.atg .v-inline-datefield-month > .v-inline-datefield-textfield {
+	width: 5.5em;
+}
+
+.atg .v-inline-datefield-day > .v-inline-datefield-textfield {
+	width: 6em;
+}
+
+.atg .v-inline-datefield-full > .v-inline-datefield-textfield {
+	width: 12.5em;
+}
+
+.atg .v-inline-datefield-popupcalendar input.v-inline-datefield-textfield {
+	border-right-width: 0;
+	-moz-border-radius-topright: 0;
+	-moz-border-radius-bottomright: 0;
+	-webkit-border-top-right-radius: 0;
+	-webkit-border-bottom-right-radius: 0;
+	height: 23px;
+}
+
+.atg .v-inline-datefield.v-readonly input.v-inline-datefield-textfield {
+	border-right-width: 1px;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+
+.atg .v-inline-datefield-prompt .v-inline-datefield-textfield {
+	color: #999;
+	font-style: normal;
+}
+
+.atg .v-inline-datefield-popupcalendar .v-inline-datefield-button {
+	width: 24px;
+	margin-right: -24px;
+	height: 23px;
+	background: transparent;
+	border: none;
+	padding: 0;
+	background-image: url(../reindeer/datefield/img/popup-btn.png);/** sprite-ref: verticals */
+	cursor: pointer;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+}
+
+.atg .v-inline-datefield-popupcalendar .v-inline-datefield-button:active {
+	background-image: url(../reindeer/datefield/img/popup-btn-pressed.png);/** sprite-ref: verticals */
+}
+
+.atg .black .v-inline-datefield-popupcalendar .v-inline-datefield-button {
+	background-image: url(../reindeer/datefield/img/popup-btn-black.png);/** sprite-ref: black-verticals */
+}
+
+.atg .black .v-inline-datefield-popupcalendar .v-inline-datefield-button:active {
+	background-image: url(../reindeer/datefield/img/popup-btn-black-pressed.png);/** sprite-ref: black-verticals */
+}
+
+.atg .black td.v-inline-datefield-calendarpanel-month {
+	background-image: url(../reindeer/datefield/img/header-bg-black.png);/** sprite-ref: black-verticals; sprite-alignment: repeat */
+	height: 21px;
+}
+
+.atg .black span.v-inline-datefield-calendarpanel-month {
+	border-left: 1px solid #333638;
+	border-right: 1px solid #232527;
+	color: #c9ccce;
+	text-shadow: #000 0 -1px 0;
+	padding: 4px 10px 1px 10px;
+	margin-top: 0;
+}
+
+.atg .black .v-inline-datefield-calendarpanel-prevyear button, .atg .black .v-inline-datefield-calendarpanel-nextyear button, .atg .black .v-inline-datefield-calendarpanel-prevmonth button, .atg .black .v-inline-datefield-calendarpanel-nextmonth button {
+	background-image: url(../reindeer/datefield/img/year-prev-black.png);/** sprite-ref: black-verticals */
+	height: 21px;
+}
+
+.atg .black .v-inline-datefield-calendarpanel-nextyear button {
+	background-image: url(../reindeer/datefield/img/year-next-black.png);/** sprite-ref: black-verticals */
+}
+
+.atg .black .v-inline-datefield-calendarpanel-prevyear button:active, .v-ie .atg .black .v-inline-datefield-calendarpanel-prevyear button.v-pressed {
+	background-image: url(../reindeer/datefield/img/year-prev-black-pressed.png);/** sprite-ref: black-verticals */
+}
+
+.atg .black .v-inline-datefield-calendarpanel-nextyear button:active, .v-ie .atg .black .v-inline-datefield-calendarpanel-nextyear button.v-pressed {
+	background-image: url(../reindeer/datefield/img/year-next-black-pressed.png);/** sprite-ref: black-verticals */
+}
+
+.atg .black .v-inline-datefield-calendarpanel-prevmonth, .atg .black .v-inline-datefield-calendarpanel-nextmonth {
+	background-image: url(../reindeer/datefield/img/header-bg-black.png);/** sprite-ref: black-verticals; sprite-alignment: repeat */
+}
+
+.atg .black .v-inline-datefield-calendarpanel-prevmonth button, .atg .black .v-inline-datefield-calendarpanel-nextmonth button {
+	border-left: 1px solid #333638;
+	border-right: 1px solid #232527;
+	background-image: url(../reindeer/datefield/img/month-prev-black.png);/** sprite-ref: black-verticals; sprite-alignment: center */
+	margin-top: 0;
+}
+
+.atg .black .v-inline-datefield-calendarpanel-nextmonth button {
+	background-image: url(../reindeer/datefield/img/month-next-black.png);/** sprite-ref: black-verticals; sprite-alignment: center */
+}
+
+.atg .black .v-inline-datefield-calendarpanel-prevmonth button:active, .v-ie .atg .black .v-inline-datefield-calendarpanel-prevmonth button.v-pressed {
+	background-image: url(../reindeer/datefield/img/month-prev-black-pressed.png);/** sprite-ref: black-verticals; sprite-alignment: center */
+}
+
+.atg .black .v-inline-datefield-calendarpanel-nextmonth button:active, .v-ie .atg .black .v-inline-datefield-calendarpanel-nextmonth button.v-pressed {
+	background-image: url(../reindeer/datefield/img/month-next-black-pressed.png);/** sprite-ref: black-verticals; sprite-alignment: center */
+}
+
+.v-ie .atg .black .v-inline-datefield-calendarpanel-prevmonth button, .v-ie .atg .black .v-inline-datefield-calendarpanel-nextmonth button {
+	border: none;
+}
+
+.atg .black .v-inline-datefield-calendarpanel-weekdays td {
+	background-image: url(../reindeer/datefield/img/weekday-bg-black.png);/** sprite-ref: black-verticals; sprite-alignment: repeat; sprite-margin-bottom: 3px */
+	color: #0a0b0b;
+	text-shadow: #5a5c5e 0 1px 0;
+}
+
+.atg .black .v-inline-datefield-calendarpanel-weekdays strong {
+	border-top-color: #1b1c1d;
+}
+
+.atg .black .v-inline-datefield-calendarpanel .v-first {
+	background-image: url(../reindeer/datefield/img/weekday-first-black.png);/** sprite-ref: black-verticals; sprite-margin-bottom: 3px */
+}
+
+.atg .black .v-inline-datefield-calendarpanel .v-last {
+	background-image: url(../reindeer/datefield/img/weekday-last-black.png);/** sprite-ref: black-verticals; sprite-alignment: right */
+}
+
+.atg .black .v-inline-datefield-prompt .v-inline-datefield-textfield {
+	color: #5f6366;
+}
+
+.atg .v-inline-datefield {
+	line-height: 14px;
+}
+
+.atg .v-formlayout-errorcell {
+	width: 13px;
+}
+
+.atg .v-formlayout-cell .v-errorindicator {
+	width: 13px;
+	height: 16px;
+	background: transparent url(../reindeer/common/icons/error.png) no-repeat 50%;
+}
+
+.atg .v-formlayout-captioncell {
+	text-align: right;
+	white-space: nowrap;
+}
+
+.atg .v-formlayout-spacing > tbody > .v-formlayout-row > .v-formlayout-captioncell, .atg .v-formlayout-spacing > tbody > .v-formlayout-row > .v-formlayout-contentcell, .atg .v-formlayout-spacing > tbody > .v-formlayout-row > .v-formlayout-errorcell {
+	padding-top: 8px;
+}
+
+.atg .v-formlayout-margin-top > tbody > .v-formlayout-firstrow > .v-formlayout-captioncell, .atg .v-formlayout-margin-top > tbody > .v-formlayout-firstrow > .v-formlayout-contentcell, .atg .v-formlayout-margin-top > tbody > .v-formlayout-firstrow > .v-formlayout-errorcell {
+	padding-top: 15px;
+}
+
+.atg .v-formlayout-margin-bottom > tbody > .v-formlayout-lastrow > .v-formlayout-captioncell, .atg .v-formlayout-margin-bottom > tbody > .v-formlayout-lastrow > .v-formlayout-contentcell, .atg .v-formlayout-margin-bottom > tbody > .v-formlayout-lastrow > .v-formlayout-errorcell {
+	padding-bottom: 15px;
+}
+
+.atg .v-formlayout-margin-left > tbody > .v-formlayout-row > .v-formlayout-captioncell {
+	padding-left: 18px;
+}
+
+.atg .v-formlayout-margin-right > tbody > .v-formlayout-row > .v-formlayout-contentcell {
+	padding-right: 18px;
+}
+
+.atg .v-form-errormessage {
+	background: transparent url(../reindeer/common/icons/error.png) no-repeat 3px 2px;
+	padding-left: 20px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	min-height: 20px;
+}
+
+.atg .v-form fieldset {
+	border: none;
+	border-top: 1px solid #babfc0;
+}
+
+.atg .v-form-nocaption fieldset {
+	border: none;
+}
+
+.atg .v-form-nocaption legend {
+	display: none;
+}
+
+.atg .v-form legend {
+	margin: 0 0 0 20px;
+	padding: 0 5px;
+	font-weight: bold;
+	color: #222;
+}
+
+.atg .black .v-form legend {
+	color: #e3e6e8;
+}
+
+.atg .v-label {
+	line-height: 18px;
+}
+
+.atg .white .black, .atg .blue .black {
+	color: #C9CCCE;
+	text-shadow: 0 0 1px #000;
+}
+
+.atg .black .v-label-h1, .atg .black .v-label-h2, .atg .black .v-caption-h1, .atg .black .v-caption-h2, .atg .white .black .v-label-h1, .atg .white .black .v-label-h2, .atg .white .black .v-caption-h1, .atg .white .black .v-caption-h2, .atg .blue .black .v-label-h1, .atg .blue .black .v-label-h2, .atg .blue .black .v-caption-h1, .atg .blue .black .v-caption-h2 {
+	color: #fff;
+	text-shadow: rgba(0, 0, 0, 0.8) 0 2px 2px;
+}
+
+.atg .black .v-label-light, .atg .white .black .v-label-light {
+	color: #72787c;
+}
+
+.atg .black .v-label hr, .atg .white .black .v-label hr {
+	background: #0c0d0e;
+	color: #0c0d0e;
+	border-bottom-color: #292b2e;
+}
+
+.atg.v-app .white, .atg .v-window .white, .atg.v-app .blue, .atg .v-window .blue {
+	color: #222;
+	text-shadow: none;
+}
+
+.atg .blue .v-label-h1, .atg .blue .v-label-h2, .atg .blue .v-caption-h1, .atg .blue .v-caption-h2, .atg .white .blue .v-label-h1, .atg .white .blue .v-label-h2, .atg .white .blue .v-caption-h1, .atg .white .blue .v-caption-h2 {
+	color: #fff;
+	text-shadow: rgba(0, 0, 0, 0.3) 0 1px 1px;
+}
+
+.atg .blue .v-label-light, .atg .white .blue .v-label-light {
+	color: #6e7c83;
+}
+
+.atg .blue .v-label hr, .atg .white .blue .v-label hr {
+	background: #a3bcc9;
+	color: #a3bcc9;
+	border-bottom-color: #cfe2eb;
+}
+
+.atg .v-label-h1, .atg .v-label-h2, .atg .v-caption-h1, .atg .v-caption-h2, .atg .white .v-label-h1, .atg .white .v-label-h2, .atg .white .v-caption-h1, .atg .white .v-caption-h2 {
+	font-family: Helvetica, Arial, "Lucida Grande", Geneva, Tahoma, Verdana, sans-serif;
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: bold;
+	color: #44698b;
+	letter-spacing: -0.02em;
+	text-shadow: #fff 0 -1px 1px;
+}
+
+.atg .v-label-h2, .atg .v-caption-h2, .atg .white .v-label-h2, .atg .white .v-caption-h2 {
+	font-size: 16px;
+	line-height: 22px;
+}
+
+.atg .v-label-light, .atg .white .v-label-light {
+	font-size: 11px;
+	line-height: 13px;
+	color: #707070;
+}
+
+.atg .v-label hr, .atg .white .v-label hr {
+	height: 2px;
+	overflow: hidden;
+	background: #dcdcdc;
+	color: #dcdcdc;
+	border: none;
+	border-bottom: 1px solid #fff;
+}
+
+.v-sa .atg .v-label hr, .v-ie8 .atg .v-label hr {
+	height: 1px;
+}
+
+.atg .v-table .v-label {
+	line-height: normal;
+}
+
+.atg .v-orderedlayout-margin-top, .atg .v-horizontallayout-margin-top, .atg .v-verticallayout-margin-top, .atg .v-layout.v-margin-top {
+	padding-top: 18px;
+}
+
+.atg .v-orderedlayout-margin-right, .atg .v-horizontallayout-margin-right, .atg .v-verticallayout-margin-right, .atg .v-layout.v-margin-right {
+	padding-right: 18px;
+}
+
+.atg .v-orderedlayout-margin-bottom, .atg .v-horizontallayout-margin-bottom, .atg .v-verticallayout-margin-bottom, .atg .v-layout.v-margin-bottom {
+	padding-bottom: 18px;
+}
+
+.atg .v-orderedlayout-margin-left, .atg .v-horizontallayout-margin-left, .atg .v-verticallayout-margin-left, .atg .v-layout.v-margin-left {
+	padding-left: 18px;
+}
+
+.atg .v-orderedlayout-spacing-on, .atg .v-horizontallayout-spacing-on, .atg .v-verticallayout-spacing-on {
+	padding-top: 7px;
+	padding-left: 6px;
+}
+
+.atg .v-spacing {
+	height: 7px;
+	width: 6px;
+}
+
+.atg .v-verticallayout-blue, .atg .v-horizontallayout-blue, .atg .v-orderedlayout-blue, .atg .v-gridlayout-blue, .atg .v-csslayout-blue, .atg .v-formlayout-blue, .atg .v-splitpanel-vertical-blue, .atg .v-splitpanel-horizontal-blue {
+	background-color: #bcd3de;
+}
+
+.atg .v-panel-content > div.blue {
+	background-color: #bcd3de;
+}
+
+.atg .v-verticallayout-white, .atg .v-horizontallayout-white, .atg .v-orderedlayout-white, .atg .v-gridlayout-white, .atg .v-csslayout-white, .atg .v-formlayout-white, .atg .v-splitpanel-vertical-white, .atg .v-splitpanel-horizontal-white {
+	background-color: #fff;
+	color: #222;
+}
+
+.atg .v-panel-content > div.white {
+	background-color: #fff;
+	color: #222;
+}
+
+.atg .v-verticallayout-black, .atg .v-horizontallayout-black, .atg .v-orderedlayout-black, .atg .v-gridlayout-black, .atg .v-csslayout-black, .atg .v-formlayout-black, .atg .v-splitpanel-vertical-black, .atg .v-splitpanel-horizontal-black {
+	background: #1e2022 url(../reindeer/layouts/img/black-bg.png) repeat-x;
+}
+
+.atg .v-panel-content > div.black {
+	background: #1e2022 url(../reindeer/layouts/img/black-bg.png) repeat-x;
+}
+
+.atg .v-link a:link span {
+	color: #1b699f;
+}
+
+.atg .v-link a:visited span {
+	color: #5c7485;
+}
+
+.atg .v-link a:hover span {
+	color: #2483c4;
+}
+
+.atg .v-menubar {
+	height: 23px;
+	background: #323336 repeat-x;
+	background-image: url(../reindeer/menubar/img/bg.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+	color: #d1d3d6;
+	text-shadow: rgba(0, 0, 0, 0.9) 0 1px 0;
+	padding: 0 8px;
+}
+
+.atg .v-menubar .v-menubar-menuitem {
+	padding: 3px 8px;
+	height: 17px;
+	line-height: 16px;
+}
+
+.atg .v-menubar .v-menubar-menuitem:hover {
+	color: #fff;
+}
+
+.atg .v-menubar-submenu {
+	background: #f8f8f9;
+	border: none;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	overflow: hidden;
+	padding: 4px 0;
+}
+
+.atg .v-menubar-submenu .v-menubar-menuitem {
+	padding: 1px 26px 1px 10px;
+	line-height: 16px;
+}
+
+.atg .v-menubar-submenu .v-menubar-menuitem-caption .v-icon {
+	vertical-align: middle;
+}
+
+.atg .v-menubar .v-menubar-menuitem-selected, .atg .v-menubar-submenu .v-menubar-menuitem-selected {
+	background: #4d749f repeat-x;
+	background-image: url(../reindeer/common/img/sel-bg.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+	color: #fff;
+	text-shadow: 0 1px 0 #3b5a7a;
+}
+
+.atg .v-menubar .v-menubar-menuitem-selected {
+	background-image: url(../reindeer/menubar/img/menu-sel-bg.png);/** sprite-ref: verticals; sprite-alignment: repeat; sprite-margin-bottom: 1px  */
+}
+
+.atg .v-menubar-submenu .v-menubar-submenu-indicator {
+	background: transparent url(../reindeer/menubar/img/submenu-icon.png) no-repeat right 70%;
+	width: 26px;
+	height: 16px;
+	text-indent: -9999px;
+	font-size: 10.8px;
+}
+
+.atg .v-menubar-submenu .v-menubar-menuitem-selected .v-menubar-submenu-indicator {
+	background-image: url(../reindeer/menubar/img/submenu-icon-hover.png);
+}
+
+.atg .v-menubar-submenu-check-column .v-menubar-menuitem {
+	padding-left: 6px;
+}
+
+.atg .v-menubar-submenu-check-column .v-menubar-menuitem-caption {
+	padding-left: 18px;
+}
+
+.atg .v-menubar-submenu .v-menubar-menuitem-checked .v-menubar-menuitem-caption {
+	background: transparent url(../reindeer/menubar/img/checked.png) no-repeat left;
+}
+
+.atg .v-menubar-submenu .v-menubar-menuitem-unchecked .v-menubar-menuitem-caption {
+	background: transparent url(../reindeer/menubar/img/unchecked.png) no-repeat left;
+}
+
+.atg .v-menubar-submenu .v-menubar-menuitem-selected-checked .v-menubar-menuitem-caption {
+	background: transparent url(../reindeer/menubar/img/checked-selected.png) no-repeat left;
+}
+
+.atg .v-menubar-submenu .v-menubar-menuitem-selected-unchecked .v-menubar-menuitem-caption {
+	background: transparent url(../reindeer/menubar/img/unchecked-selected.png) no-repeat left;
+}
+
+.atg .v-Notification {
+	color: #fff;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	font-size: 16px;
+	background: #c8ccd0;
+	font-weight: bold;
+}
+
+.v-ie9 .atg .v-Notification H1, .v-ie10 .atg .v-Notification H1 {
+	font-weight: bold;
+}
+
+.atg .v-Notification p {
+	line-height: 1.3;
+}
+
+.atg .v-Notification-warning {
+	background: #fdf3b5;
+	color: #ca9a61;
+	border: 3px solid #fee3af;
+}
+
+.atg .v-Notification-error {
+	background: #b40000 url(../reindeer/notification/img/error-close.png) no-repeat right top;
+	border: 3px solid #ca3030;
+}
+
+.atg .v-Notification-tray {
+	margin: 0 5px 5px 0;
+	background: #3b3c3e;
+	border: 2px solid #585b5c;
+	padding: 0.8em 0.9em;
+}
+
+.atg .v-Notification-tray h1 {
+	font-size: 14px;
+	line-height: 18px;
+}
+
+.atg .v-Notification-tray p {
+	font-size: 12px;
+	font-weight: normal;
+}
+
+.atg .v-Notification-system {
+	background-color: #b40000;
+}
+
+.atg .blue .v-panel-caption, .atg .blue .v-panel-nocaption, .atg .blue .v-panel-content {
+	border-color: #a8bcc5;
+}
+
+.atg .v-panel-caption, .atg .v-panel-nocaption, .atg .white .v-panel-caption, .atg .white .v-panel-nocaption {
+	border-bottom: 1px solid #e5e5e5;
+	line-height: 16px;
+}
+
+.v-webkit .atg .v-panel-caption, .v-webkit .atg .v-panel-nocaption, .v-gecko .atg .v-panel-caption, .v-gecko .atg .v-panel-nocaption, .v-ie9 .atg .v-panel-caption, .v-ie9 .atg .v-panel-nocaption, .v-ie10 .atg .v-panel-caption, .v-ie10 .atg .v-panel-nocaption {
+	border-bottom-color: rgba(0, 0, 0, 0.08);
+}
+
+.v-webkit .atg .v-panel-content, .v-gecko .atg .v-panel-content, .v-ie9 .atg .v-panel-content, .v-ie10 .atg .v-panel-content {
+	border-top-color: rgba(0, 0, 0, 0.07);
+}
+
+.v-webkit .atg .v-panel-deco, .v-gecko .atg .v-panel-deco, .v-ie9 .atg .v-panel-deco, .v-ie10 .atg .v-panel-deco {
+	border-top-color: rgba(0, 0, 0, 0.1);
+	background: rgba(0, 0, 0, 0.08);
+}
+
+.atg .v-panel-caption {
+	padding-bottom: 2px;
+}
+
+.atg .v-panel-content, .atg .white .v-panel-content {
+	background: #fff;
+	border: 1px solid #dcdcdc;
+	border-bottom: none;
+	border-top: none;
+}
+
+.atg .blue .v-panel-deco {
+	border-color: #92a3ac;
+	background: #adc2cd;
+}
+
+.atg .v-panel-deco, .atg .white .v-panel-deco {
+	height: 1px;
+	border-top: 1px solid #bebebe;
+	background: #e2e2e2;
+	overflow: hidden;
+}
+
+.atg .v-panel-caption .v-errorindicator {
+	height: 16px;
+	width: 13px;
+	background: url(../reindeer/common/icons/error.png) no-repeat 50%;
+	display: inline;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.atg .v-panel-light .v-panel-caption-light, .atg .v-panel-light .v-panel-nocaption-light {
+	border: none;
+}
+
+.atg .v-panel-light .v-panel-content-light {
+	border: none;
+	background: transparent;
+}
+
+.atg .v-panel-light .v-panel-deco-light {
+	height: 0;
+	border: none;
+}
+
+.atg .v-popupview {
+	color: #1b699f;
+}
+
+.atg .v-popupview:hover {
+	color: #2483c4;
+}
+
+.atg .v-popupview-popup {
+	background: #fff;
+	padding: 3px;
+}
+
+.atg .v-progressbar-wrapper {
+	background: #dfe2e4 url(../reindeer/progressindicator/img/base.gif) repeat-x;
+	border: 1px solid #bfbfbf;
+}
+
+.atg .v-disabled .v-progressbar-wrapper {
+	background-image: url(../reindeer/progressindicator/img/disabled.gif);
+}
+
+.atg .v-progressbar-indicator {
+	background: #f7f9f9 url(../reindeer/progressindicator/img/progress.png);
+}
+
+.atg .v-progressindicator-wrapper {
+	background: #dfe2e4 url(../reindeer/progressindicator/img/base.gif) repeat-x;
+	border: 1px solid #bfbfbf;
+}
+
+.atg .v-disabled .v-progressindicator-wrapper {
+	background-image: url(../reindeer/progressindicator/img/disabled.gif);
+}
+
+.atg .v-progressindicator-indicator {
+	background: #f7f9f9 url(../reindeer/progressindicator/img/progress.png);
+}
+
+.atg .v-filterselect {
+	height: 24px;
+	background-repeat: no-repeat;
+	background-image: url(../reindeer/select/img/left.png);/** sprite-ref: verticals; sprite-margin-bottom: 1px */
+	padding-left: 2px;
+	padding-right: 25px;
+}
+
+.atg.v-app .v-filterselect-input, .atg .v-window .v-filterselect-input, .atg .v-popupview-popup .v-filterselect-input {
+	background: transparent repeat-x;
+	background-image: url(../reindeer/select/img/center.png);/** sprite-ref: verticals; sprite-alignment: repeat; sprite-margin-bottom: 1px */
+	border: none;
+	height: 24px;
+}
+
+.atg.v-app input.v-filterselect-input, .atg .v-window input.v-filterselect-input, .atg .v-popupview-popup input.v-filterselect-input {
+	padding: 4px 0 4px 2px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.atg .v-filterselect-prompt .v-filterselect-input {
+	font-style: normal;
+}
+
+.atg .v-filterselect-input:focus {
+	outline: none;
+}
+
+.atg .v-filterselect-focus {
+	background-image: url(../reindeer/select/img/left-focus.png);/** sprite-ref: verticals; sprite-margin-bottom: 1px */
+}
+
+.atg .v-filterselect-focus .v-filterselect-input {
+	background-image: url(../reindeer/select/img/center-focus.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+}
+
+.atg .v-filterselect-button {
+	overflow: hidden;
+	width: 25px;
+	height: 24px;
+	background-position: 0 0;
+	background-image: url(../reindeer/select/img/right.png);/** sprite-ref: verticals ; sprite-margin-bottom: 1px */
+	cursor: default;
+	margin-right: -25px;
+}
+
+.atg .v-filterselect-button:hover {
+	background-image: url(../reindeer/select/img/right-hover.png);/** sprite-ref: verticals */
+}
+
+.atg .v-filterselect-button:active {
+	background-image: url(../reindeer/select/img/right-pressed.png);/** sprite-ref: verticals */
+}
+
+.atg .v-filterselect-focus .v-filterselect-button {
+	background-image: url(../reindeer/select/img/right-focus.png);/** sprite-ref: verticals */
+}
+
+.atg .v-filterselect-focus .v-filterselect-button:hover {
+	background-image: url(../reindeer/select/img/right-focus-hover.png);/** sprite-ref: verticals */
+}
+
+.atg .v-filterselect-focus .v-filterselect-button:active {
+	background-image: url(../reindeer/select/img/right-focus-pressed.png);/** sprite-ref: verticals */
+}
+
+.atg .v-disabled .v-filterselect-button:hover, .atg .v-readonly .v-filterselect-button:hover {
+	background-image: url(../reindeer/select/img/right.png);/** sprite-ref: verticals */
+}
+
+.atg .v-filterselect-suggestpopup {
+	background: #f8f8f9;
+	border: none;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	overflow: hidden;
+}
+
+.atg .v-filterselect-suggestmenu {
+	margin: 4px 0;
+}
+
+.atg .v-filterselect-suggestmenu .gwt-MenuItem {
+	padding: 1px 8px;
+	height: 16px;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	cursor: default;
+}
+
+.atg .v-filterselect-suggestmenu .gwt-MenuItem .v-icon {
+	margin-right: 3px;
+}
+
+.atg .v-filterselect-suggestmenu .gwt-MenuItem-selected {
+	background: transparent repeat-x;
+	background-image: url(../reindeer/common/img/sel-bg.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+	color: #fff;
+	text-shadow: #3b5a7a 0 1px 0;
+}
+
+.atg .v-filterselect-nextpage, .atg .v-filterselect-nextpage-off, .atg .v-filterselect-prevpage-off, .atg .v-filterselect-prevpage {
+	height: 11px;
+	width: 100%;
+	background: transparent;
+	margin-bottom: -4px;
+}
+
+.atg .v-filterselect-nextpage, .atg .v-filterselect-nextpage-off {
+	margin: -4px 0 0;
+}
+
+.atg .v-filterselect-nextpage:hover {
+	background-repeat: repeat-x;
+	background-image: url(../reindeer/select/img/page-down-hover.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+}
+
+.atg .v-filterselect-prevpage:hover {
+	background-repeat: repeat-x;
+	background-image: url(../reindeer/select/img/page-up-hover.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+}
+
+.atg .v-filterselect-nextpage:active {
+	background-repeat: repeat-x;
+	background-image: url(../reindeer/select/img/page-down-pressed.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+}
+
+.atg .v-filterselect-prevpage:active {
+	background-repeat: repeat-x;
+	background-image: url(../reindeer/select/img/page-up-pressed.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+}
+
+.atg .v-filterselect-nextpage-off span, .atg .v-filterselect-prevpage-off span {
+	display: none;
+}
+
+.atg .v-filterselect-nextpage span, .atg .v-filterselect-prevpage span {
+	display: block;
+	height: 11px;
+	width: 100%;
+	overflow: hidden;
+	text-indent: -99999px;
+	background: transparent no-repeat center 3px;
+	background-image: url(../reindeer/select/img/arrow-down.png);/** sprite-ref: verticals; sprite-margin-top: 3px; sprite-margin-bottom: 3px; sprite-alignment: center */
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+}
+
+.atg .v-filterselect-prevpage span {
+	background-image: url(../reindeer/select/img/arrow-up.png);/** sprite-ref: verticals; sprite-margin-top: 3px; sprite-margin-bottom: 3px; sprite-alignment: center */
+}
+
+.atg .v-filterselect-nextpage:hover span {
+	background-image: url(../reindeer/select/img/arrow-down-hover.png);/** sprite-ref: verticals; sprite-margin-top: 3px; sprite-margin-bottom: 3px; sprite-alignment: center */
+}
+
+.atg .v-filterselect-prevpage:hover span {
+	background-image: url(../reindeer/select/img/arrow-up-hover.png);/** sprite-ref: verticals; sprite-margin-top: 3px; sprite-margin-bottom: 3px; sprite-alignment: center */
+}
+
+.atg .v-filterselect-status {
+	text-shadow: #e9eaeb 0 1px 0;
+	font-size: 11px;
+	line-height: normal;
+	width: 100%;
+	padding: 3px 0;
+	height: 11px;
+	overflow: hidden;
+	background-repeat: repeat-x;
+	background-image: url(../reindeer/select/img/status-bg.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+	-moz-border-radius-bottomleft: 3px;
+	-moz-border-radius-bottomright: 3px;
+	-webkit-border-bottom-left-radius: 3px;
+	-webkit-border-bottom-right-radius: 3px;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+}
+
+.v-ie .atg .v-filterselect-suggestmenu .gwt-MenuItem-selected {
+	background: transparent url(../reindeer/common/img/sel-bg.png) repeat-x;
+}
+
+.v-ie .atg .v-filterselect-nextpage:hover {
+	background: transparent url(../reindeer/select/img/page-down-hover.png) repeat-x;
+}
+
+.v-ie .atg .v-filterselect-prevpage:hover {
+	background: transparent url(../reindeer/select/img/page-up-hover.png) repeat-x;
+}
+
+.v-ie .atg .v-filterselect-prevpage span {
+	background: transparent url(../reindeer/select/img/arrow-up.png) no-repeat center 3px;
+}
+
+.v-ie .atg .v-filterselect-nextpage span {
+	background: transparent url(../reindeer/select/img/arrow-down.png) no-repeat center 3px;
+}
+
+.v-ie .atg .v-filterselect-prevpage:hover span {
+	background: transparent url(../reindeer/select/img/arrow-up-hover.png) no-repeat center 3px;
+}
+
+.v-ie .atg .v-filterselect-nextpage:hover span {
+	background: transparent url(../reindeer/select/img/arrow-down-hover.png) no-repeat center 3px;
+}
+
+.v-ie .atg .v-filterselect-status {
+	background: transparent url(../reindeer/select/img/status-bg.png) repeat-x;
+}
+
+.atg .v-filterselect .v-icon {
+	width: 16px;
+	position: relative;
+}
+
+.atg .v-filterselect .v-icon + .v-filterselect-input {
+	margin-left: -16px;
+	padding-left: 18px;
+}
+
+.atg .black .v-filterselect {
+	background-image: url(../reindeer/select/img/black/left-black.png);/** sprite-ref: black-verticals; sprite-margin-bottom: 1px */
+}
+
+.atg.v-app .black .v-filterselect-input, .atg .v-window .black .v-filterselect-input, .atg .v-window-black .v-filterselect-input, .atg .v-popupview-popup .black .v-filterselect-input {
+	color: #c9ccce;
+	background-image: url(../reindeer/select/img/black/center-black.png);/** sprite-ref: black-verticals; sprite-alignment: repeat; sprite-margin-bottom: 1px */
+}
+
+.atg .black .v-filterselect-focus {
+	background-image: url(../reindeer/select/img/black/left-black-focus.png);/** sprite-ref: black-verticals; sprite-margin-bottom: 1px */
+}
+
+.atg .black .v-filterselect-focus .v-filterselect-input {
+	background-image: url(../reindeer/select/img/black/center-black-focus.png);/** sprite-ref: black-verticals; sprite-alignment: repeat; sprite-margin-bottom: 1px */
+}
+
+.atg .black .v-filterselect-button {
+	background-image: url(../reindeer/select/img/black/right-black.png);/** sprite-ref: black-verticals; sprite-margin-bottom: 1px */
+}
+
+.atg .black .v-filterselect-button:hover {
+	background-image: url(../reindeer/select/img/black/right-black-hover.png);/** sprite-ref: black-verticals; sprite-margin-bottom: 1px */
+}
+
+.atg .black .v-filterselect-button:active {
+	background-image: url(../reindeer/select/img/black/right-black-pressed.png);/** sprite-ref: black-verticals; sprite-margin-bottom: 1px */
+}
+
+.atg .black .v-filterselect-focus .v-filterselect-button {
+	background-image: url(../reindeer/select/img/black/right-black-focus.png);/** sprite-ref: black-verticals; sprite-margin-bottom: 1px */
+}
+
+.atg .black .v-filterselect-focus .v-filterselect-button:hover {
+	background-image: url(../reindeer/select/img/black/right-black-focus-hover.png);/** sprite-ref: black-verticals; sprite-margin-bottom: 1px */
+}
+
+.atg .black .v-filterselect-focus .v-filterselect-button:active {
+	background-image: url(../reindeer/select/img/black/right-black-focus-pressed.png);/** sprite-ref: black-verticals; sprite-margin-bottom: 1px */
+}
+
+.atg .black .v-disabled .v-filterselect-button:hover, .atg .black .v-readonly .v-filterselect-button:hover {
+	background-image: url(../reindeer/select/img/black/right-black.png);/** sprite-ref: black-verticals; sprite-margin-bottom: 1px */
+}
+
+.atg .black .v-filterselect-prompt .v-filterselect-input {
+	color: #5f6366;
+}
+
+.atg .black .v-select select, .atg .black .v-select-twincol select {
+	border-color: #38393a;
+	border-top-color: #2c2d2e;
+	border-bottom-color: #3e3f3f;
+	background: #151717;
+	color: #c9ccce;
+}
+
+.atg .v-slider {
+	border-top: 1px solid #9a9c9e;
+	border-bottom: 1px solid #bdbfc1;
+	margin: 4px 0;
+}
+
+.atg .v-slider-base {
+	height: 1px;
+	background: #e0e2e2;
+	border-top: 1px solid #adb0b1;
+	border-left: 1px solid #a0a3a6;
+	border-right: 1px solid #a0a3a6;
+}
+
+.atg .v-slider-handle {
+	background: transparent;
+	background-image: url(../reindeer/slider/img/knob.png);/** sprite-ref: verticals */
+	width: 10px;
+	height: 10px;
+	margin-top: -5px;
+}
+
+.atg .v-slider-handle-active {
+	background-image: url(../reindeer/slider/img/knob-pressed.png);/** sprite-ref: verticals */
+}
+
+.atg .v-slider-vertical {
+	width: 2px;
+	margin: 0 5px;
+	border: none;
+	border-left: 1px solid #9a9c9e;
+	border-right: 1px solid #bdbfc1;
+}
+
+.atg .v-slider-vertical .v-slider-base {
+	width: 2px;
+	border-left: 1px solid #adb0b1;
+	border-right: none;
+	border-top: 1px solid #adb0b1;
+	border-bottom: 1px solid #adb0b1;
+}
+
+.atg .v-slider-vertical .v-slider-handle {
+	width: 10px;
+	height: 10px;
+	margin-left: -5px;
+}
+
+.atg .v-splitpanel-hsplitter, .atg .v-splitpanel-hsplitter-locked {
+	width: 7px;
+	background-repeat: repeat-y;
+	background-image: url(../reindeer/splitpanel/img/hor-bg.png);/** sprite-ref: horizontals; sprite-alignment: repeat */
+}
+
+.atg .v-splitpanel-hsplitter div {
+	width: 7px;
+	height: 100%;
+	background: transparent;
+	background-repeat: no-repeat;
+	background-position: 50%;
+	background-image: url(../reindeer/splitpanel/img/hor-handle.png);/** sprite-ref: horizontals; sprite-alignment: center */
+}
+
+.atg .v-splitpanel-vsplitter, .atg .v-splitpanel-vsplitter-locked {
+	height: 7px;
+	background-repeat: repeat-x;
+	background-image: url(../reindeer/splitpanel/img/ver-bg.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+}
+
+.atg .v-splitpanel-vsplitter div {
+	height: 7px;
+	background: transparent;
+	background-repeat: no-repeat;
+	background-position: 50%;
+	background-image: url(../reindeer/splitpanel/img/ver-handle.png);/** sprite-ref: verticals; sprite-alignment: center */
+}
+
+.atg .blue .v-splitpanel-hsplitter-small, .atg .blue .v-splitpanel-hsplitter-small-locked {
+	background: #7c8a91;
+}
+
+.atg .black .v-splitpanel-hsplitter-small, .atg .black .v-splitpanel-hsplitter-small-locked {
+	background: #4e5253;
+}
+
+.atg .v-splitpanel-hsplitter-small, .atg .v-splitpanel-hsplitter-small-locked, .atg .white .v-splitpanel-hsplitter-small, .atg .white .v-splitpanel-hsplitter-small-locked {
+	width: 1px;
+	background: #949698;
+}
+
+.atg .v-splitpanel-vsplitter-small, .atg .v-splitpanel-vsplitter-small-locked, .atg .white .v-splitpanel-vsplitter-small, .atg .white .v-splitpanel-vsplitter-small-locked {
+	height: 1px;
+	background: #949698;
+}
+
+.atg .v-splitpanel-hsplitter-small div {
+	width: 5px;
+	margin-left: -2px;
+	background: transparent;
+}
+
+.atg .v-splitpanel-vsplitter-small div {
+	height: 5px;
+	margin-top: -2px;
+	background: transparent;
+}
+
+.atg .blue .v-table-header-wrap {
+	border-color: #92a2aa;
+}
+
+.atg .blue .v-table-body {
+	border-color: #92a2aa;
+	border-top-color: #c2c3c4;
+}
+
+.atg .v-table-header-wrap, .atg .white .v-table-header-wrap, .atg .v-table-footer-wrap, .atg .white .v-table-footer-wrap, .atg .v-table-header-drag {
+	border-color: #c2c3c4;
+	background: transparent repeat-x;
+	background-image: url(../reindeer/table/img/header-bg-light.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+	height: 20px;
+	text-transform: uppercase;
+	font-size: 10px;
+	font-weight: bold;
+	color: #222;
+	text-shadow: #f3f5f8 0 1px 0;
+	line-height: normal;
+}
+
+.atg .v-table-footer-wrap, .atg .white .v-table-footer-wrap {
+	text-transform: none;
+	font-size: 12px;
+	font-weight: normal;
+}
+
+.atg .v-table-footer td, .atg .white .v-table-footer td {
+	border-color: #c2c3c4;
+}
+
+.atg .v-table-footer-container {
+	padding-right: 7px;
+}
+
+.atg .v-table-header, .atg .v-table-footer, .atg .v-table-footer table {
+	height: 20px;
+}
+
+.atg .v-table-caption-container, .atg .v-table-header-drag {
+	padding-top: 4px;
+	padding-right: 4px;
+}
+
+.atg .v-table-caption-container .v-icon, .atg .v-table-header-drag .v-icon {
+	height: 16px;
+	margin: -4px 3px 0 0;
+	vertical-align: middle;
+}
+
+.v-ie .atg .v-table-caption-container .v-icon, .v-ie .atg .v-table-header-drag .v-icon {
+	margin-top: -3px;
+}
+
+.atg .v-table-resizer {
+	height: 20px;
+	width: 2px;
+	background: transparent;
+	border-right: 1px solid #c2c3c4;
+}
+
+.atg .v-table-sort-indicator {
+	background: transparent;
+	width: 0px;
+	height: 20px;
+}
+
+.atg .v-table-header-cell-asc .v-table-sort-indicator {
+	background: transparent no-repeat right 7px;
+	background-image: url(../reindeer/table/img/asc-light.png);/** sprite-ref: verticals; sprite-alignment: right; sprite-margin-top: 7px; sprite-margin-bottom: 6px; sprite-margin-right: 6px; */
+	width: 16px;
+}
+
+.atg .v-table-header-cell-desc .v-table-sort-indicator {
+	background: transparent no-repeat right 7px;
+	background-image: url(../reindeer/table/img/desc-light.png);/** sprite-ref: verticals; sprite-alignment: right; sprite-margin-top: 7px; sprite-margin-bottom: 6px; sprite-margin-right: 6px; */
+	width: 16px;
+}
+
+.atg .v-table-body, .atg .white .v-table-body {
+	border-color: #c2c3c4;
+	background: #fff;
+}
+
+.atg .v-table-cell-content {
+	padding-top: 0;
+	border-right-color: #d3d4d5;
+	vertical-align: top;
+}
+
+.atg .v-table-cell-wrapper {
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.atg .v-table-row-odd {
+	background: #eff0f1;
+}
+
+.atg .v-table-generated-row {
+	background: #dcdee0;
+	text-transform: uppercase;
+	font-size: 10px;
+	font-weight: bold;
+	color: #222;
+	text-shadow: #f3f5f8 0 1px 0;
+	line-height: normal;
+}
+
+.atg .v-table-generated-row .v-table-cell-wrapper {
+	padding-top: 4px;
+	padding-bottom: 5px;
+}
+
+.atg .v-table-cell-content:last-child {
+	border-right-color: transparent;
+}
+
+.atg .v-table .v-selected, .atg .black .v-table .v-selected {
+	background: #4d749f url(../reindeer/common/img/sel-bg.png) repeat-x;
+	color: #fff;
+	text-shadow: #3b5a7a 0 1px 0;
+}
+
+.atg .v-table .v-selected .v-table-cell-content {
+	border-right-color: #466c90;
+}
+
+.atg .v-table-column-selector {
+	width: 16px;
+	height: 20px;
+	margin-top: -20px;
+	background: transparent no-repeat;
+	background-image: url(../reindeer/table/img/col-sel-light.png);/** sprite-ref: verticals */
+}
+
+.atg .v-table-column-selector:active {
+	background-image: url(../reindeer/table/img/col-sel-light-pressed.png);/** sprite-ref: verticals */
+}
+
+.atg .v-table-focus-slot-left {
+	border-left: 1px solid #222;
+	margin-bottom: -20px;
+	width: auto;
+}
+
+.atg .v-table-focus-slot-right {
+	border-right-color: #222;
+	margin-right: 0;
+}
+
+.atg .v-table-header-drag {
+	padding-left: 6px;
+	height: 16px;
+}
+
+.atg .v-table-header-drag img {
+	height: 16px;
+	margin: -3px 3px 0 0;
+}
+
+.atg .v-table-scrollposition {
+	width: auto;
+	background: transparent;
+	border: none;
+}
+
+.atg .v-table-scrollposition span {
+	background: transparent repeat-x;
+	background-image: url(../reindeer/table/img/scroll-indic-bg.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+	border: 1px solid #939494;
+	border: none;
+	border-radius-bottomleft: 4px;
+	border-radius-bottomright: 4px;
+	-moz-border-radius-bottomleft: 4px;
+	-moz-border-radius-bottomright: 4px;
+	-webkit-border-bottom-left-radius: 4px;
+	-webkit-border-bottom-right-radius: 4px;
+	height: 13px;
+	padding: 4px 30px;
+	white-space: nowrap;
+	color: #222;
+	text-shadow: #fff 0 1px 0;
+	position: relative;
+	top: 1px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.5) 0 1px 2px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.5) 0 1px 2px;
+}
+
+.atg .v-table-borderless .v-table-scrollposition span {
+	top: 0;
+}
+
+.atg .v-contextmenu .v-on, .atg .v-contextmenu .v-off {
+	display: inline-block;
+	zoom: 1;
+	background: transparent no-repeat 0 4px;
+	background-image: url(../reindeer/common/icons/bullet.png);/** sprite-ref: verticals; sprite-margin-top: 4px; sprite-margin-bottom: 4px */
+	padding-left: 12px;
+	padding-right: 4px;
+}
+
+.atg .v-contextmenu .v-off {
+	background-image: none;
+	color: #666;
+}
+
+.atg .v-contextmenu .gwt-MenuItem-selected .v-on {
+	background-image: url(../reindeer/common/icons/bullet-white.png);/** sprite-ref: verticals; sprite-margin-top: 4px; sprite-margin-bottom: 5px */
+}
+
+.atg .v-table-strong .v-table-header-wrap, .atg .v-table-strong .v-table-header-drag {
+	border-color: #2b3033;
+	border-top-color: #2b3033;
+	background-image: url(../reindeer/table/img/header-bg.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+	color: #e7e9ea;
+	text-shadow: #000 0 -1px 0;
+}
+
+.atg .v-table-strong .v-table-body {
+	border-top-color: #2b3033;
+}
+
+.atg .v-table-strong .v-table-resizer {
+	border-right-color: #1c1f21;
+}
+
+.atg .v-table-strong .v-table-header-cell-asc .v-table-sort-indicator {
+	background-image: url(../reindeer/table/img/asc.png);/** sprite-ref: verticals; sprite-alignment: right; sprite-margin-top: 7px; sprite-margin-bottom: 6px; sprite-margin-right: 6px; */
+}
+
+.atg .v-table-strong .v-table-header-cell-desc .v-table-sort-indicator {
+	background-image: url(../reindeer/table/img/desc.png);/** sprite-ref: verticals; sprite-alignment: right; sprite-margin-top: 7px; sprite-margin-bottom: 6px; sprite-margin-right: 6px; */
+}
+
+.atg .v-table-strong .v-table-column-selector {
+	background-image: url(../reindeer/table/img/col-sel.png);/** sprite-ref: verticals */
+}
+
+.atg .v-table-strong .v-table-column-selector:active {
+	background-image: url(../reindeer/table/img/col-sel-pressed.png);/** sprite-ref: verticals */
+}
+
+.atg .v-table-strong .v-table-focus-slot-left, .atg .v-table-strong .v-table-focus-slot-right {
+	border-color: #9ca1a5;
+}
+
+.atg .black .v-table-header-wrap, .atg .black .v-table-header-drag {
+	border-color: #252729;
+	background-image: url(../reindeer/table/img/header-bg-black.png);/** sprite-ref: black-verticals; sprite-alignment: repeat */
+	color: #e7eaee;
+	text-shadow: #000 0 -1px 0;
+}
+
+.atg .black .v-table-resizer {
+	border-right-color: #252729;
+}
+
+.atg .black .v-table-header-cell-asc .v-table-sort-indicator {
+	background-image: url(../reindeer/table/img/asc.png);/** sprite-ref: black-verticals; sprite-alignment: right; sprite-margin-top: 7px; sprite-margin-bottom: 6px; sprite-margin-right: 6px; */
+}
+
+.atg .black .v-table-header-cell-desc .v-table-sort-indicator {
+	background-image: url(../reindeer/table/img/desc.png);/** sprite-ref: black-verticals; sprite-alignment: right; sprite-margin-top: 7px; sprite-margin-bottom: 6px; sprite-margin-right: 6px; */
+}
+
+.atg .black .v-table-column-selector {
+	background-image: url(../reindeer/table/img/col-sel-black.png);/** sprite-ref: black-verticals */
+}
+
+.atg .black .v-table-column-selector:active {
+	background-image: url(../reindeer/table/img/col-sel-black-pressed.png);/** sprite-ref: black-verticals */
+}
+
+.atg .black .v-table-focus-slot-left, .atg .black .v-table-focus-slot-right {
+	border-color: #9ca1a5;
+}
+
+.atg .black .v-table-body {
+	border-color: #252729;
+	background: transparent;
+}
+
+.atg .black .v-table-cell-content {
+	border-right-color: #252729;
+	border-bottom: 1px solid #252729;
+}
+
+.atg .black .v-table-cell-wrapper {
+	padding-bottom: 2px;
+}
+
+.atg .black .v-table-row-odd {
+	background: transparent;
+}
+
+.atg .black .v-table .v-selected .v-table-cell-content {
+	border-bottom: 1px solid #4d749f;
+}
+
+.atg .v-table-borderless .v-table-header-wrap, .atg .v-table-borderless .v-table-body {
+	border: none;
+}
+
+.atg .v-tabsheet-tabitemcell, .atg .v-tabsheet-spacertd {
+	height: 32px;
+}
+
+.atg .v-tabsheet-tabitemcell {
+	background: no-repeat;
+	background-image: url(../reindeer/tabsheet/img/framed/tab-left.png);/** sprite-ref: verticals */
+	padding-left: 3px;
+}
+
+.atg .v-tabsheet-tabitemcell-first {
+	padding-left: 10px;
+	background-image: url(../reindeer/tabsheet/img/framed/tab-first-left.png);/** sprite-ref: verticals */
+}
+
+.atg .v-tabsheet-tabitem, .atg .v-tabsheet-spacertd div {
+	border: none;
+	height: 32px;
+	background: transparent repeat-x;
+	background-image: url(../reindeer/tabsheet/img/framed/tab-bg.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+	padding: 0;
+	color: #222;
+	text-shadow: #fff 0 1px 0;
+}
+
+.atg .v-tabsheet-tabitem .v-caption {
+	border: none;
+	height: 23px;
+	background: no-repeat right top;
+	background-image: url(../reindeer/tabsheet/img/framed/tab-right.png);/** sprite-ref: verticals; sprite-alignment: right */
+	padding: 9px 8px 0 6px;
+}
+
+.atg .v-tabsheet-tabitem .v-caption-closable {
+	padding-right: 0;
+	padding-left: 17px;
+}
+
+.atg .v-tabsheet-tabitem .v-captiontext {
+	height: 16px;
+	line-height: 16px;
+	vertical-align: baseline;
+}
+
+.atg .v-tabsheet-caption-close {
+	float: right;
+	width: 19px;
+	height: 18px;
+	margin: -1px -1px 0;
+	padding-left: 2px;
+	background: transparent;
+	background-image: url(../reindeer/tabsheet/img/close-btn.png);/** sprite-ref: verticals */
+	cursor: default;
+	text-indent: -999px;
+	overflow: hidden;
+	font-size: 14px;
+	font-weight: normal;
+}
+
+.v-ff .atg .v-tabsheet-caption-close {
+	margin-top: -17px;
+}
+
+.v-ff .atg .v-tabsheet-caption-close:only-child {
+	margin-top: -1px;
+}
+
+.atg .v-tabsheet-caption-close:hover {
+	background-image: url(../reindeer/tabsheet/img/close-btn-hover.png);/** sprite-ref: verticals */
+}
+
+.atg .v-tabsheet-caption-close:active {
+	background-image: url(../reindeer/tabsheet/img/close-btn-pressed.png);/** sprite-ref: verticals */
+}
+
+.atg .v-tabsheet-tabitem-selected .v-tabsheet-caption-close {
+	background-image: url(../reindeer/tabsheet/img/close-btn-sel.png);/** sprite-ref: verticals */
+}
+
+.atg .v-tabsheet-tabitem-selected .v-tabsheet-caption-close:hover {
+	background-image: url(../reindeer/tabsheet/img/close-btn-sel-hover.png);/** sprite-ref: verticals */
+}
+
+.atg .v-tabsheet-tabitem-selected .v-tabsheet-caption-close:active {
+	background-image: url(../reindeer/tabsheet/img/close-btn-sel-pressed.png);/** sprite-ref: verticals */
+}
+
+.atg .v-tabsheet-tabitemcell-selected {
+	background-image: url(../reindeer/tabsheet/img/framed/tab-left-sel.png);/** sprite-ref: verticals */
+}
+
+.atg .v-tabsheet-tabitemcell-selected-first {
+	background-image: url(../reindeer/tabsheet/img/framed/tab-first-left-sel.png);/** sprite-ref: verticals */
+}
+
+.atg .v-tabsheet-tabitem-selected {
+	background-image: url(../reindeer/tabsheet/img/framed/tab-bg-sel.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+	color: #232930;
+}
+
+.atg .v-tabsheet-tabitem-selected .v-caption {
+	background-image: url(../reindeer/tabsheet/img/framed/tab-right-sel.png);/** sprite-ref: verticals; sprite-alignment: right */
+}
+
+.atg .v-tabsheet-spacertd div {
+	margin-right: 4px;
+}
+
+.atg .v-tabsheet-spacertd {
+	background: transparent no-repeat right top;
+	background-image: url(../reindeer/tabsheet/img/framed/tab-spacer-right.png);/** sprite-ref: verticals; sprite-alignment: right */
+}
+
+.atg .blue .v-tabsheet-content {
+	border-color: #a8bcc5;
+}
+
+.atg .v-tabsheet-content, .atg .white .v-tabsheet-content {
+	border: 1px solid #dcdcdc;
+	border-bottom: none;
+	border-top: none;
+	color: #222;
+	text-shadow: none;
+}
+
+.atg .v-tabsheet-tabsheetpanel {
+	background: #fff;
+}
+
+.v-sa .atg .v-tabsheet-content {
+	border-color: rgba(0, 0, 0, 0.1);
+}
+
+.atg .blue .v-tabsheet-deco {
+	border-color: #92a3ac;
+	background: #adc2cd;
+}
+
+.atg .v-tabsheet-deco, .atg .white .v-tabsheet-deco {
+	height: 1px;
+	border-top: 1px solid #bebebe;
+	background: #e2e2e2;
+	overflow: hidden;
+}
+
+.v-sa .atg .v-tabsheet-deco {
+	border-top-color: rgba(0, 0, 0, 0.1);
+	background: rgba(0, 0, 0, 0.08);
+}
+
+.atg .v-tabsheet-tabs .v-icon, .atg .v-tabsheet-tabs .v-captiontext, .atg .v-tabsheet-tabs .v-errorindicator {
+	display: inline;
+	float: none;
+}
+
+.v-sa .atg .v-tabsheet-tabs .v-captiontext {
+	display: inline-block;
+}
+
+.atg .v-tabsheet-tabs .v-icon {
+	width: 16px !important;
+	height: 16px !important;
+}
+
+.atg .v-tabsheet-tabs .v-errorindicator {
+	display: inline-block;
+	width: 13px;
+	height: 16px;
+	background: transparent url(../reindeer/common/icons/error.png) no-repeat 50%;
+}
+
+.v-ie .atg .v-tabsheet-tabs .v-errorindicator {
+	zoom: 1;
+	display: inline-block;
+}
+
+.atg .v-tabsheet-scroller {
+	height: 31px;
+	margin-top: -31px;
+	padding: 0 3px 0 4px;
+	border-right: 1px solid #c2c2c2;
+	border-left: 1px solid #cfcfcf;
+	position: relative;
+	float: right;
+	background: transparent url(../reindeer/tabsheet/img/framed/tab-bg.png) repeat-x left -1px;
+	width: 36px;
+}
+
+.atg .v-tabsheet-scroller button {
+	margin-top: 7px;
+}
+
+.atg .v-tabsheet-scrollerPrev, .atg .v-tabsheet-scrollerNext, .atg .v-tabsheet-scrollerPrev-disabled, .atg .v-tabsheet-scrollerNext-disabled {
+	border: none;
+	background: transparent;
+	background-image: url(../reindeer/tabsheet/img/tab-prev.png);/** sprite-ref: verticals */
+	width: 18px;
+	height: 17px;
+	overflow: hidden;
+}
+
+.atg .v-tabsheet-scroller button::-moz-focus-inner {
+	border: none;
+}
+
+.atg .v-tabsheet-scrollerNext {
+	background-image: url(../reindeer/tabsheet/img/tab-next.png);/** sprite-ref: verticals */
+}
+
+.atg .v-tabsheet-scrollerPrev:active {
+	background-image: url(../reindeer/tabsheet/img/tab-prev-pressed.png);/** sprite-ref: verticals */
+}
+
+.atg .v-tabsheet-scrollerNext:active {
+	background-image: url(../reindeer/tabsheet/img/tab-next-pressed.png);/** sprite-ref: verticals */
+}
+
+.atg .v-tabsheet-scrollerPrev-disabled, .atg .v-tabsheet-scrollerPrev-disabled:active {
+	background-image: url(../reindeer/tabsheet/img/tab-prev-disabled.png);/** sprite-ref: verticals */
+	opacity: 1;
+	filter: none;
+}
+
+.atg .v-tabsheet-scrollerNext-disabled, .atg .v-tabsheet-scrollerNext-disabled:active {
+	background-image: url(../reindeer/tabsheet/img/tab-next-disabled.png);/** sprite-ref: verticals; sprite-margin-bottom: 1px */
+	opacity: 1;
+	filter: none;
+}
+
+.atg .v-tabsheet-borderless .v-tabsheet-tabitemcell-first {
+	padding-left: 7px;
+	background: url(../reindeer/tabsheet/img/framed/tab-first-left.png) no-repeat -3px 0;
+}
+
+.atg .v-tabsheet-borderless .v-tabsheet-tabitemcell-selected-first {
+	background: url(../reindeer/tabsheet/img/framed/tab-first-left-sel.png) no-repeat -3px 0;
+}
+
+.atg .v-tabsheet-borderless .v-tabsheet-spacertd div {
+	margin-right: 0;
+}
+
+.atg .v-tabsheet-borderless .v-tabsheet-spacertd {
+	background: transparent;
+}
+
+.atg .v-tabsheet-borderless .v-tabsheet-content {
+	border: none;
+}
+
+.atg .v-tabsheet-borderless .v-tabsheet-deco {
+	height: 0;
+	border-top: none;
+}
+
+.atg .blue .v-tabsheet-tabs-minimal .v-tabsheet-spacertd div, .atg .blue .v-tabsheet-tabs-minimal .v-tabsheet-tabitem, .atg .blue .v-tabsheet-tabs-minimal .v-tabsheet-tabitem-selected {
+	border-color: #7c8a91;
+}
+
+.atg .blue .v-tabsheet-tabs-minimal .v-tabsheet-caption-close {
+	color: #7c8a91;
+}
+
+.atg .blue .v-tabsheet-tabs-minimal .v-tabsheet-caption-close:hover {
+	color: #BCD3DE;
+	background: #778d98;
+}
+
+.atg .blue .v-tabsheet-tabs-minimal .v-tabsheet-caption-close:active {
+	background: #4f6874;
+}
+
+.atg .v-tabsheet-tabs-minimal .v-tabsheet-spacertd div, .atg .white .v-tabsheet-tabs-minimal .v-tabsheet-spacertd div {
+	border-bottom: 1px solid #bfbfbf;
+	height: auto;
+	background: transparent;
+}
+
+.atg .v-tabsheet-tabs-minimal .v-tabsheet-tabitemcell, .atg .v-tabsheet-tabs-minimal .v-tabsheet-spacertd {
+	height: auto;
+	background: transparent;
+	padding-left: 0;
+}
+
+.atg .v-tabsheet-tabs-minimal .v-tabsheet-tabitem, .atg .white .v-tabsheet-tabs-minimal .v-tabsheet-tabitem {
+	border: none;
+	border-bottom: 1px solid #bfbfbf;
+	color: #4d748f;
+	padding: 0;
+	height: auto;
+	background: transparent;
+	text-shadow: none;
+}
+
+.atg .v-tabsheet-tabs-minimal .v-tabsheet-tabitem .v-caption {
+	padding: 5px 16px;
+	height: auto;
+	background: transparent;
+}
+
+.atg .v-tabsheet-tabs-minimal .v-tabsheet-tabitemcell-selected {
+	background: transparent;
+}
+
+.atg .v-tabsheet-tabs-minimal .v-tabsheet-tabitem-selected, .atg .white .v-tabsheet-tabs-minimal .v-tabsheet-tabitem-selected {
+	background: transparent;
+	border: 1px solid #bfbfbf;
+	border-bottom: none;
+	color: #222;
+}
+
+.atg .v-tabsheet-tabs-minimal .v-tabsheet-tabitem-selected .v-caption {
+	background: transparent;
+	padding: 4px 15px 6px 15px;
+}
+
+.atg .v-tabsheet-tabs-minimal .v-tabsheet-tabitem .v-caption-closable, .atg .v-tabsheet-tabs-minimal .v-tabsheet-tabitem-selected .v-caption-closable {
+	padding-right: 6px;
+}
+
+.atg .v-tabsheet-content-minimal, .atg .white .v-tabsheet-content-minimal {
+	border: none;
+}
+
+.atg .v-tabsheet-content-minimal .v-tabsheet-tabsheetpanel {
+	background: transparent;
+}
+
+.atg .v-tabsheet-deco-minimal, .atg .white .v-tabsheet-deco-minimal {
+	height: 0;
+	border: none;
+}
+
+.atg .v-tabsheet-tabcontainer-minimal .v-tabsheet-scroller {
+	margin-top: -20px;
+	height: 17px;
+	padding: 0;
+	border: none;
+	background: transparent;
+}
+
+.atg .v-tabsheet-tabcontainer-minimal .v-tabsheet-scroller button {
+	margin-top: 0;
+}
+
+.atg .v-tabsheet-tabs-minimal .v-tabsheet-caption-close, .atg .v-tabsheet-tabs-minimal .v-tabsheet-caption-close:hover, .atg .v-tabsheet-tabs-minimal .v-tabsheet-caption-close:active {
+	text-indent: 0;
+	background: transparent;
+	margin-left: 3px;
+	margin-right: -3px;
+	padding: 0;
+	color: #999;
+	width: 14px;
+	height: 14px;
+	line-height: 14px;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+}
+
+.v-ie9 .atg .v-tabsheet-tabs-minimal .v-tabsheet-tabitem .v-tabsheet-caption-close, .v-ie9 .atg .v-tabsheet-tabs-minimal .v-tabsheet-tabitem .v-tabsheet-caption-close:hover, .v-ie9 .atg .v-tabsheet-tabs-minimal .v-tabsheet-tabitem .v-tabsheet-caption-close:active, .v-ie10 .atg .v-tabsheet-tabs-minimal .v-tabsheet-tabitem .v-tabsheet-caption-close, .v-ie10 .atg .v-tabsheet-tabs-minimal .v-tabsheet-tabitem .v-tabsheet-caption-close:hover, .v-ie10 .atg .v-tabsheet-tabs-minimal .v-tabsheet-tabitem .v-tabsheet-caption-close:active {
+	margin-left: 2.5px;
+	margin-top: 1px;
+}
+
+.atg .v-tabsheet-tabs-minimal .v-tabsheet-caption-close:hover, .atg .white .v-tabsheet-tabs-minimal .v-tabsheet-caption-close:hover {
+	color: #fff;
+	background: #aaa;
+}
+
+.atg .v-tabsheet-tabs-minimal .v-tabsheet-caption-close:active, .atg .white .v-tabsheet-tabs-minimal .v-tabsheet-caption-close:active {
+	background: #777;
+}
+
+.atg .black .v-tabsheet-tabs-minimal .v-tabsheet-spacertd div, .atg .black .v-tabsheet-tabs-minimal .v-tabsheet-tabitem, .atg .black .v-tabsheet-tabs-minimal .v-tabsheet-tabitem-selected {
+	border-color: #3e4044;
+	color: #6a7f89;
+}
+
+.atg .black .v-tabsheet-tabs-minimal .v-tabsheet-tabitem-selected {
+	color: #c9ccce;
+}
+
+.atg .black .v-tabsheet-content-minimal, .atg .black .v-tabsheet-content-bar {
+	color: #c9ccce;
+	text-shadow: #000 0 0 1px;
+}
+
+.atg .black .v-tabsheet-tabs-minimal .v-tabsheet-caption-close {
+	color: #72787c;
+}
+
+.atg .black .v-tabsheet-tabs-minimal .v-tabsheet-caption-close:hover {
+	color: #1d2021;
+	background: #4d5154;
+}
+
+.atg .black .v-tabsheet-tabs-minimal .v-tabsheet-caption-close:active {
+	background: #626669;
+}
+
+.atg .v-tabsheet-tabs-bar .v-tabsheet-tabitemcell, .atg .v-tabsheet-tabs-bar .v-tabsheet-spacertd {
+	height: 20px;
+}
+
+.atg .v-tabsheet-tabs-bar .v-tabsheet-spacertd {
+	background: transparent;
+}
+
+.atg .v-tabsheet-tabs-bar .v-tabsheet-tabitemcell {
+	background-image: url(../reindeer/tabsheet/img/bar/tab-left.png);/** sprite-ref: verticals */
+}
+
+.atg .v-tabsheet-tabs-bar .v-tabsheet-tabitemcell-first {
+	padding-left: 6px;
+	background-image: url(../reindeer/tabsheet/img/bar/tab-first-left.png);/** sprite-ref: verticals */
+}
+
+.atg .v-tabsheet-tabs-bar .v-tabsheet-tabitem, .atg .v-tabsheet-tabs-bar .v-tabsheet-spacertd div {
+	height: 20px;
+	background-image: url(../reindeer/tabsheet/img/bar/tab-bg.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+	margin: 0;
+}
+
+.atg .v-tabsheet-tabs-bar .v-tabsheet-tabitem .v-caption {
+	font-size: 11px;
+	height: 18px;
+	background-image: url(../reindeer/tabsheet/img/bar/tab-right.png);/** sprite-ref: verticals; sprite-alignment: right */
+	padding: 2px 12px 0 10px;
+}
+
+.atg .v-tabsheet-tabs-bar .v-tabsheet-tabitem .v-caption-closable, .atg .v-tabsheet-tabs-bar .v-tabsheet-tabitem-selected .v-caption-closable {
+	padding-right: 8px;
+	padding-left: 14px;
+}
+
+.atg .v-tabsheet-tabs-bar .v-tabsheet-caption-close, .atg .v-tabsheet-tabs-bar .v-tabsheet-caption-close:hover, .atg .v-tabsheet-tabs-bar .v-tabsheet-caption-close:active {
+	text-indent: 0;
+	background: transparent;
+	margin-left: 3px;
+	margin-right: -3px;
+	padding: 1px 0 0 1px;
+	color: #3c3c3c;
+	width: 13px;
+	height: 13px;
+	line-height: 12px;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+}
+
+.atg .v-tabsheet-tabs-bar .v-tabsheet-caption-close {
+	margin-top: 1px;
+}
+
+.v-ff .atg .v-tabsheet-tabs-bar .v-tabsheet-caption-close {
+	margin-top: -14px;
+}
+
+.v-ie9 .atg .v-tabsheet-tabs-bar .v-tabsheet-caption-close:only-child, .v-ie9 .atg .v-tabsheet-tabs-bar .v-captiontext:first-child + .v-tabsheet-caption-close, .v-ie10 .atg .v-tabsheet-tabs-bar .v-tabsheet-caption-close:only-child, .v-ie10 .atg .v-tabsheet-tabs-bar .v-captiontext:first-child + .v-tabsheet-caption-close {
+	margin-top: -14px;
+}
+
+.atg .v-tabsheet-tabs-bar .v-tabsheet-caption-close:hover {
+	background: #bfbfbf;
+	-webkit-box-shadow: 0 1px 0 #fff;
+}
+
+.atg .v-tabsheet-tabs-bar .v-tabsheet-caption-close:active {
+	background: #a9a9a9;
+}
+
+.atg .v-tabsheet-tabs-bar .v-tabsheet-tabitem-selected .v-tabsheet-caption-close {
+	color: #404142;
+}
+
+.atg .v-tabsheet-tabs-bar .v-tabsheet-tabitem-selected .v-tabsheet-caption-close:hover {
+	background: #5e666e;
+	color: #fff;
+	text-shadow: 0 -1px 0 #222;
+}
+
+.atg .v-tabsheet-tabs-bar .v-tabsheet-tabitem-selected .v-tabsheet-caption-close:active {
+	background: #404142;
+}
+
+.atg .v-tabsheet-tabs-bar .v-tabsheet-tabitemcell-selected {
+	background-image: url(../reindeer/tabsheet/img/bar/tab-left-sel.png);/** sprite-ref: verticals */
+}
+
+.atg .v-tabsheet-tabs-bar .v-tabsheet-tabitemcell-selected-first {
+	background-image: url(../reindeer/tabsheet/img/bar/tab-first-left-sel.png);/** sprite-ref: verticals */
+}
+
+.atg .v-tabsheet-tabs-bar .v-tabsheet-tabitem-selected {
+	background-image: url(../reindeer/tabsheet/img/bar/tab-bg-sel.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+	color: #232930;
+}
+
+.atg .v-tabsheet-tabs-bar .v-tabsheet-tabitem-selected .v-caption {
+	background-image: url(../reindeer/tabsheet/img/bar/tab-right-sel.png);/** sprite-ref: verticals; sprite-alignment: right */
+}
+
+.atg .v-tabsheet-tabcontainer-bar .v-tabsheet-scroller {
+	margin-top: -20px;
+	height: 19px;
+	border-right: none;
+	background-image: url(../reindeer/tabsheet/img/bar/tab-bg.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+}
+
+.atg .v-tabsheet-tabcontainer-bar .v-tabsheet-scroller button {
+	margin-top: 1px;
+}
+
+.atg .v-tabsheet-content-bar, .atg .white .v-tabsheet-content-bar {
+	border: none;
+}
+
+.atg .v-tabsheet-content-bar .v-tabsheet-tabsheetpanel {
+	background: transparent;
+}
+
+.atg .v-tabsheet-deco-bar, .atg .white .v-tabsheet-deco-bar {
+	height: 0;
+	border: none;
+}
+
+.atg .v-tabsheet-tabs-selected-closable .v-tabsheet-tabitem .v-tabsheet-caption-close, .atg .v-tabsheet-tabs-selected-closable .v-tabsheet-tabitem:hover .v-tabsheet-caption-close {
+	visibility: hidden;
+}
+
+.atg .v-tabsheet-tabs-selected-closable .v-tabsheet-tabitem-selected .v-tabsheet-caption-close, .atg .v-tabsheet-tabs-selected-closable .v-tabsheet-tabitem-selected:hover .v-tabsheet-caption-close {
+	visibility: visible;
+}
+
+.atg .v-tabsheet-tabs-hover-closable .v-tabsheet-caption-close {
+	visibility: hidden;
+}
+
+.atg .v-tabsheet-tabs-hover-closable .v-tabsheet-tabitem:hover .v-tabsheet-caption-close {
+	visibility: visible;
+}
+
+.atg .blue .v-textfield, .atg .blue .v-textarea {
+	border-color: #92a2aa;
+	border-top-color: #7c8a90;
+	border-bottom-color: #a1b3bc;
+}
+
+.atg .v-textfield, .atg .v-textarea, .atg .white .v-textfield, .atg .white .v-textarea {
+	border: 1px solid #bcbdbe;
+	border-top-color: #a2a3a4;
+	border-bottom-color: #d2d3d4;
+	background: #fff;
+	background-repeat: repeat-x;
+	background-image: url(../reindeer/textfield/img/bg.png);/** sprite-ref: verticals; sprite-alignment: repeat; sprite-margin-bottom: 22px */
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	margin: 0;
+	height: 23px;
+	line-height: normal;
+}
+
+.atg .v-textarea, .atg .white .v-textarea {
+	background-image: none;
+	height: auto;
+}
+
+.atg.v-app input.v-textfield, .atg .v-window input.v-textfield, .atg.v-app textarea.v-textarea, .atg .v-window textarea.v-textarea {
+	padding: 3px 3px 4px;
+}
+
+.atg.v-app input.v-textfield.v-widget, .atg .v-window input.v-textfield.v-widget {
+	height: 24px;
+}
+
+.atg.v-app .v-textfield-focus, .atg .v-window .v-textfield-focus, .atg .v-popupview-popup .v-textfield-focus, .atg.v-app .v-textarea-focus, .atg .v-window .v-textarea-focus, .atg .v-popupview-popup .v-textarea-focus {
+	border-color: #5b97d0;
+	border-top-color: #4f83b4;
+	border-bottom-color: #5ca0df;
+	outline: none;
+	background-color: #fff;
+}
+
+.atg input.v-textfield-prompt, .atg textarea.v-textarea-prompt {
+	font-style: normal;
+	color: #999;
+}
+
+.atg.v-app input.v-textfield-small {
+	font-size: 11px;
+	line-height: normal;
+	height: auto;
+	padding: 2px;
+}
+
+.atg.v-app textarea.v-textarea-small {
+	font-size: 11px;
+}
+
+.atg.v-app .v-table input.v-textfield.v-widget, .atg .v-window .v-table input.v-textfield.v-widget {
+	padding: 1px 2px;
+	height: auto;
+	line-height: normal;
+}
+
+.atg .v-table-cell-wrapper > input.v-textfield {
+	margin-top: -2px;
+	margin-bottom: -2px;
+}
+
+.atg .black .v-textfield, .atg .black .v-textarea {
+	border-color: #38393a;
+	border-top-color: #2c2d2e;
+	border-bottom-color: #3e3f3f;
+	background: #151717;
+	background-image: url(../reindeer/textfield/img/bg-black.png);/** sprite-ref: black-verticals; sprite-alignment: repeat; sprite-margin-bottom: 22px */
+	color: #c9ccce;
+	text-shadow: #000 0 0 1px;
+}
+
+.atg .black .v-textarea {
+	background-image: none;
+}
+
+.atg.v-app .black .v-textfield-focus, .atg .v-window-black .v-textfield-focus, .atg .v-window .black .v-textfield-focus, .atg .v-popupview-popup .black .v-textfield-focus, .atg.v-app .black .v-textarea-focus, .atg .v-window-black .v-textarea-focus, .atg .v-window .black .v-textarea-focus, .atg .v-popupview-popup .black .v-textarea-focus {
+	border-color: #4b7192;
+	border-top-color: #3b5a75;
+	border-bottom-color: #507596;
+	background-color: #151717;
+}
+
+.atg .black input.v-textfield-prompt {
+	color: #5f6366;
+}
+
+.atg input.v-textfield-readonly, .atg .black input.v-textfield-readonly, .atg textarea.v-textarea-readonly, .atg .black textarea.v-textarea-readonly {
+	border: none;
+	background: transparent;
+}
+
+.atg .v-tree-node {
+	background: transparent url(../reindeer/tree/img/arrows.png) no-repeat 6px -10px;
+}
+
+.atg .v-tree-node-expanded {
+	background-position: -7px 5px;
+}
+
+.atg .v-tree-node-caption {
+	margin-left: 16px;
+	padding-bottom: 1px;
+}
+
+.atg .v-tree-node span {
+	padding: 1px 2px;
+	display: inline-block;
+}
+
+.atg .v-tree-node-selected span {
+	background: #4d749f repeat-x;
+	background-image: url(../reindeer/common/img/sel-bg.png);
+	color: #fff;
+	padding: 1px 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	text-shadow: #2b425a 0 1px 0;
+	display: inline-block;
+}
+
+.atg .v-tree-node-children {
+	padding-left: 16px;
+}
+
+.atg .v-tree-node-caption.v-tree-node-focused span {
+	padding-left: 1px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+.atg .v-tree-node-focused span {
+	border: 1px dotted black;
+}
+
+.atg .v-tree .v-tree-node-drag-top {
+	background-position: 6px -11px;
+}
+
+.atg .v-tree .v-tree-node-drag-top.v-tree-node-expanded {
+	background-position: -7px 4px;
+}
+
+.atg .v-tree-connectors .v-tree-node-drag-top, .atg .v-tree-connectors .v-tree-node-expanded.v-tree-node-drag-top {
+	background-position: 2px -53px;
+}
+
+.atg .v-tree-connectors .v-tree-node-drag-top.v-tree-node-leaf {
+	background-position: 2px 50%;
+}
+
+.atg .v-window {
+	background: transparent;
+}
+
+.atg .v-window-wrap {
+	border: 1px solid #808386;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.v-sa .atg .v-window-wrap, .v-op .atg .v-window-wrap {
+	border-color: rgba(0, 0, 0, 0.2);
+}
+
+.atg .v-window-outerheader {
+	padding: 12px 52px 0 14px;
+	height: 37px;
+	background: black repeat-x;
+	background-image: url(../reindeer/window/img/header-bg.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+}
+
+.atg .v-window-header {
+	font-weight: bold;
+	font-size: 12px;
+	line-height: normal;
+	color: #fff;
+	text-shadow: #000 0 -1px 0;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-ms-text-overflow: ellipsis;
+}
+
+.atg .v-window-error .v-window-header {
+	padding-left: 13px;
+	background: transparent url(../reindeer/common/icons/error.png) no-repeat 0 50%;
+}
+
+.atg .v-window-resizebox {
+	width: 15px;
+	height: 15px;
+	cursor: se-resize;
+	background: transparent;
+	background-image: url(../reindeer/window/img/resize.png);/** sprite-ref: verticals */
+}
+
+.atg .v-window-footer {
+	background-color: white;
+	background-repeat: repeat-x;
+	background-image: url(../reindeer/window/img/footer-bg.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+	height: 15px;
+}
+
+.atg .v-window-closebox {
+	top: 12px;
+	right: 10px;
+	width: 15px;
+	height: 16px;
+	background: transparent;
+	background-image: url(../reindeer/window/img/close.png);/** sprite-ref: verticals */
+}
+
+.atg .v-window-closebox:hover {
+	background-image: url(../reindeer/window/img/close-hover.png);/** sprite-ref: verticals */
+}
+
+.atg .v-window-closebox:active {
+	background-image: url(../reindeer/window/img/close-pressed.png);/** sprite-ref: verticals */
+}
+
+.atg .v-window-maximizebox, .atg .v-window-restorebox {
+	top: 12px;
+	right: 28px;
+	width: 15px;
+	height: 16px;
+	background: transparent;
+}
+
+.atg .v-window-maximizebox, .atg .v-window-maximizebox:hover, .atg .v-window-maximizebox:active {
+	background-image: url(../reindeer/window/img/maximize.png);/** sprite-ref: verticals */
+}
+
+.atg .v-window-restorebox, .atg .v-window-restorebox:hover, .atg .v-window-restorebox:active {
+	background-image: url(../reindeer/window/img/restore.png);/** sprite-ref: verticals */
+}
+
+.atg .v-window-contents {
+	background: #fff;
+}
+
+.atg .v-window-modalitycurtain {
+	background: #56595b;
+}
+
+.atg .v-window-light .v-window-outerheader {
+	background: transparent;
+	padding: 15px 52px 0 18px;
+}
+
+.atg .v-window-light .v-window-header {
+	font-size: 16px;
+	color: #292e34;
+	text-shadow: none;
+}
+
+.atg .v-window-light .v-window-resizebox {
+	width: 12px;
+	height: 12px;
+	background-image: url(../reindeer/window/img/light/resize.png);/** sprite-ref: verticals */
+}
+
+.atg .v-window-light .v-window-footer {
+	background: transparent;
+	height: 12px;
+}
+
+.atg .v-window-light .v-window-closebox {
+	right: 1px;
+	top: 17px;
+	width: 19px;
+	height: 15px;
+	background-image: url(../reindeer/window/img/light/close.png);/** sprite-ref: verticals */
+}
+
+.atg .v-window-light .v-window-closebox:hover {
+	background-image: url(../reindeer/window/img/light/close-hover.png);/** sprite-ref: verticals */
+}
+
+.atg .v-window-light .v-window-closebox:active {
+	background-image: url(../reindeer/window/img/light/close-pressed.png);/** sprite-ref: verticals */
+}
+
+.atg .v-window-light .v-window-maximizebox {
+	top: 17px;
+	background-image: url(../reindeer/window/img/light/maximize.png);/** sprite-ref: verticals */
+}
+
+.atg .v-window-light .v-window-maximizebox:hover {
+	background-image: url(../reindeer/window/img/light/maximize-hover.png);/** sprite-ref: verticals */
+}
+
+.atg .v-window-light .v-window-maximizebox:active {
+	background-image: url(../reindeer/window/img/light/maximize-active.png);/** sprite-ref: verticals */
+}
+
+.atg .v-window-light .v-window-restorebox {
+	top: 17px;
+	background-image: url(../reindeer/window/img/light/restore.png);/** sprite-ref: verticals */
+}
+
+.atg .v-window-light .v-window-restorebox:hover {
+	background-image: url(../reindeer/window/img/light/restore-hover.png);/** sprite-ref: verticals */
+}
+
+.atg .v-window-light .v-window-restorebox:active {
+	background-image: url(../reindeer/window/img/light/restore-active.png);/** sprite-ref: verticals */
+}
+
+.atg .v-window-light .v-window-contents {
+	background: transparent;
+}
+
+.atg .v-window-light .v-window-wrap {
+	background: #f7f7f8 repeat-x;
+	background-image: url(../reindeer/window/img/light/content-bg.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+}
+
+.atg .v-window-black .v-window-wrap {
+	border-color: #2e3030;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	overflow: hidden;
+}
+
+.v-sa .atg .v-window-black .v-window-wrap, .v-op .atg .v-window-black .v-window-wrap {
+	border-color: rgba(0, 0, 0, 0.8);
+}
+
+.atg .v-window-black .v-window-wrap {
+	background-color: #1d2021;
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+}
+
+.v-sa .atg .v-window-black .v-window-wrap, .v-op .atg .v-window-black .v-window-wrap {
+	background-color: rgba(29, 32, 33, 0.9);
+}
+
+.atg .v-window-black .v-window-outerheader {
+	height: 29px;
+	padding: 7px 14px;
+	background: transparent repeat-x;
+	background-image: url(../reindeer/window/img/black/header-bg.png);/** sprite-ref: black-verticals; sprite-alignment: repeat */
+	text-align: center;
+	-moz-border-radius-topright: 7px;
+	-moz-border-radius-topleft: 7px;
+	-webkit-border-top-right-radius: 7px;
+	-webkit-border-top-left-radius: 7px;
+	overflow: hidden;
+	border: none;
+}
+
+.atg .v-window-black .v-window-header {
+	font-size: 12px;
+	font-weight: normal;
+	color: #dddfe1;
+}
+
+.atg .v-window-black .v-window-closebox {
+	top: 8px;
+	background-image: url(../reindeer/window/img/black/close.png);/** sprite-ref: black-verticals */
+}
+
+.atg .v-window-black .v-window-closebox:hover {
+	background-image: url(../reindeer/window/img/black/close-hover.png);/** sprite-ref: black-verticals */
+}
+
+.atg .v-window-black .v-window-closebox:active {
+	background-image: url(../reindeer/window/img/black/close-pressed.png);/** sprite-ref: black-verticals */
+}
+
+.atg .v-window-black .v-window-footer {
+	background: transparent;
+	border: none;
+	height: 14px;
+}
+
+.atg .v-window-black .v-window-resizebox {
+	background: transparent no-repeat;
+	background-image: url(../reindeer/window/img/black/resize.png);/** sprite-ref: black-verticals; sprite-margin-bottom: 4px */
+	width: 14px;
+	height: 14px;
+}
+
+.atg .v-window-black .v-window-maximizebox {
+	top: 8px;
+	background-image: url(../reindeer/window/img/black/maximize.png);/** sprite-ref: black-verticals */
+}
+
+.atg .v-window-black .v-window-maximizebox:hover {
+	background-image: url(../reindeer/window/img/black/maximize-hover.png);/** sprite-ref: black-verticals */
+}
+
+.atg .v-window-black .v-window-maximizebox:active {
+	background-image: url(../reindeer/window/img/black/maximize-active.png);/** sprite-ref: black-verticals */
+}
+
+.atg .v-window-black .v-window-restorebox {
+	top: 8px;
+	background-image: url(../reindeer/window/img/black/restore.png);/** sprite-ref: black-verticals */
+}
+
+.atg .v-window-black .v-window-restorebox:hover {
+	background-image: url(../reindeer/window/img/black/restore-hover.png);/** sprite-ref: black-verticals */
+}
+
+.atg .v-window-black .v-window-restorebox:active {
+	background-image: url(../reindeer/window/img/black/restore-active.png);/** sprite-ref: black-verticals */
+}
+
+.atg .v-window-black .v-window-contents {
+	border: none;
+	background: transparent repeat-x;
+	background-image: url(../reindeer/window/img/black/content-bg.png);/** sprite-ref: black-verticals; sprite-alignment: repeat */
+}
